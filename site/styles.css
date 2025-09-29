@@ -1547,9 +1547,36 @@ a[href^="mailto:"]:hover {
         padding: 100px 0 60px;
     }
 
+    .hero-content h1 {
+        font-size: 2.2rem !important;
+        line-height: 1.2 !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .index-page .hero-content h1 {
+        font-size: 2.2rem !important;
+        line-height: 1.2 !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem !important;
+        line-height: 1.5 !important;
+        margin-bottom: 1.5rem !important;
+        max-width: 100% !important;
+    }
+
+    .index-page .hero-subtitle {
+        font-size: 1rem !important;
+        line-height: 1.5 !important;
+        margin-bottom: 1.5rem !important;
+        max-width: 100% !important;
+    }
+
     .hero-buttons {
         flex-direction: column;
         align-items: center;
+        gap: 0.75rem;
     }
 
     .highlights-grid {
@@ -1644,6 +1671,36 @@ a[href^="mailto:"]:hover {
 
     .hero {
         padding: 90px 0 50px;
+    }
+
+    .hero-content h1 {
+        font-size: 1.8rem !important;
+        line-height: 1.2 !important;
+        margin-bottom: 0.75rem !important;
+    }
+
+    .index-page .hero-content h1 {
+        font-size: 1.8rem !important;
+        line-height: 1.2 !important;
+        margin-bottom: 0.75rem !important;
+    }
+
+    .hero-subtitle {
+        font-size: 0.9rem !important;
+        line-height: 1.4 !important;
+        margin-bottom: 1.25rem !important;
+        max-width: 100% !important;
+    }
+
+    .index-page .hero-subtitle {
+        font-size: 0.9rem !important;
+        line-height: 1.4 !important;
+        margin-bottom: 1.25rem !important;
+        max-width: 100% !important;
+    }
+
+    .hero-buttons {
+        gap: 0.5rem;
     }
 
     .highlight-item,
