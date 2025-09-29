@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://idfs.com/sitemap.xml
+
+# Allow all search engines to crawl the site
+Allow: /capabilities.html
+Allow: /industries.html
+Allow: /contact.html
+Allow: /capabilities-statement.pdf
+Allow: /one-page-capabilities.pdf
+Allow: /assets/
+
+# Disallow admin or private areas (if any)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Crawl delay (optional)
+Crawl-delay: 1
+
+# Host directive
+Host: https://idfs.com

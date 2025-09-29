@@ -1,0 +1,7 @@
+# Lambda function dependencies
+# Note: boto3 is included in the Lambda runtime, so we don't need to include it here
+# urllib is part of Python standard library
+
+# If you need additional packages, add them here:
+# requests==2.31.0
+# python-dateutil==2.8.2

@@ -1,0 +1,23 @@
+# Terraform files
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfplan
+.terraform/
+.terraform.lock.hcl
+
+# Lambda deployment packages
+*.zip
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log

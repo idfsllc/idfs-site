@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+    <url>
+        <loc>https://idfs.com/</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://idfs.com/assets/machine-shop-facility.webp</image:loc>
+            <image:title>IDFS Machine Shop Facility Fayetteville Georgia</image:title>
+            <image:caption>State-of-the-art fabrication shop in Georgia with CNC machining Georgia capabilities</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://idfs.com/assets/robot-milling-foam.webp</image:loc>
+            <image:title>Robotic Milling Georgia and CNC Machining</image:title>
+            <image:caption>Advanced robotic milling Georgia capabilities for precision manufacturing</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://idfs.com/assets/welding1.webp</image:loc>
+            <image:title>Welding and Fabrication Services Georgia</image:title>
+            <image:caption>Professional welding and fabrication services for defense fabrication Georgia</image:caption>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://idfs.com/capabilities.html</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://idfs.com/assets/cad-to-part2.webp</image:loc>
+            <image:title>Custom Metal Fabrication Georgia Services</image:title>
+            <image:caption>Advanced CAD modeling and CNC programming for custom metal fabrication Georgia</image:caption>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://idfs.com/industries.html</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://idfs.com/assets/robotic-cutting.webp</image:loc>
+            <image:title>Defense Fabrication Georgia Manufacturing</image:title>
+            <image:caption>Precision manufacturing for defense fabrication Georgia and aerospace industries</image:caption>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://idfs.com/contact.html</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://idfs.com/capabilities-statement.pdf</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://idfs.com/one-page-capabilities.pdf</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+</urlset>

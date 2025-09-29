@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDFS Capabilities Statement - Manufacturing Excellence</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 1in 1.25in;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            font-size: 11pt;
+            line-height: 1.4;
+            color: #1e293b;
+            margin: 0;
+            padding: 0;
+            background: #ffffff;
+        }
+        
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #1e3a8a;
+            padding-bottom: 20px;
+        }
+        
+        .header-logo {
+            width: 100px;
+            height: auto;
+            margin-right: 30px;
+            flex-shrink: 0;
+        }
+        
+        .header-content {
+            flex: 1;
+        }
+        
+        .logo {
+            width: 120px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        
+        .company-name {
+            font-size: 24pt;
+            font-weight: bold;
+            color: #1e3a8a;
+            margin: 0;
+        }
+        
+        .company-tagline {
+            font-size: 12pt;
+            color: #475569;
+            margin: 5px 0;
+            font-style: italic;
+        }
+        
+        .contact-info {
+            font-size: 10pt;
+            color: #64748b;
+            margin-top: 10px;
+        }
+        
+        .government-info {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            padding: 10px;
+            margin: 15px 0;
+            border-radius: 4px;
+            font-size: 9pt;
+        }
+        
+        .government-info h4 {
+            margin: 0 0 5px 0;
+            font-size: 10pt;
+            color: #1e3a8a;
+            font-weight: bold;
+        }
+        
+        .government-info p {
+            margin: 0;
+            font-size: 9pt;
+            color: #475569;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+        }
+        
+        .section-title {
+            font-size: 14pt;
+            font-weight: bold;
+            color: #1e3a8a;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 5px;
+        }
+        
+        .subsection-title {
+            font-size: 12pt;
+            font-weight: bold;
+            color: #1e40af;
+            margin: 15px 0 8px 0;
+        }
+        
+        .capabilities-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .capability-item {
+            background: #f8fafc;
+            padding: 15px;
+            border-left: 4px solid #1e3a8a;
+            border-radius: 4px;
+        }
+        
+        .capability-item h4 {
+            margin: 0 0 8px 0;
+            font-size: 11pt;
+            color: #1e3a8a;
+        }
+        
+        .capability-item ul {
+            margin: 0;
+            padding-left: 15px;
+        }
+        
+        .capability-item li {
+            margin-bottom: 3px;
+            font-size: 10pt;
+            position: relative;
+            padding-left: 1rem;
+        }
+        
+        .capability-item li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #1e3a8a;
+            font-weight: bold;
+        }
+        
+        .equipment-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 10pt;
+        }
+        
+        .equipment-table th,
+        .equipment-table td {
+            border: 1px solid #e2e8f0;
+            padding: 8px;
+            text-align: left;
+        }
+        
+        .equipment-table th {
+            background: #1e3a8a;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .certifications {
+            background: #f0f9ff;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 15px 0;
+        }
+        
+        .cert-item {
+            margin-bottom: 8px;
+            font-size: 10pt;
+        }
+        
+        .cert-item strong {
+            color: #1e3a8a;
+        }
+        
+        .industries {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin: 15px 0;
+        }
+        
+        .industry-item {
+            background: #f8fafc;
+            padding: 12px;
+            border-radius: 4px;
+            border-left: 3px solid #3b82f6;
+        }
+        
+        .industry-item h4 {
+            margin: 0 0 5px 0;
+            font-size: 11pt;
+            color: #1e3a8a;
+        }
+        
+        .industry-item p {
+            margin: 0;
+            font-size: 10pt;
+            color: #475569;
+        }
+        
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 9pt;
+            color: #64748b;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 15px;
+        }
+        
+        .page-break {
+            page-break-before: always;
+        }
+        
+        .highlight-box {
+            background: #fef3c7;
+            border: 1px solid #f59e0b;
+            padding: 12px;
+            border-radius: 4px;
+            margin: 15px 0;
+        }
+        
+        .highlight-box h4 {
+            margin: 0 0 5px 0;
+            color: #92400e;
+            font-size: 11pt;
+        }
+        
+        .highlight-box p {
+            margin: 0;
+            font-size: 10pt;
+            color: #92400e;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="assets/favicon.webp" alt="IDFS Machine Shop Georgia Logo" class="header-logo">
+        
+        <div class="header-content">
+            <div class="company-name">IDFS</div>
+            <div class="company-tagline">Integrated Designs and Fabrication Solutions</div>
+            <div class="contact-info">
+                131 Bethea Rd. Suite 801 | Fayetteville, GA 30214<br>
+                Phone: (470) 409-9972 | Email: Designs@idfsllc.com<br>
+                Website: www.idfs.com | DUNS: WG82SYNRPDZ9
+            </div>
+            
+            <div class="government-info">
+                <h4>Government Contracting Information</h4>
+                <p><strong>CAGE Code:</strong> 109T0 | <strong>D-U-N-S:</strong> 110818579 | <strong>Entity ID:</strong> WG82SYNRPDZ9 | <strong>NAICS:</strong> 332710, 332311, 332999</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">COMPANY OVERVIEW</div>
+        <p>IDFS specializes in high-precision metal fabrication and machining, with a focus on ground support equipment for aircraft maintenance, including stands, lifts, and custom carts for handling wings and other large components. Our services include CNC milling, turning, welding, and custom prototypes. We are registered under NAICS codes 332710, 332311, and 332999, demonstrating our ability to serve industrial, aerospace, and defense-related projects.</p>
+        
+        <div class="highlight-box">
+            <h4>Key Differentiators</h4>
+            <p>• 6,000 sq ft facility • Advanced CNC capabilities • Full-service design-to-delivery solutions • Experienced engineering team • Quality-focused manufacturing</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">MANUFACTURING CAPABILITIES</div>
+        
+        <div class="capabilities-grid">
+            <div class="capability-item">
+                <h4>CNC Machining</h4>
+                <ul>
+                    <li>3-Axis and 5-Axis CNC Milling</li>
+                    <li>CNC Turning and Swiss Machining</li>
+                    <li>Precision tolerances to ±0.001"</li>
+                    <li>Multi-axis machining capabilities</li>
+                    <li>Prototype to production runs</li>
+                </ul>
+            </div>
+            
+            <div class="capability-item">
+                <h4>Custom Metal Fabrication</h4>
+                <ul>
+                    <li>TIG and MIG Welding</li>
+                    <li>Stainless steel and aluminum work</li>
+                    <li>Structural fabrication</li>
+                    <li>Sheet metal forming</li>
+                    <li>Assembly and finishing</li>
+                </ul>
+            </div>
+            
+            <div class="capability-item">
+                <h4>Robotic Manufacturing</h4>
+                <ul>
+                    <li>Robotic milling systems</li>
+                    <li>Automated machining cells</li>
+                    <li>3D printing and rapid prototyping</li>
+                    <li>Foam milling capabilities</li>
+                    <li>Large format machining</li>
+                </ul>
+            </div>
+            
+            <div class="capability-item">
+                <h4>Design & Engineering</h4>
+                <ul>
+                    <li>CAD/CAM programming</li>
+                    <li>Design for manufacturability</li>
+                    <li>Engineering consultation</li>
+                    <li>Reverse engineering</li>
+                    <li>Process optimization</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">EQUIPMENT & TECHNOLOGY</div>
+        
+        <table class="equipment-table">
+            <thead>
+                <tr>
+                    <th>Equipment Category</th>
+                    <th>Capabilities</th>
+                    <th>Materials</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>CNC Mills</td>
+                    <td>3-Axis, 5-Axis machining</td>
+                    <td>Aluminum, Steel, Titanium, Plastics</td>
+                </tr>
+                <tr>
+                    <td>CNC Lathes</td>
+                    <td>Turning, Boring, Threading</td>
+                    <td>All metals, Plastics</td>
+                </tr>
+                <tr>
+                    <td>Welding Systems</td>
+                    <td>TIG, MIG, Plasma cutting</td>
+                    <td>Stainless, Aluminum, Steel</td>
+                </tr>
+                <tr>
+                    <td>Robotic Systems</td>
+                    <td>Milling, Assembly, Inspection</td>
+                    <td>Foam, Plastics, Metals</td>
+                </tr>
+                <tr>
+                    <td>Quality Control</td>
+                    <td>Inspection equipment</td>
+                    <td>All materials</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <div class="section-title">INDUSTRIES SERVED</div>
+        
+        <div class="industries">
+            <div class="industry-item">
+                <h4>Defense & Government</h4>
+                <p>Military equipment, aircraft components, ground support systems, security protocols</p>
+            </div>
+            
+            <div class="industry-item">
+                <h4>Aerospace</h4>
+                <p>Commercial and military aircraft components, engine parts, structural assemblies, avionics enclosures</p>
+            </div>
+            
+            <div class="industry-item">
+                <h4>Automotive</h4>
+                <p>Engine components, transmission parts, suspension systems, custom automotive fabrication</p>
+            </div>
+            
+            <div class="industry-item">
+                <h4>Entertainment</h4>
+                <p>Scene shop fabrication, custom props, set pieces, theatrical equipment, special effects components</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">GOVERNMENT REGISTRATION & COMPLIANCE</div>
+        
+        <div class="certifications">
+            <div class="cert-item"><strong>Government Registration:</strong> SAM.gov registered contractor</div>
+            <div class="cert-item"><strong>CAGE Code:</strong> 109T0</div>
+            <div class="cert-item"><strong>D-U-N-S Number:</strong> 110818579</div>
+            <div class="cert-item"><strong>Entity ID:</strong> WG82SYNRPDZ9</div>
+            <div class="cert-item"><strong>NAICS Codes:</strong> 332710, 332311, 332999</div>
+        </div>
+    </div>
+
+
+    <div class="section">
+        <div class="section-title">FACILITY & CAPACITY</div>
+        
+        <div class="subsection-title">Facility Specifications</div>
+        <ul>
+            <li><strong>Location:</strong> 131 Bethea Rd. Suite 801, Fayetteville, GA 30214</li>
+            <li><strong>Facility Size:</strong> 6,000 square feet</li>
+            <li><strong>Security:</strong> Controlled access, security protocols</li>
+        </ul>
+        
+        <div class="subsection-title">Production Capacity</div>
+        <ul>
+            <li>Prototype quantities: 1-10 pieces</li>
+            <li>Small batch production: 10-100 pieces</li>
+            <li>Medium production runs: 100-1,000 pieces</li>
+            <li>Lead times: 2-6 weeks typical</li>
+            <li>Rush services available</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <div class="section-title">CONTACT & QUOTING</div>
+        
+        <div class="subsection-title">Request for Quote Process</div>
+        <ol>
+            <li>Submit drawings, specifications, and requirements</li>
+            <li>Engineering review and manufacturability analysis</li>
+            <li>Material sourcing and cost analysis</li>
+            <li>Production planning and scheduling</li>
+            <li>Quote delivery within 24-48 hours</li>
+        </ol>
+        
+        <div class="subsection-title">Contact Information</div>
+        <p><strong>Primary Contact:</strong> Engineering Department<br>
+        <strong>Phone:</strong> (470) 409-9972<br>
+        <strong>Email:</strong> Designs@idfsllc.com<br>
+        <strong>Website:</strong> www.idfs.com<br>
+        <strong>Hours:</strong> Monday-Friday, 7:00 AM - 5:00 PM EST</p>
+    </div>
+
+    <div class="footer">
+        <p>This capabilities statement is current as of December 2024. For the most up-to-date information, please visit www.idfs.com or contact us directly.</p>
+        <p>IDFS - Integrated Designs and Fabrication Solutions | Precision Manufacturing Excellence</p>
+    </div>
+</body>
+</html>
