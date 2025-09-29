@@ -1,56 +1,61 @@
-# Route 53 DNS configuration
-# Handles DNS records for the domain and subdomain
-# COMMENTED OUT FOR TESTING WITHOUT DOMAIN
+# Route53 DNS configuration for domain management
+# Creates hosted zone and DNS records for CloudFront distribution
 
-# # A record for www subdomain pointing to CloudFront
-# resource "aws_route53_record" "www" {
-#   zone_id = data.aws_route53_zone.main.zone_id
-#   name    = local.www_domain
-#   type    = "A"
+# Route53 hosted zone for the domain
+resource "aws_route53_zone" "main" {
+  name = var.domain_name
 
-#   alias {
-#     name                   = aws_cloudfront_distribution.site.domain_name
-#     zone_id                = aws_cloudfront_distribution.site.hosted_zone_id
-#     evaluate_target_health = false
-#   }
-# }
+  tags = local.common_tags
+}
 
-# # AAAA record for www subdomain pointing to CloudFront (IPv6)
-# resource "aws_route53_record" "www_ipv6" {
-#   zone_id = data.aws_route53_zone.main.zone_id
-#   name    = local.www_domain
-#   type    = "AAAA"
+# DNS record for apex domain (idfsllc.com) - redirects to www
+resource "aws_route53_record" "apex" {
+  zone_id = aws_route53_zone.main.zone_id
+  name    = var.domain_name
+  type    = "A"
 
-#   alias {
-#     name                   = aws_cloudfront_distribution.site.domain_name
-#     zone_id                = aws_cloudfront_distribution.site.hosted_zone_id
-#     evaluate_target_health = false
-#   }
-# }
+  alias {
+    name                   = aws_cloudfront_distribution.site.domain_name
+    zone_id                = aws_cloudfront_distribution.site.hosted_zone_id
+    evaluate_target_health = false
+  }
+}
 
-# # Apex domain redirect to www subdomain
-# # Using CloudFront function for redirect (simpler than separate S3+CF setup)
-# resource "aws_route53_record" "apex" {
-#   zone_id = data.aws_route53_zone.main.zone_id
-#   name    = local.apex_domain
-#   type    = "A"
+# DNS record for www subdomain
+resource "aws_route53_record" "www" {
+  zone_id = aws_route53_zone.main.zone_id
+  name    = "${var.subdomain}.${var.domain_name}"
+  type    = "A"
 
-#   alias {
-#     name                   = aws_cloudfront_distribution.site.domain_name
-#     zone_id                = aws_cloudfront_distribution.site.hosted_zone_id
-#     evaluate_target_health = false
-#   }
-# }
+  alias {
+    name                   = aws_cloudfront_distribution.site.domain_name
+    zone_id                = aws_cloudfront_distribution.site.hosted_zone_id
+    evaluate_target_health = false
+  }
+}
 
-# # AAAA record for apex domain (IPv6)
-# resource "aws_route53_record" "apex_ipv6" {
-#   zone_id = data.aws_route53_zone.main.zone_id
-#   name    = local.apex_domain
-#   type    = "AAAA"
+# DNS record for apex domain IPv6 (AAAA)
+resource "aws_route53_record" "apex_ipv6" {
+  zone_id = aws_route53_zone.main.zone_id
+  name    = var.domain_name
+  type    = "AAAA"
 
-#   alias {
-#     name                   = aws_cloudfront_distribution.site.domain_name
-#     zone_id                = aws_cloudfront_distribution.site.hosted_zone_id
-#     evaluate_target_health = false
-#   }
-# }
+  alias {
+    name                   = aws_cloudfront_distribution.site.domain_name
+    zone_id                = aws_cloudfront_distribution.site.hosted_zone_id
+    evaluate_target_health = false
+  }
+}
+
+# DNS record for www subdomain IPv6 (AAAA)
+resource "aws_route53_record" "www_ipv6" {
+  zone_id = aws_route53_zone.main.zone_id
+  name    = "${var.subdomain}.${var.domain_name}"
+  type    = "AAAA"
+
+  alias {
+    name                   = aws_cloudfront_distribution.site.domain_name
+    zone_id                = aws_cloudfront_distribution.site.hosted_zone_id
+    evaluate_target_health = false
+  }
+}

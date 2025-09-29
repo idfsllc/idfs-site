@@ -84,27 +84,27 @@ def lambda_handler(event, context):
                 total_cost += cost
                 service_costs[service] = cost
         
-        print(f"Total cost for current month: ${total_cost:.2f}")
+        print("Total cost for current month: $" + str(round(total_cost, 2)))
         
         # Send alert if approaching threshold
         if total_cost >= alert_threshold and total_cost < shutdown_threshold:
             send_alert_email(
                 ses_client, 
                 notification_email, 
-                f"Cost Alert: ${total_cost:.2f} (Threshold: ${alert_threshold})",
-                f"Current AWS costs are at ${total_cost:.2f}, approaching shutdown threshold of ${shutdown_threshold}."
+                "Cost Alert: $" + str(round(total_cost, 2)) + " (Threshold: " + str(alert_threshold) + ")",
+                "Current AWS costs are at $" + str(round(total_cost, 2)) + ", approaching shutdown threshold of " + str(shutdown_threshold) + "."
             )
         
         # Hard shutdown if threshold exceeded
         if total_cost >= shutdown_threshold:
-            print(f"COST THRESHOLD EXCEEDED: ${total_cost:.2f} >= ${shutdown_threshold}")
+            print("COST THRESHOLD EXCEEDED: $" + str(round(total_cost, 2)) + " >= " + str(shutdown_threshold))
             
             # Send business-friendly shutdown notification
             send_alert_email(
                 ses_client,
                 notification_email,
-                f"BUSINESS ALERT: Contact Form Disabled - Cost: ${total_cost:.2f}",
-                f"Cost threshold of ${shutdown_threshold} exceeded. Contact form has been disabled to reduce costs, but your website remains fully accessible. No DNS changes needed."
+                "BUSINESS ALERT: Contact Form Disabled - Cost: $" + str(round(total_cost, 2)),
+                "Cost threshold of " + str(shutdown_threshold) + " exceeded. Contact form has been disabled to reduce costs, but your website remains fully accessible. No DNS changes needed."
             )
             
             # Shutdown services
@@ -118,7 +118,7 @@ def lambda_handler(event, context):
             return {
                 'statusCode': 200,
                 'body': json.dumps({
-                    'message': f'Contact form disabled due to cost threshold: ${total_cost:.2f} - Website remains accessible',
+                    'message': 'Contact form disabled due to cost threshold: $' + str(round(total_cost, 2)) + ' - Website remains accessible',
                     'total_cost': total_cost,
                     'threshold': shutdown_threshold,
                     'business_impact': 'Website accessible, contact form disabled'
@@ -136,7 +136,7 @@ def lambda_handler(event, context):
         }
         
     except Exception as e:
-        print(f"Error in cost monitoring: {str(e)}")
+        print("Error in cost monitoring: " + str(e))
         return {
             'statusCode': 500,
             'body': json.dumps({
@@ -155,9 +155,9 @@ def send_alert_email(ses_client, email, subject, body):
                 'Body': {'Text': {'Data': body}}
             }
         )
-        print(f"Alert email sent to {email}")
+        print("Alert email sent to " + email)
     except Exception as e:
-        print(f"Failed to send email: {str(e)}")
+        print("Failed to send email: " + str(e))
 
 def shutdown_services(lambda_client, cloudfront_client, s3_client, project_tag):
     """Business-friendly cost control - disable only non-critical services"""
@@ -172,7 +172,7 @@ def shutdown_services(lambda_client, cloudfront_client, s3_client, project_tag):
             )
             print("Disabled contact form Lambda - website still accessible")
         except Exception as e:
-            print(f"Failed to disable contact Lambda: {str(e)}")
+            print("Failed to disable contact Lambda: " + str(e))
         
         # Disable OPTIONS Lambda (contact form related)
         try:
@@ -182,7 +182,7 @@ def shutdown_services(lambda_client, cloudfront_client, s3_client, project_tag):
             )
             print("Disabled contact OPTIONS Lambda")
         except Exception as e:
-            print(f"Failed to disable OPTIONS Lambda: {str(e)}")
+            print("Failed to disable OPTIONS Lambda: " + str(e))
         
         # CRITICAL: DO NOT disable CloudFront - keep website running!
         # CRITICAL: DO NOT disable S3 - keep website content accessible!
@@ -192,7 +192,7 @@ def shutdown_services(lambda_client, cloudfront_client, s3_client, project_tag):
         print("Only contact form disabled to reduce costs")
         
     except Exception as e:
-        print(f"Error during business-friendly shutdown: {str(e)}")
+        print("Error during business-friendly shutdown: " + str(e))
 
 EOF
     filename = "cost_monitor.py"

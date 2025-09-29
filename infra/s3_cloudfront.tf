@@ -164,7 +164,7 @@ resource "aws_cloudfront_distribution" "site" {
   default_root_object = "index.html"
   price_class         = "PriceClass_100"
 
-  # aliases = [local.apex_domain, local.www_domain]  # Commented out for testing without domain
+  aliases = ["idfsllc.com", "www.idfsllc.com"]
 
   default_cache_behavior {
     allowed_methods        = ["DELETE", "GET", "HEAD", "OPTIONS", "PATCH", "POST", "PUT"]
@@ -208,8 +208,7 @@ resource "aws_cloudfront_distribution" "site" {
   }
 
   viewer_certificate {
-    # acm_certificate_arn      = aws_acm_certificate_validation.site.certificate_arn  # Commented out for testing
-    cloudfront_default_certificate = true  # Use CloudFront default certificate for testing
+    acm_certificate_arn      = aws_acm_certificate_validation.cert_validation.certificate_arn
     ssl_support_method       = "sni-only"
     minimum_protocol_version = "TLSv1.2_2021"
   }
