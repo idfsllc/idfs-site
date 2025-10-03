@@ -3,8 +3,8 @@
 This Terraform configuration creates a complete AWS infrastructure for hosting a static marketing site with a contact form API. The setup includes:
 
 - **Static Site Hosting**: S3 + CloudFront with Origin Access Control (OAC)
-- **SSL/TLS**: ACM certificate with DNS validation
-- **DNS**: Route 53 with apex domain redirect to www
+- **SSL/TLS**: ACM certificate with email validation (manual validation required)
+- **DNS**: Managed externally (e.g., Squarespace) - Route 53 removed
 - **Contact API**: API Gateway HTTP API + Lambda function
 - **Email**: Amazon SES for sending contact form emails
 - **Security**: Comprehensive security headers and CORS configuration
@@ -12,22 +12,21 @@ This Terraform configuration creates a complete AWS infrastructure for hosting a
 ## Architecture
 
 ```
-Internet → Route 53 → CloudFront → S3 (Static Site)
-                    ↓
-                 API Gateway → Lambda → SES (Contact Form)
+Internet → External DNS (Squarespace) → CloudFront → S3 (Static Site)
+                                    ↓
+                                 API Gateway → Lambda → SES (Contact Form)
 ```
 
 ## Prerequisites
 
 1. **AWS CLI** configured with appropriate permissions
 2. **Terraform** >= 1.6 installed
-3. **Route 53 hosted zone** for your domain already exists
-4. **Domain** registered and pointing to Route 53 nameservers
+3. **Domain** registered and managed by external DNS provider (e.g., Squarespace)
+4. **Email access** for ACM certificate validation
 
 ## Required Permissions
 
 Your AWS credentials need the following permissions:
-- Route 53 (zone management, record creation)
 - ACM (certificate management)
 - S3 (bucket creation, policy management)
 - CloudFront (distribution creation, cache invalidation)
@@ -144,10 +143,10 @@ This setup is designed to be cost-effective:
 - **Lambda pay-per-request** - Only pay when used
 
 Estimated monthly costs (for low-traffic site):
-- Route 53: ~$0.50
 - CloudFront: ~$1-5
 - S3: ~$0.10
 - Lambda: ~$0.20
+- ACM: Free
 - API Gateway: ~$0.35
 - SES: ~$0.10
 - **Total: ~$2-6/month**
@@ -185,7 +184,7 @@ curl -I https://www.example.com
 ### Common Issues
 
 1. **SES Domain Not Verified**
-   - Check Route 53 for DNS records
+   - Check external DNS provider (e.g., Squarespace) for DNS records
    - Wait for DNS propagation (up to 48 hours)
    - Verify in SES console
 
@@ -196,8 +195,8 @@ curl -I https://www.example.com
 
 3. **SSL Certificate Issues**
    - Ensure ACM certificate is in us-east-1 region
-   - Check DNS validation records in Route 53
-   - Wait for certificate validation
+   - Check email validation in ACM console
+   - Complete email validation manually
 
 4. **CloudFront Not Updating**
    - Run `./deploy_static_site.sh` to invalidate cache
@@ -220,7 +219,7 @@ infra/
 ├── variables.tf              # Input variables
 ├── outputs.tf                # Output values
 ├── main.tf                   # Main configuration
-├── route53.tf                # DNS configuration
+├── (route53.tf removed)      # DNS managed externally
 ├── acm.tf                    # SSL certificate
 ├── s3_cloudfront.tf          # Static site hosting
 ├── api_gateway.tf            # HTTP API configuration

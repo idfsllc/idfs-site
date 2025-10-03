@@ -1,12 +1,7 @@
 # Main Terraform configuration file
 # This file wires together all the modules and resources
 
-# Data source to get the Route 53 zone
-# COMMENTED OUT FOR TESTING WITHOUT DOMAIN
-# data "aws_route53_zone" "main" {
-#   name         = var.domain_name
-#   private_zone = false
-# }
+# Route 53 removed - using Squarespace for DNS management
 
 # Local values for common configurations
 locals {

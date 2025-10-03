@@ -7,7 +7,7 @@ This guide shows how to test the infrastructure without owning a domain name.
 - ✅ **CloudFront works perfectly** - You'll access via CloudFront domain (e.g., `d1234567890.cloudfront.net`)
 - ✅ **SSL works** - CloudFront provides a default SSL certificate
 - ✅ **Contact form works** - API Gateway + Lambda + SES (with verified email)
-- ❌ **No custom domain** - Route 53, ACM, and domain-specific SES features are commented out
+- ❌ **No custom domain** - ACM and domain-specific SES features require manual setup
 - ❌ **No apex redirect** - CloudFront function for redirect is commented out
 
 ## Quick Start
@@ -145,10 +145,10 @@ Estimated monthly costs for testing:
 
 When you're ready to use a real domain:
 
-1. **Uncomment Route 53 resources** in `route53.tf`
-2. **Uncomment ACM resources** in `acm.tf`
-3. **Uncomment SES domain resources** in `ses.tf`
-4. **Update CloudFront aliases** in `s3_cloudfront.tf`
+1. **Set up ACM certificate** - Certificate will be created with email validation
+2. **Complete email validation** - Check AWS ACM console for validation emails
+3. **Update CloudFront aliases** in `s3_cloudfront.tf` (already configured)
+4. **Set up DNS records** in your external DNS provider (e.g., Squarespace)
 5. **Update CORS origins** to your domain
 6. **Run `terraform apply`** with your real domain
 
