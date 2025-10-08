@@ -25,6 +25,110 @@ document.addEventListener('DOMContentLoaded', function() {
             navToggle.classList.remove('active');
         }
     });
+
+    // Hero Carousel functionality
+    const heroCarouselTrack = document.getElementById('heroCarouselTrack');
+    const heroPrevBtn = document.getElementById('heroPrevBtn');
+    const heroNextBtn = document.getElementById('heroNextBtn');
+    const heroCarouselDots = document.getElementById('heroCarouselDots');
+    
+    if (heroCarouselTrack && heroPrevBtn && heroNextBtn && heroCarouselDots) {
+        const slides = heroCarouselTrack.querySelectorAll('.hero-carousel-slide');
+        let currentSlide = 0;
+        
+        // Create dots
+        slides.forEach((_, index) => {
+            const dot = document.createElement('div');
+            dot.className = 'hero-carousel-dot';
+            if (index === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => goToSlide(index));
+            heroCarouselDots.appendChild(dot);
+        });
+        
+        function updateCarousel() {
+            slides.forEach((slide, index) => {
+                slide.classList.toggle('active', index === currentSlide);
+            });
+            
+            const dots = heroCarouselDots.querySelectorAll('.hero-carousel-dot');
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentSlide);
+            });
+        }
+        
+        function goToSlide(slideIndex) {
+            currentSlide = slideIndex;
+            updateCarousel();
+        }
+        
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            updateCarousel();
+        }
+        
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            updateCarousel();
+        }
+        
+        heroNextBtn.addEventListener('click', nextSlide);
+        heroPrevBtn.addEventListener('click', prevSlide);
+        
+        // Auto-advance carousel every 8 seconds
+        setInterval(nextSlide, 8000);
+    }
+
+    // Full-Width Hero Carousel functionality
+    const heroCarouselTrackFull = document.getElementById('heroCarouselTrackFull');
+    const heroPrevBtnFull = document.getElementById('heroPrevBtnFull');
+    const heroNextBtnFull = document.getElementById('heroNextBtnFull');
+    const heroCarouselDotsFull = document.getElementById('heroCarouselDotsFull');
+    
+    if (heroCarouselTrackFull && heroPrevBtnFull && heroNextBtnFull && heroCarouselDotsFull) {
+        const slidesFull = heroCarouselTrackFull.querySelectorAll('.hero-carousel-slide-full');
+        let currentSlideFull = 0;
+        
+        // Create dots
+        slidesFull.forEach((_, index) => {
+            const dot = document.createElement('div');
+            dot.className = 'hero-carousel-dot-full';
+            if (index === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => goToSlideFull(index));
+            heroCarouselDotsFull.appendChild(dot);
+        });
+        
+        function updateCarouselFull() {
+            slidesFull.forEach((slide, index) => {
+                slide.classList.toggle('active', index === currentSlideFull);
+            });
+            
+            const dots = heroCarouselDotsFull.querySelectorAll('.hero-carousel-dot-full');
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentSlideFull);
+            });
+        }
+        
+        function goToSlideFull(slideIndex) {
+            currentSlideFull = slideIndex;
+            updateCarouselFull();
+        }
+        
+        function nextSlideFull() {
+            currentSlideFull = (currentSlideFull + 1) % slidesFull.length;
+            updateCarouselFull();
+        }
+        
+        function prevSlideFull() {
+            currentSlideFull = (currentSlideFull - 1 + slidesFull.length) % slidesFull.length;
+            updateCarouselFull();
+        }
+        
+        heroNextBtnFull.addEventListener('click', nextSlideFull);
+        heroPrevBtnFull.addEventListener('click', prevSlideFull);
+        
+        // Auto-advance carousel every 6 seconds for more dynamic feel
+        setInterval(nextSlideFull, 6000);
+    }
 });
 
 // Smooth scrolling for anchor links
@@ -251,7 +355,19 @@ function debounce(func, wait) {
     };
 }
 
-// Apply debouncing to scroll events (removed conflicting handler - using class-based approach instead)
+// Apply debouncing to scroll events
+const debouncedScrollHandler = debounce(function() {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+        navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+        navbar.style.backdropFilter = 'blur(10px)';
+    } else {
+        navbar.style.backgroundColor = '#fff';
+        navbar.style.backdropFilter = 'none';
+    }
+}, 10);
+
+window.addEventListener('scroll', debouncedScrollHandler);
 
 // Add loading states and error handling
 function showLoading(element) {
@@ -305,70 +421,6 @@ function trapFocus(element) {
         }
     });
 }
-
-// Gallery Filter Functionality
-document.addEventListener('DOMContentLoaded', function() {
-    const filterButtons = document.querySelectorAll('.gallery-filter');
-    const galleryItems = document.querySelectorAll('.gallery-item');
-
-    filterButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            const filter = this.getAttribute('data-filter');
-            
-            // Update active button
-            filterButtons.forEach(btn => {
-                btn.classList.remove('active');
-                btn.style.background = 'rgba(255,255,255,0.8)';
-                btn.style.color = 'var(--creative-navy)';
-            });
-            this.classList.add('active');
-            this.style.background = 'var(--creative-navy)';
-            this.style.color = 'white';
-            
-            // Filter gallery items
-            galleryItems.forEach(item => {
-                if (filter === 'all' || item.getAttribute('data-category') === filter) {
-                    item.style.display = 'block';
-                    item.style.opacity = '0';
-                    item.style.transform = 'translateY(20px)';
-                    
-                    setTimeout(() => {
-                        item.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
-                        item.style.opacity = '1';
-                        item.style.transform = 'translateY(0)';
-                    }, 50);
-                } else {
-                    item.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
-                    item.style.opacity = '0';
-                    item.style.transform = 'translateY(-20px)';
-                    
-                    setTimeout(() => {
-                        item.style.display = 'none';
-                    }, 300);
-                }
-            });
-        });
-    });
-
-    // Add hover effects to gallery items
-    galleryItems.forEach(item => {
-        item.addEventListener('mouseenter', function() {
-            this.style.transform = 'translateY(-5px)';
-            const img = this.querySelector('img');
-            if (img) {
-                img.style.transform = 'scale(1.05)';
-            }
-        });
-        
-        item.addEventListener('mouseleave', function() {
-            this.style.transform = 'translateY(0)';
-            const img = this.querySelector('img');
-            if (img) {
-                img.style.transform = 'scale(1)';
-            }
-        });
-    });
-});
 
 // Apply focus trapping to mobile menu when it's open
 const navMenu = document.querySelector('.nav-menu');
