@@ -697,6 +697,21 @@ p {
     max-width: 100%;
 }
 
+/* Lighter hero section for capabilities page */
+.capabilities-page .hero {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #cbd5e1 100%) !important;
+}
+
+.capabilities-page .hero-text h1 {
+    color: var(--kratos-navy) !important;
+    text-shadow: none !important;
+}
+
+.capabilities-page .hero-text p {
+    color: var(--kratos-dark-gray) !important;
+    text-shadow: none !important;
+}
+
 .hero-text {
     display: flex;
     flex-direction: column;
