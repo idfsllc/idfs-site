@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://idfs.com/sitemap.xml
+Sitemap: https://idfsllc.com/sitemap.xml
 
 # Allow all search engines to crawl the site
 Allow: /capabilities.html
@@ -20,4 +20,4 @@ Allow: /assets/
 Crawl-delay: 1
 
 # Host directive
-Host: https://idfs.com
+Host: https://idfsllc.com

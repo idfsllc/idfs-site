@@ -1,4 +1,11 @@
+// ============================================================================
+// Constants
+// ============================================================================
+const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+// ============================================================================
 // Mobile Navigation Toggle
+// ============================================================================
 document.addEventListener('DOMContentLoaded', function() {
     const navToggle = document.querySelector('.nav-toggle');
     const navMenu = document.querySelector('.nav-menu');
@@ -161,8 +168,7 @@ function validateFormField(field) {
     
     // Email validation
     if (field.type === 'email' && value) {
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(value)) {
+        if (!EMAIL_REGEX.test(value)) {
             fieldGroup.classList.add('error');
             return false;
         }
@@ -242,8 +248,7 @@ if (rfqForm) {
     }
     
     // Email validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(data.email)) {
+    if (!EMAIL_REGEX.test(data.email)) {
         alert('Please enter a valid email address.');
         return;
     }

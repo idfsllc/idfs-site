@@ -1,0 +1,262 @@
+{
+  "audit_date": "2024-12-20",
+  "structured_data": {
+    "implementation_status": "partial",
+    "schema_types_used": [
+      "LocalBusiness",
+      "Service",
+      "ContactPage"
+    ],
+    "pages_with_schema": [
+      {
+        "page": "Home (index.html)",
+        "url": "https://idfsllc.com/",
+        "schema_type": "LocalBusiness",
+        "schema_content": {
+          "@type": "LocalBusiness",
+          "identifier": "WG82SYNRPDZ9",
+          "name": "IDFS Integrated Design and Fabrication Solutions",
+          "alternateName": ["IDFS", "IDFS Machine Shop Georgia"],
+          "description": "Hybrid design and fabrication shop in Fayetteville, Georgia specializing in custom metal fabrication, product design, industrial SLA 3D printing, and entertainment/prop fabrication for the Atlanta metro area",
+          "url": "https://idfsllc.com",
+          "telephone": "+1-470-409-9972",
+          "email": "Designs@idfsllc.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "133 Bethea Rd. Suite 801",
+            "addressLocality": "Fayetteville",
+            "addressRegion": "GA",
+            "postalCode": "30214",
+            "addressCountry": "US"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "33.4487",
+            "longitude": "-84.4549"
+          },
+          "openingHours": "Mo-Fr 09:00-16:30",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+1-470-409-9972",
+            "contactType": "customer service",
+            "areaServed": ["Georgia", "Atlanta Metro Area", "Fayetteville"],
+            "availableLanguage": "English"
+          },
+          "hasMap": "https://www.google.com/maps/place/133+Bethea+Rd+Suite+801,+Fayetteville,+GA+30214",
+          "serviceArea": {
+            "@type": "GeoCircle",
+            "geoMidpoint": {
+              "@type": "GeoCoordinates",
+              "latitude": "33.4487",
+              "longitude": "-84.4549"
+            },
+            "geoRadius": "100"
+          },
+          "knowsAbout": [
+            "Custom Metal Fabrication",
+            "Design & Engineering Services",
+            "Prototyping & Small Production Runs",
+            "CNC Machining",
+            "Welding Services",
+            "Industrial SLA 3D Printing",
+            "Entertainment & Prop Fabrication",
+            "Sculptural Milling"
+          ]
+        },
+        "validation_status": "needs_testing",
+        "recommendations": [
+          "Test with Google Rich Results Test",
+          "Verify all required fields are present",
+          "Consider adding aggregateRating if reviews available"
+        ]
+      },
+      {
+        "page": "Capabilities (capabilities.html)",
+        "url": "https://idfsllc.com/capabilities",
+        "schema_type": "Service",
+        "schema_content": {
+          "@type": "Service",
+          "name": "Manufacturing & Fabrication Capabilities",
+          "description": "Design, machining, welding, fabrication, and industrial SLA 3D printing capabilities based in Fayetteville, Georgia serving the Atlanta metro area.",
+          "provider": {
+            "@type": "LocalBusiness",
+            "identifier": "WG82SYNRPDZ9",
+            "name": "IDFS Integrated Design and Fabrication Solutions",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Fayetteville",
+              "addressRegion": "GA",
+              "addressCountry": "US"
+            }
+          },
+          "serviceType": "Manufacturing Services",
+          "areaServed": {
+            "@type": "State",
+            "name": "Georgia"
+          },
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Manufacturing Services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "CNC Machining",
+                  "description": "Precision CNC milling and turning services"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Welding Services",
+                  "description": "Professional TIG, MIG, and Stick welding"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Custom Metal Fabrication",
+                  "description": "Custom fabrication and assembly services"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Industrial SLA 3D Printing & Additive Manufacturing",
+                  "description": "Professional-grade additive manufacturing for production-quality parts and industrial applications"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Scene Work & Entertainment Fabrication",
+                  "description": "Scene work and entertainment fabrication services"
+                }
+              }
+            ]
+          }
+        },
+        "validation_status": "needs_testing"
+      },
+      {
+        "page": "Contact (contact.html)",
+        "url": "https://idfsllc.com/contact",
+        "schema_type": "ContactPage + LocalBusiness",
+        "schema_content": {
+          "@type": "ContactPage",
+          "name": "Contact IDFS Custom Fabrication & Design",
+          "description": "Contact page for IDFS, a hybrid design and fabrication shop providing custom metal fabrication, CNC machining, welding, industrial SLA 3D printing, and entertainment/prop fabrication in Fayetteville, Georgia.",
+          "url": "https://idfsllc.com/contact",
+          "mainEntity": {
+            "@type": "LocalBusiness",
+            "identifier": "WG82SYNRPDZ9",
+            "name": "IDFS Integrated Design and Fabrication Solutions",
+            "alternateName": ["IDFS", "IDFS Machine Shop Georgia"],
+            "description": "Hybrid design and fabrication shop in Fayetteville, Georgia specializing in custom metal fabrication, product design, industrial SLA 3D printing, and entertainment/prop fabrication",
+            "telephone": "+1-470-409-9972",
+            "email": "Designs@idfsllc.com",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "133 Bethea Rd. Suite 801",
+              "addressLocality": "Fayetteville",
+              "addressRegion": "GA",
+              "postalCode": "30214",
+              "addressCountry": "US"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": "33.4487",
+              "longitude": "-84.4549"
+            },
+            "openingHours": "Mo-Fr 07:00-17:00",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+1-470-409-9972",
+              "contactType": "customer service",
+              "areaServed": ["Georgia", "Alabama", "Florida", "South Carolina", "North Carolina", "Tennessee"],
+              "availableLanguage": "English"
+            },
+            "hasMap": "https://www.google.com/maps/place/133+Bethea+Rd+Suite+801,+Fayetteville,+GA+30214",
+            "serviceArea": {
+              "@type": "GeoCircle",
+              "geoMidpoint": {
+                "@type": "GeoCoordinates",
+                "latitude": "33.4487",
+                "longitude": "-84.4549"
+              },
+              "geoRadius": "500"
+            }
+          }
+        },
+        "validation_status": "needs_testing",
+        "note": "Opening hours differ between Home and Contact pages (09:00-16:30 vs 07:00-17:00) - should be standardized"
+      },
+      {
+        "page": "Industries (industries.html)",
+        "url": "https://idfsllc.com/industries",
+        "schema_type": "Service",
+        "schema_content": {
+          "@type": "Service",
+          "name": "Industries Served by IDFS",
+          "description": "Precision fabrication, engineering support, and custom manufacturing services for aerospace, industrial, automotive, defense, film, commercial, and consumer industries.",
+          "url": "https://idfsllc.com/industries",
+          "serviceType": [
+            "Aerospace Fabrication",
+            "Industrial Manufacturing",
+            "Automotive Fabrication",
+            "Defense Contracting",
+            "Film & Entertainment Prop Fabrication",
+            "Commercial & Consumer Fabrication"
+          ]
+        },
+        "validation_status": "needs_testing"
+      }
+    ],
+    "pages_missing_schema": [
+      {
+        "page": "Services (services.html)",
+        "url": "https://idfsllc.com/services",
+        "recommended_schema": "Service",
+        "priority": "high"
+      },
+      {
+        "page": "3D Printing (3d-printing.html)",
+        "url": "https://idfsllc.com/3d-printing",
+        "recommended_schema": "Service",
+        "priority": "high"
+      },
+      {
+        "page": "Prop Fabrication (prop-fabrication.html)",
+        "url": "https://idfsllc.com/prop-fabrication",
+        "recommended_schema": "Service",
+        "priority": "high"
+      },
+      {
+        "page": "Privacy Policy (privacy-policy.html)",
+        "url": "https://idfsllc.com/privacy-policy",
+        "recommended_schema": "WebPage",
+        "priority": "low"
+      }
+    ],
+    "validation_tools": [
+      "Google Rich Results Test: https://search.google.com/test/rich-results",
+      "Schema.org Validator: https://validator.schema.org/",
+      "Google Search Console: Check for structured data errors"
+    ],
+    "recommendations": [
+      "Add Service schema to Services, 3D Printing, and Prop Fabrication pages",
+      "Standardize opening hours across all LocalBusiness schemas",
+      "Consider adding BreadcrumbList schema for navigation",
+      "Consider adding FAQPage schema if FAQ sections exist",
+      "Consider adding Review/AggregateRating if customer reviews available",
+      "Test all schema with Google Rich Results Test",
+      "Monitor structured data in Google Search Console"
+    ]
+  }
+}
+

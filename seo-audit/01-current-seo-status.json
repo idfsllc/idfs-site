@@ -1,0 +1,159 @@
+{
+  "audit_date": "2024-12-20",
+  "domain": "https://idfsllc.com",
+  "pages": [
+    {
+      "url": "https://idfsllc.com/",
+      "file": "site/index.html",
+      "title": "Custom Metal Fabrication & Design in Fayetteville, GA | IDFS Integrated Design & Fabrication Solutions",
+      "meta_description": "IDFS is a hybrid design and fabrication shop in Fayetteville, GA providing custom metal fabrication, welding, product design, small production runs, industrial SLA 3D printing, and entertainment/prop fabrication for clients across the Atlanta metro and the U.S.",
+      "meta_keywords": "custom metal fabrication, fabrication shop, CNC machining, welding services, product design, prototyping, industrial 3D printing, SLA 3D printing, entertainment fabrication, prop fabrication, Fayetteville GA, Atlanta metro",
+      "canonical": "https://idfsllc.com/",
+      "hreflang": ["en-us", "x-default"],
+      "open_graph": {
+        "og:title": "Custom Metal Fabrication & Design in Fayetteville, GA | IDFS",
+        "og:description": "Hybrid design and fabrication shop providing custom metal fabrication, welding, product design, small production runs, industrial SLA 3D printing, and entertainment/prop work for Atlanta metro and beyond.",
+        "og:type": "website",
+        "og:url": "https://idfsllc.com",
+        "og:image": "https://idfsllc.com/assets/machine-shop-facility.webp",
+        "og:site_name": "IDFS Integrated Design and Fabrication Solutions",
+        "og:locale": "en_US"
+      },
+      "twitter_card": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Custom Metal Fabrication & Design in Fayetteville, GA | IDFS",
+        "twitter:description": "Hybrid design and fabrication shop providing custom metal fabrication, welding, product design, small production runs, industrial SLA 3D printing, and entertainment/prop work for Atlanta metro and beyond.",
+        "twitter:image": "https://idfsllc.com/assets/machine-shop-facility.webp"
+      },
+      "structured_data": {
+        "@type": "LocalBusiness",
+        "identifier": "WG82SYNRPDZ9",
+        "name": "IDFS Integrated Design and Fabrication Solutions",
+        "telephone": "+1-470-409-9972",
+        "email": "Designs@idfsllc.com",
+        "address": {
+          "streetAddress": "133 Bethea Rd. Suite 801",
+          "addressLocality": "Fayetteville",
+          "addressRegion": "GA",
+          "postalCode": "30214",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "latitude": "33.4487",
+          "longitude": "-84.4549"
+        },
+        "openingHours": "Mo-Fr 09:00-16:30"
+      },
+      "h1": "From Blueprint to Built. Design • Fabrication • Engineering",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    },
+    {
+      "url": "https://idfsllc.com/capabilities",
+      "file": "site/capabilities.html",
+      "title": "Capabilities | CNC Machining, Welding, Fabrication & SLA 3D Printing | IDFS Fayetteville, GA",
+      "meta_description": "Explore IDFS capabilities in Fayetteville, GA: CNC machining, MIG/TIG welding, custom metal fabrication, industrial SLA 3D printing, small production runs, scene and sculptural milling, and specialty fabrication for aerospace, industrial, automotive, defense, and entertainment clients.",
+      "meta_keywords": "CNC machining, precision machining, MIG welding, TIG welding, custom fabrication, industrial 3D printing, additive manufacturing, robotic milling, sculptural milling, entertainment fabrication, aerospace fabrication, Atlanta metro",
+      "canonical": "https://idfsllc.com/capabilities",
+      "hreflang": ["en-us", "x-default"],
+      "structured_data": {
+        "@type": "Service",
+        "name": "Manufacturing & Fabrication Capabilities",
+        "description": "Design, machining, welding, fabrication, and industrial SLA 3D printing capabilities based in Fayetteville, Georgia serving the Atlanta metro area."
+      },
+      "h1": "Our Capabilities",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    },
+    {
+      "url": "https://idfsllc.com/services",
+      "file": "site/services.html",
+      "title": "Fabrication Services | Welding, Design Engineering, 3D Printing, Metal Repair",
+      "meta_description": "IDFS offers custom metal fabrication, welding, design engineering, SLA 3D printing, trailer and gate repair, industrial fixtures, production runs, and film/prop fabrication. Fast turnaround in Fayetteville, GA.",
+      "meta_keywords": "fabrication services Georgia, welding services Georgia, design engineering Georgia, 3D printing services Georgia, metal fabrication services, trailer repair Georgia, gate repair Georgia, production runs Georgia, film fabrication Georgia, prop fabrication Georgia",
+      "canonical": "https://idfsllc.com/services",
+      "hreflang": ["en-us", "x-default"],
+      "h1": "Our Services",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    },
+    {
+      "url": "https://idfsllc.com/industries",
+      "file": "site/industries.html",
+      "title": "Industries We Serve | Aerospace, Industrial, Automotive, Defense & Film | IDFS",
+      "meta_description": "IDFS serves aerospace, industrial, automotive, defense, film, commercial, and consumer industries with precision fabrication, engineering support, and custom manufacturing in Fayetteville, GA.",
+      "meta_keywords": "aerospace fabrication, industrial manufacturing, automotive fabrication, defense contractors, film prop fabrication, custom metal fabrication, Fayetteville GA",
+      "canonical": "https://idfsllc.com/industries",
+      "hreflang": ["en-us", "x-default"],
+      "structured_data": {
+        "@type": "Service",
+        "name": "Industries Served by IDFS",
+        "description": "Precision fabrication, engineering support, and custom manufacturing services for aerospace, industrial, automotive, defense, film, commercial, and consumer industries."
+      },
+      "h1": "Industries We Serve",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    },
+    {
+      "url": "https://idfsllc.com/contact",
+      "file": "site/contact.html",
+      "title": "Contact IDFS | Custom Metal Fabrication & Design in Fayetteville, GA",
+      "meta_description": "Contact IDFS in Fayetteville, GA for custom metal fabrication, welding, design and prototyping, industrial 3D printing, and entertainment/prop fabrication. Call (470) 409-9972 or email Designs@idfsllc.com to request a quote.",
+      "meta_keywords": "custom metal fabrication, welding, design engineering, 3D printing, prop fabrication, Fayetteville GA, Atlanta metro, contact fabrication shop",
+      "canonical": "https://idfsllc.com/contact",
+      "hreflang": ["en-us", "x-default"],
+      "structured_data": {
+        "@type": "ContactPage",
+        "name": "Contact IDFS Custom Fabrication & Design",
+        "description": "Contact page for IDFS, a hybrid design and fabrication shop providing custom metal fabrication, CNC machining, welding, industrial SLA 3D printing, and entertainment/prop fabrication in Fayetteville, Georgia."
+      },
+      "h1": "Contact Us",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    },
+    {
+      "url": "https://idfsllc.com/3d-printing",
+      "file": "site/3d-printing.html",
+      "title": "Industrial 3D Printing (SLA) | Formlabs 3L Resin Printing | IDFS Georgia",
+      "meta_description": "Large-format resin 3D printing with the Formlabs 3L. Functional prototypes, tooling, enclosures, engineering parts, biocompatible resins, and production-quality SLA printing. Fast turnaround.",
+      "meta_keywords": "Formlabs 3L Georgia, SLA 3D printing Georgia, resin 3D printing Georgia, large format 3D printing Georgia, industrial 3D printing Georgia, additive manufacturing Georgia, functional prototypes Georgia, production 3D printing Georgia",
+      "canonical": "https://idfsllc.com/3d-printing",
+      "hreflang": ["en-us", "x-default"],
+      "h1": "Industrial 3D Printing (SLA)",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    },
+    {
+      "url": "https://idfsllc.com/prop-fabrication",
+      "file": "site/prop-fabrication.html",
+      "title": "Film & Prop Fabrication | Custom Props, Metalwork, Set Fabrication | IDFS",
+      "meta_description": "Custom prop fabrication for film, TV, and entertainment. Metalwork, practical effects, hero props, set pieces, and precision builds. Fast turnaround for Atlanta productions.",
+      "meta_keywords": "film fabrication Georgia, prop fabrication Georgia, entertainment fabrication Georgia, custom props Georgia, set fabrication Georgia, Atlanta film fabrication, practical effects Georgia, hero props Georgia",
+      "canonical": "https://idfsllc.com/prop-fabrication",
+      "hreflang": ["en-us", "x-default"],
+      "h1": "Film & Entertainment Prop Fabrication",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    },
+    {
+      "url": "https://idfsllc.com/privacy-policy",
+      "file": "site/privacy-policy.html",
+      "title": "Privacy Policy | IDFS Integrated Design and Fabrication Solutions",
+      "meta_description": "Privacy Policy for IDFS Integrated Design and Fabrication Solutions. Learn how we collect, use, and protect your personal information.",
+      "meta_keywords": "privacy policy, data protection, IDFS privacy, custom fabrication privacy",
+      "canonical": "https://idfsllc.com/privacy-policy",
+      "hreflang": ["en-us", "x-default"],
+      "h1": "Privacy Policy",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    }
+  ],
+  "global_seo_elements": {
+    "favicon": "assets/favicon.webp",
+    "language": "en",
+    "charset": "UTF-8",
+    "viewport": "width=device-width, initial-scale=1.0",
+    "geo_location": {
+      "region": "US-GA",
+      "placename": "Fayetteville"
+    },
+    "author": "IDFS Integrated Design and Fabrication Solutions",
+    "robots_default": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+    "revisit_after": "7 days",
+    "distribution": "global",
+    "rating": "general"
+  }
+}
+

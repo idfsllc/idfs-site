@@ -1,0 +1,175 @@
+{
+  "audit_date": "2024-12-20",
+  "internal_linking": {
+    "navigation_structure": {
+      "main_navigation": {
+        "location": "Header (all pages)",
+        "links": [
+          {
+            "text": "Home",
+            "url": "/",
+            "anchor_text": "Home"
+          },
+          {
+            "text": "Capabilities",
+            "url": "/capabilities.html",
+            "anchor_text": "Capabilities"
+          },
+          {
+            "text": "Services",
+            "url": "/services.html",
+            "anchor_text": "Services"
+          },
+          {
+            "text": "Industries",
+            "url": "/industries.html",
+            "anchor_text": "Industries",
+            "note": "Fixed: Navigation label now matches page content"
+          },
+          {
+            "text": "Contact",
+            "url": "/contact.html",
+            "anchor_text": "Contact"
+          },
+          {
+            "text": "Get Quote",
+            "url": "/contact.html#rfqForm",
+            "anchor_text": "Get Quote",
+            "cta": true
+          }
+        ],
+        "note": "Main navigation appears on all pages - good for internal linking"
+      },
+      "footer_navigation": {
+        "location": "Footer (all pages)",
+        "sections": [
+          {
+            "section": "Services",
+            "links": [
+              {
+                "text": "Design & Engineering",
+                "url": "/capabilities.html",
+                "anchor_text": "Design & Engineering"
+              },
+              {
+                "text": "Fabrication",
+                "url": "/capabilities.html",
+                "anchor_text": "Fabrication"
+              },
+              {
+                "text": "Machining",
+                "url": "/capabilities.html",
+                "anchor_text": "Machining"
+              },
+              {
+                "text": "Plasma Cutting",
+                "url": "/capabilities.html",
+                "anchor_text": "Plasma Cutting"
+              }
+            ],
+            "note": "All footer service links point to capabilities.html - could be more specific"
+          },
+          {
+            "section": "Quick Links",
+            "links": [
+              {
+                "text": "View Our Work",
+                "url": "/industries.html",
+                "anchor_text": "View Our Work"
+              },
+              {
+                "text": "Our Capabilities",
+                "url": "/capabilities.html",
+                "anchor_text": "Our Capabilities"
+              },
+              {
+                "text": "Get Quote",
+                "url": "/contact.html",
+                "anchor_text": "Get Quote"
+              },
+              {
+                "text": "Contact Us",
+                "url": "/contact.html",
+                "anchor_text": "Contact Us"
+              },
+              {
+                "text": "Privacy Policy",
+                "url": "/privacy-policy.html",
+                "anchor_text": "Privacy Policy"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "in_content_linking": {
+      "home_page": {
+        "links_to": [
+          "/contact.html",
+          "/services.html",
+          "/capabilities.html"
+        ],
+        "cta_buttons": [
+          {
+            "text": "Get a Quote",
+            "url": "/contact.html"
+          },
+          {
+            "text": "Explore Our Services",
+            "url": "/services.html"
+          },
+          {
+            "text": "View Full Capabilities",
+            "url": "/capabilities.html"
+          }
+        ]
+      },
+      "other_pages": {
+        "note": "Needs detailed analysis of in-content links across all pages"
+      }
+    },
+    "link_analysis": {
+      "total_internal_links": "needs_counting",
+      "link_distribution": {
+        "home_page_links": "high",
+        "capabilities_links": "medium",
+        "services_links": "medium",
+        "contact_links": "high",
+        "other_pages": "needs_analysis"
+      },
+      "orphan_pages": [
+        {
+          "page": "3d-printing.html",
+          "note": "May not be linked from main navigation or footer"
+        },
+        {
+          "page": "prop-fabrication.html",
+          "note": "May not be linked from main navigation or footer"
+        }
+      ]
+    },
+    "anchor_text_analysis": {
+      "descriptive_anchor_text": "good",
+      "generic_anchor_text": [
+        "Home",
+        "Contact",
+        "Get Quote"
+      ],
+      "recommendations": [
+        "Use more descriptive anchor text where possible",
+        "Ensure important pages have keyword-rich anchor text",
+        "Balance between descriptive and natural-sounding anchor text"
+      ]
+    },
+    "recommendations": [
+      "Ensure all important pages are linked from main navigation or footer",
+      "Add links to 3D Printing and Prop Fabrication pages from relevant service pages",
+      "Create a sitemap page for users (in addition to XML sitemap)",
+      "Add breadcrumb navigation for better user experience and SEO",
+      "Ensure internal links use consistent URL format",
+      "Add contextual links within content where relevant",
+      "Monitor internal linking structure in Google Search Console"
+    ]
+  }
+}
+

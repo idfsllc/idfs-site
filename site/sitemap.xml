@@ -1,77 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
     <url>
-        <loc>https://idfs.com/</loc>
+        <loc>https://idfsllc.com/</loc>
         <lastmod>2024-12-20</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <image:image>
-            <image:loc>https://idfs.com/assets/machine-shop-facility.webp</image:loc>
+            <image:loc>https://idfsllc.com/assets/machine-shop-facility.webp</image:loc>
             <image:title>IDFS Custom Fabrication & Design Facility Fayetteville Georgia</image:title>
             <image:caption>State-of-the-art custom fabrication & design shop in Georgia with CNC machining and robotic capabilities</image:caption>
         </image:image>
         <image:image>
-            <image:loc>https://idfs.com/assets/robotic-milling-operations.webp</image:loc>
+            <image:loc>https://idfsllc.com/assets/robotic-milling-operations.webp</image:loc>
             <image:title>Robotic Milling Georgia and Scene Work Fabrication</image:title>
             <image:caption>Advanced robotic milling Georgia capabilities for scenic work and precision manufacturing</image:caption>
         </image:image>
         <image:image>
-            <image:loc>https://idfs.com/assets/precision-welding-services.webp</image:loc>
+            <image:loc>https://idfsllc.com/assets/precision-welding-services.webp</image:loc>
             <image:title>Welding and Custom Fabrication Services Georgia</image:title>
             <image:caption>Professional welding and custom fabrication services for defense and entertainment industries</image:caption>
         </image:image>
         <image:image>
-            <image:loc>https://idfs.com/assets/our-work/plasma-cutting-technology.webp</image:loc>
+            <image:loc>https://idfsllc.com/assets/our-work/plasma-cutting-technology.webp</image:loc>
             <image:title>Plasma Cutting Technology Georgia</image:title>
             <image:caption>Advanced plasma cutting technology for custom fabrication and scenic work</image:caption>
         </image:image>
     </url>
     <url>
-        <loc>https://idfs.com/capabilities.html</loc>
+        <loc>https://idfsllc.com/capabilities.html</loc>
         <lastmod>2024-12-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
         <image:image>
-            <image:loc>https://idfs.com/assets/cad-design-to-finished-part.webp</image:loc>
+            <image:loc>https://idfsllc.com/assets/cad-design-to-finished-part.webp</image:loc>
             <image:title>Custom Design & Fabrication Georgia Services</image:title>
             <image:caption>Advanced CAD design and CNC programming for custom fabrication Georgia and scenic work</image:caption>
         </image:image>
         <image:image>
-            <image:loc>https://idfs.com/assets/manufacturing-capabilities-hero.webp</image:loc>
+            <image:loc>https://idfsllc.com/assets/manufacturing-capabilities-hero.webp</image:loc>
             <image:title>Manufacturing Capabilities Georgia</image:title>
             <image:caption>Comprehensive manufacturing capabilities including design, fabrication, and prototyping</image:caption>
         </image:image>
     </url>
     <url>
-        <loc>https://idfs.com/industries.html</loc>
+        <loc>https://idfsllc.com/industries.html</loc>
         <lastmod>2024-12-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
         <image:image>
-            <image:loc>https://idfs.com/assets/robotic-milling-operations.webp</image:loc>
+            <image:loc>https://idfsllc.com/assets/robotic-milling-operations.webp</image:loc>
             <image:title>Defense Fabrication Georgia Manufacturing</image:title>
             <image:caption>Precision manufacturing for defense fabrication Georgia and aerospace industries</image:caption>
         </image:image>
         <image:image>
-            <image:loc>https://idfs.com/assets/Gallery-pics/subway.webp</image:loc>
+            <image:loc>https://idfsllc.com/assets/Gallery-pics/subway.webp</image:loc>
             <image:title>Design to Production Georgia</image:title>
             <image:caption>From concept to finished product - custom fabrication and scenic work</image:caption>
         </image:image>
     </url>
     <url>
-        <loc>https://idfs.com/contact.html</loc>
+        <loc>https://idfsllc.com/services.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://idfsllc.com/assets/precision-welding-services.webp</image:loc>
+            <image:title>Fabrication Services Georgia</image:title>
+            <image:caption>Custom metal fabrication, welding, design engineering, and 3D printing services in Fayetteville, GA</image:caption>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://idfsllc.com/contact.html</loc>
         <lastmod>2024-12-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://idfs.com/capabilities-statement.pdf</loc>
+        <loc>https://idfsllc.com/3d-printing.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://idfsllc.com/assets/cad-design-to-finished-part.webp</image:loc>
+            <image:title>Industrial 3D Printing SLA Formlabs 3L Georgia</image:title>
+            <image:caption>Large-format resin 3D printing with Formlabs 3L for functional prototypes and production parts</image:caption>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://idfsllc.com/prop-fabrication.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://idfsllc.com/assets/robotic-milling-operations.webp</image:loc>
+            <image:title>Film Prop Fabrication Atlanta Georgia</image:title>
+            <image:caption>Custom prop fabrication for film, TV, and entertainment in Atlanta metro area</image:caption>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://idfsllc.com/privacy-policy.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    <url>
+        <loc>https://idfsllc.com/capabilities-statement.pdf</loc>
         <lastmod>2024-12-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://idfs.com/one-page-capabilities.pdf</loc>
+        <loc>https://idfsllc.com/one-page-capabilities.pdf</loc>
         <lastmod>2024-12-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>

@@ -1,0 +1,85 @@
+{
+  "audit_date": "2024-12-20",
+  "image_optimization": {
+    "image_formats": {
+      "primary_format": "WebP",
+      "status": "excellent",
+      "benefits": [
+        "Better compression than JPEG/PNG",
+        "Smaller file sizes",
+        "Faster page load times"
+      ]
+    },
+    "lazy_loading": {
+      "status": "implemented",
+      "attribute": "loading='lazy'",
+      "coverage": "needs_verification",
+      "note": "Check all images have lazy loading attribute"
+    },
+    "alt_text": {
+      "status": "needs_verification",
+      "importance": "critical_for_accessibility_and_seo",
+      "recommendations": [
+        "Verify all images have descriptive alt text",
+        "Ensure alt text includes relevant keywords naturally",
+        "Avoid keyword stuffing in alt text",
+        "Make alt text descriptive and useful for screen readers"
+      ],
+      "sample_images": [
+        {
+          "page": "Home",
+          "images": [
+            {
+              "src": "assets/machine-shop-facility.webp",
+              "alt": "IDFS Custom Fabrication & Design Facility Fayetteville Georgia",
+              "status": "has_alt"
+            },
+            {
+              "src": "assets/robotic-milling-operations.webp",
+              "alt": "Robotic Milling Operations - CNC Machining Georgia",
+              "status": "has_alt"
+            }
+          ]
+        }
+      ]
+    },
+    "image_sizing": {
+      "status": "needs_verification",
+      "recommendations": [
+        "Ensure images are properly sized for their display context",
+        "Use responsive images with srcset where appropriate",
+        "Avoid serving large images that are displayed small",
+        "Consider using different image sizes for mobile vs desktop"
+      ]
+    },
+    "image_naming": {
+      "status": "good",
+      "convention": "descriptive-kebab-case",
+      "examples": [
+        "machine-shop-facility.webp",
+        "robotic-milling-operations.webp",
+        "precision-welding-services.webp",
+        "cad-design-to-finished-part.webp"
+      ],
+      "note": "Image names are descriptive and SEO-friendly"
+    },
+    "sitemap_images": {
+      "status": "implemented",
+      "location": "sitemap.xml",
+      "images_in_sitemap": true,
+      "coverage": "partial",
+      "note": "Some images included in sitemap, but not all pages have images in sitemap"
+    },
+    "recommendations": [
+      "Verify all images have descriptive alt text",
+      "Ensure all images use lazy loading",
+      "Optimize image file sizes (already using WebP - good)",
+      "Consider responsive images with srcset for different screen sizes",
+      "Add more images to XML sitemap if not already included",
+      "Ensure images are properly compressed",
+      "Consider using image CDN for faster delivery",
+      "Test image loading performance with PageSpeed Insights"
+    ]
+  }
+}
+

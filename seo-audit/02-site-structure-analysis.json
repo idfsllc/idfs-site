@@ -1,0 +1,176 @@
+{
+  "audit_date": "2024-12-20",
+  "domain": "https://idfsllc.com",
+  "site_structure": {
+    "url_hierarchy": {
+      "home": {
+        "url": "https://idfsllc.com/",
+        "priority": 1.0,
+        "changefreq": "weekly",
+        "children": []
+      },
+      "capabilities": {
+        "url": "https://idfsllc.com/capabilities",
+        "priority": 0.9,
+        "changefreq": "monthly",
+        "children": []
+      },
+      "services": {
+        "url": "https://idfsllc.com/services",
+        "priority": 0.9,
+        "changefreq": "monthly",
+        "children": []
+      },
+      "industries": {
+        "url": "https://idfsllc.com/industries",
+        "priority": 0.8,
+        "changefreq": "monthly",
+        "children": []
+      },
+      "contact": {
+        "url": "https://idfsllc.com/contact",
+        "priority": 0.9,
+        "changefreq": "monthly",
+        "children": []
+      },
+      "3d_printing": {
+        "url": "https://idfsllc.com/3d-printing",
+        "priority": 0.7,
+        "changefreq": "monthly",
+        "children": []
+      },
+      "prop_fabrication": {
+        "url": "https://idfsllc.com/prop-fabrication",
+        "priority": 0.7,
+        "changefreq": "monthly",
+        "children": []
+      },
+      "privacy_policy": {
+        "url": "https://idfsllc.com/privacy-policy",
+        "priority": 0.5,
+        "changefreq": "yearly",
+        "children": []
+      }
+    },
+    "navigation_structure": {
+      "main_nav": [
+        {
+          "label": "Home",
+          "url": "/",
+          "order": 1
+        },
+        {
+          "label": "Capabilities",
+          "url": "/capabilities.html",
+          "order": 2
+        },
+        {
+          "label": "Services",
+          "url": "/services.html",
+          "order": 3
+        },
+        {
+          "label": "Industries",
+          "url": "/industries.html",
+          "order": 4,
+          "note": "Fixed: Navigation label now matches page content"
+        },
+        {
+          "label": "Contact",
+          "url": "/contact.html",
+          "order": 5
+        },
+        {
+          "label": "Get Quote",
+          "url": "/contact.html#rfqForm",
+          "order": 6,
+          "cta": true
+        }
+      ],
+      "footer_nav": {
+        "services": [
+          "/capabilities.html",
+          "/capabilities.html",
+          "/capabilities.html",
+          "/capabilities.html"
+        ],
+        "quick_links": [
+          "/industries.html",
+          "/capabilities.html",
+          "/contact.html",
+          "/contact.html",
+          "/privacy-policy.html"
+        ]
+      }
+    },
+    "url_patterns": {
+      "clean_urls": true,
+      "file_extensions": ".html",
+      "canonical_format": "https://idfsllc.com/{path}",
+      "issues": [
+        "Some URLs use .html extension, some don't in canonical tags",
+        "Navigation uses .html but canonical URLs don't always match"
+      ]
+    },
+    "sitemap": {
+      "location": "https://idfsllc.com/sitemap.xml",
+      "last_modified": "2024-12-20",
+      "total_urls": 7,
+      "includes_images": true,
+      "includes_news": false,
+      "urls": [
+        {
+          "loc": "https://idfsllc.com/",
+          "priority": 1.0,
+          "changefreq": "weekly",
+          "images": 4
+        },
+        {
+          "loc": "https://idfsllc.com/capabilities.html",
+          "priority": 0.9,
+          "changefreq": "monthly",
+          "images": 2
+        },
+        {
+          "loc": "https://idfsllc.com/industries.html",
+          "priority": 0.8,
+          "changefreq": "monthly",
+          "images": 2
+        },
+        {
+          "loc": "https://idfsllc.com/contact.html",
+          "priority": 0.9,
+          "changefreq": "monthly"
+        },
+        {
+          "loc": "https://idfsllc.com/capabilities-statement.pdf",
+          "priority": 0.7,
+          "changefreq": "monthly"
+        },
+        {
+          "loc": "https://idfsllc.com/one-page-capabilities.pdf",
+          "priority": 0.7,
+          "changefreq": "monthly"
+        }
+      ],
+      "missing_urls": [],
+      "note": "All pages now included in sitemap (fixed 2024-12-20)"
+    },
+    "robots_txt": {
+      "location": "https://idfsllc.com/robots.txt",
+      "sitemap_declared": true,
+      "sitemap_url": "https://idfsllc.com/sitemap.xml",
+      "crawl_delay": 1,
+      "allowed_paths": [
+        "/capabilities.html",
+        "/industries.html",
+        "/contact.html",
+        "/capabilities-statement.pdf",
+        "/one-page-capabilities.pdf",
+        "/assets/"
+      ],
+      "disallowed_paths": []
+    }
+  }
+}
+

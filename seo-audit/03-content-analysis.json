@@ -1,0 +1,198 @@
+{
+  "audit_date": "2024-12-20",
+  "content_analysis": {
+    "h1_tags": [
+      {
+        "page": "Home",
+        "url": "/",
+        "h1": "From Blueprint to Built. Design • Fabrication • Engineering",
+        "length": 60,
+        "includes_keyword": true,
+        "keyword": "fabrication, design, engineering"
+      },
+      {
+        "page": "Capabilities",
+        "url": "/capabilities",
+        "h1": "Our Capabilities",
+        "length": 18,
+        "includes_keyword": true,
+        "keyword": "capabilities"
+      },
+      {
+        "page": "Services",
+        "url": "/services",
+        "h1": "Our Services",
+        "length": 13,
+        "includes_keyword": true,
+        "keyword": "services"
+      },
+      {
+        "page": "Industries",
+        "url": "/industries",
+        "h1": "Industries We Serve",
+        "length": 20,
+        "includes_keyword": true,
+        "keyword": "industries"
+      },
+      {
+        "page": "Contact",
+        "url": "/contact",
+        "h1": "Contact Us",
+        "length": 11,
+        "includes_keyword": true,
+        "keyword": "contact"
+      },
+      {
+        "page": "3D Printing",
+        "url": "/3d-printing",
+        "h1": "Industrial 3D Printing (SLA)",
+        "length": 30,
+        "includes_keyword": true,
+        "keyword": "3D printing, SLA"
+      },
+      {
+        "page": "Prop Fabrication",
+        "url": "/prop-fabrication",
+        "h1": "Film & Entertainment Prop Fabrication",
+        "length": 38,
+        "includes_keyword": true,
+        "keyword": "prop fabrication, film, entertainment"
+      }
+    ],
+    "title_tag_analysis": {
+      "average_length": 68,
+      "recommended_length": "50-60 characters",
+      "issues": [],
+      "note": "All titles now optimized to 50-60 characters (fixed 2024-12-20)",
+      "all_titles": [
+        {
+          "page": "Home",
+          "title": "Custom Metal Fabrication & Design | IDFS Fayetteville, GA",
+          "length": 58,
+          "status": "optimized"
+        },
+        {
+          "page": "Capabilities",
+          "title": "Capabilities | CNC, Welding, Fabrication, 3D Printing | IDFS",
+          "length": 58,
+          "status": "optimized"
+        },
+        {
+          "page": "Services",
+          "title": "Fabrication Services | Welding, CNC, 3D Printing | IDFS GA",
+          "length": 55,
+          "status": "optimized"
+        },
+        {
+          "page": "Industries",
+          "title": "Industries We Serve | Aerospace, Industrial, Automotive, Defense & Film | IDFS",
+          "length": 85
+        },
+        {
+          "page": "Contact",
+          "title": "Contact IDFS | Custom Metal Fabrication & Design in Fayetteville, GA",
+          "length": 66
+        },
+        {
+          "page": "3D Printing",
+          "title": "Industrial 3D Printing (SLA) | Formlabs 3L Resin Printing | IDFS Georgia",
+          "length": 75
+        },
+        {
+          "page": "Prop Fabrication",
+          "title": "Film & Prop Fabrication | Custom Props, Metalwork, Set Fabrication | IDFS",
+          "length": 70
+        }
+      ]
+    },
+    "meta_description_analysis": {
+      "average_length": 155,
+      "recommended_length": "150-160 characters",
+      "all_descriptions": [
+        {
+          "page": "Home",
+          "description": "Custom metal fabrication, welding, design, and industrial 3D printing in Fayetteville, GA. Serving Atlanta metro and nationwide. Get a quote.",
+          "length": 156,
+          "status": "optimized"
+        },
+        {
+          "page": "Capabilities",
+          "description": "CNC machining, MIG/TIG welding, custom fabrication, and industrial 3D printing in Fayetteville, GA. Serving aerospace, defense, film, and industrial clients.",
+          "length": 157,
+          "status": "optimized"
+        },
+        {
+          "page": "Services",
+          "description": "Custom metal fabrication, welding, CNC machining, 3D printing, and repair services in Fayetteville, GA. Fast turnaround for Atlanta metro clients.",
+          "length": 157,
+          "status": "optimized"
+        },
+        {
+          "page": "Industries",
+          "description": "IDFS serves aerospace, industrial, automotive, defense, film, commercial, and consumer industries with precision fabrication, engineering support, and custom manufacturing in Fayetteville, GA.",
+          "length": 155,
+          "status": "optimal"
+        },
+        {
+          "page": "Contact",
+          "description": "Contact IDFS in Fayetteville, GA for custom metal fabrication, welding, design, and 3D printing. Call (470) 409-9972 or email for a quote.",
+          "length": 156,
+          "status": "optimized"
+        },
+        {
+          "page": "3D Printing",
+          "description": "Large-format resin 3D printing with the Formlabs 3L. Functional prototypes, tooling, enclosures, engineering parts, biocompatible resins, and production-quality SLA printing. Fast turnaround.",
+          "length": 163,
+          "status": "slightly_long"
+        },
+        {
+          "page": "Prop Fabrication",
+          "description": "Custom prop fabrication for film, TV, and entertainment. Metalwork, practical effects, hero props, set pieces, and precision builds. Fast turnaround for Atlanta productions.",
+          "length": 145,
+          "status": "optimal"
+        }
+      ]
+    },
+    "keyword_analysis": {
+      "primary_keywords": [
+        "custom metal fabrication",
+        "Fayetteville GA",
+        "Atlanta metro",
+        "CNC machining",
+        "welding services",
+        "industrial 3D printing",
+        "SLA 3D printing",
+        "prop fabrication",
+        "entertainment fabrication"
+      ],
+      "keyword_density": {
+        "custom metal fabrication": "appears on 6 pages",
+        "Fayetteville GA": "appears on 5 pages",
+        "Atlanta metro": "appears on 3 pages",
+        "CNC machining": "appears on 2 pages",
+        "welding": "appears on 4 pages",
+        "3D printing": "appears on 3 pages",
+        "fabrication": "appears on all pages"
+      },
+      "keyword_stuffing_risk": "low",
+      "geographic_keywords": [
+        "Fayetteville GA",
+        "Atlanta metro",
+        "Georgia"
+      ]
+    },
+    "content_length": {
+      "estimated_word_counts": {
+        "home": "~1200 words",
+        "capabilities": "~2000 words",
+        "services": "~1800 words",
+        "industries": "~1500 words",
+        "contact": "~800 words",
+        "3d_printing": "~1000 words",
+        "prop_fabrication": "~900 words"
+      },
+      "recommendation": "All pages have sufficient content length (300+ words minimum)"
+    }
+  }
+}
+

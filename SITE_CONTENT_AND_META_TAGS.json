@@ -2,7 +2,7 @@
   "site_info": {
     "company_name": "IDFS Integrated Design and Fabrication Solutions",
     "alternate_names": ["IDFS", "IDFS Machine Shop Georgia"],
-    "base_url": "https://idfs.com",
+    "base_url": "https://idfsllc.com",
     "location": {
       "address": "133 Bethea Rd. Suite 801",
       "city": "Fayetteville",
@@ -29,7 +29,7 @@
   "pages": [
     {
       "page": "index.html",
-      "url": "https://idfs.com/",
+      "url": "https://idfsllc.com/",
       "title": "Custom Metal Fabrication & Design (Fayetteville, GA)",
       "meta_tags": {
         "description": "Expert custom metal fabrication and product design in Fayetteville, GA by IDFS - Custom metal work, prototyping, small run manufacturing, product design. Trusted by clients across the U.S.",
@@ -44,8 +44,8 @@
         "og:title": "Custom Metal Fabrication Georgia | Fayetteville GA & Atlanta GA | IDFS",
         "og:description": "Expert custom metal fabrication and product design in Fayetteville, GA by IDFS - Custom metal work, prototyping, small run manufacturing, product design. Trusted by clients across the U.S.",
         "og:type": "website",
-        "og:url": "https://idfs.com",
-        "og:image": "https://idfs.com/assets/machine-shop-facility.webp",
+        "og:url": "https://idfsllc.com",
+        "og:image": "https://idfsllc.com/assets/machine-shop-facility.webp",
         "og:site_name": "IDFS Integrated Design and Fabrication Solutions",
         "og:locale": "en_US"
       },
@@ -53,7 +53,7 @@
         "twitter:card": "summary_large_image",
         "twitter:title": "Custom Metal Fabrication Georgia | Fayetteville GA & Atlanta GA | IDFS",
         "twitter:description": "Expert custom metal fabrication and product design in Fayetteville, GA by IDFS - Custom metal work, prototyping, small run manufacturing, product design. Trusted by clients across the U.S.",
-        "twitter:image": "https://idfs.com/assets/machine-shop-facility.webp"
+        "twitter:image": "https://idfsllc.com/assets/machine-shop-facility.webp"
       },
       "structured_data": {
         "@type": "LocalBusiness",
@@ -143,7 +143,7 @@
     },
     {
       "page": "capabilities.html",
-      "url": "https://idfs.com/capabilities",
+      "url": "https://idfsllc.com/capabilities",
       "title": "Manufacturing Capabilities Fayetteville GA | Atlanta Metro CNC Machining, Welding & Fabrication Services | IDFS",
       "meta_tags": {
         "description": "Comprehensive manufacturing capabilities in Fayetteville, GA serving Atlanta metro area. CNC machining, TIG/MIG welding, fabrication, industrial 3D printing, contract manufacturing services. Located near Trilith Studios, Tyler Perry Studios, and Atlanta Metro Studios. ±0.001\" precision, aerospace-grade quality. Get quote today!",
@@ -218,7 +218,7 @@
     },
     {
       "page": "contact.html",
-      "url": "https://idfs.com/contact",
+      "url": "https://idfsllc.com/contact",
       "title": "Contact IDFS Custom Fabrication & Design Fayetteville GA | Atlanta Metro Custom Fabrication Quote Request | CNC Robotic Fabrication Design",
       "meta_tags": {
         "description": "Contact IDFS for custom fabrication, part cutting, design, and prototyping services in Fayetteville, GA serving Atlanta area. With tons of experience in design, fabrication, and prototyping, we're your go-to for all your custom fabrication needs. Call (470) 409-9972 or email Designs@idfsllc.com",
@@ -292,7 +292,7 @@
     },
     {
       "page": "industries.html",
-      "url": "https://idfs.com/industries",
+      "url": "https://idfsllc.com/industries",
       "title": "Industries Served | Government Defense Aerospace Manufacturing | Fayetteville GA Atlanta Metro | IDFS",
       "meta_tags": {
         "description": "Industries served by IDFS: Government & Defense, Aerospace, Automotive, Energy, Entertainment. Contract manufacturing services in Fayetteville, Georgia serving Atlanta metro area for government contractors and industrial clients.",
@@ -348,7 +348,7 @@
     },
     {
       "page": "privacy-policy.html",
-      "url": "https://idfs.com/privacy-policy",
+      "url": "https://idfsllc.com/privacy-policy",
       "title": "Privacy Policy | IDFS Integrated Design and Fabrication Solutions",
       "meta_tags": {
         "description": "Privacy Policy for IDFS Integrated Design and Fabrication Solutions. Learn how we collect, use, and protect your personal information.",

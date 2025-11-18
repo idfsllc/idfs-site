@@ -1,3 +1,8 @@
+/**
+ * IDFS Local Development Server
+ * Serves static site files and provides mock API endpoints for local development
+ */
+
 const express = require('express');
 const path = require('path');
 const cors = require('cors');
@@ -8,7 +13,7 @@ const PORT = process.env.PORT || 3000;
 // Enable CORS for all routes
 app.use(cors());
 
-// Disable caching for development
+// Disable caching for development (allows seeing changes immediately)
 app.use((req, res, next) => {
     res.set('Cache-Control', 'no-store, no-cache, must-revalidate, private');
     res.set('Pragma', 'no-cache');
@@ -19,13 +24,14 @@ app.use((req, res, next) => {
 // Serve static files from the site directory with proper MIME types
 app.use(express.static(path.join(__dirname, 'site'), {
     setHeaders: (res, filePath) => {
+        // Ensure MP4 videos are served with correct MIME type
         if (filePath.endsWith('.mp4')) {
             res.setHeader('Content-Type', 'video/mp4');
         }
     }
 }));
 
-// Mock API endpoint for contact form (no actual email sending)
+// Mock API endpoint for contact form (no actual email sending in dev)
 app.post('/contact', express.json(), (req, res) => {
   console.log('📧 Contact form submission received:');
   console.log('Name:', req.body.name);
@@ -41,7 +47,7 @@ app.post('/contact', express.json(), (req, res) => {
   }, 500);
 });
 
-// Handle OPTIONS preflight requests
+// Handle OPTIONS preflight requests for CORS
 app.options('/contact', (req, res) => {
   res.header('Access-Control-Allow-Origin', '*');
   res.header('Access-Control-Allow-Methods', 'POST, OPTIONS');
@@ -54,14 +60,14 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'site', 'index.html'));
 });
 
-// Serve capabilities statement PDF with proper headers
+// Serve capabilities statement as HTML (served as PDF route for compatibility)
 app.get('/capabilities-statement.pdf', (req, res) => {
   res.setHeader('Content-Type', 'text/html');
   res.setHeader('Content-Disposition', 'inline; filename="IDFS-Capabilities-Statement.html"');
   res.sendFile(path.join(__dirname, 'site', 'capabilities-statement.html'));
 });
 
-// Serve one-page capabilities PDF
+// Serve one-page capabilities as HTML (served as PDF route for compatibility)
 app.get('/one-page-capabilities.pdf', (req, res) => {
   res.setHeader('Content-Type', 'text/html');
   res.setHeader('Content-Disposition', 'inline; filename="IDFS-One-Page-Capabilities.html"');
