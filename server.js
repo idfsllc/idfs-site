@@ -8,8 +8,22 @@ const PORT = process.env.PORT || 3000;
 // Enable CORS for all routes
 app.use(cors());
 
-// Serve static files from the site directory
-app.use(express.static(path.join(__dirname, 'site')));
+// Disable caching for development
+app.use((req, res, next) => {
+    res.set('Cache-Control', 'no-store, no-cache, must-revalidate, private');
+    res.set('Pragma', 'no-cache');
+    res.set('Expires', '0');
+    next();
+});
+
+// Serve static files from the site directory with proper MIME types
+app.use(express.static(path.join(__dirname, 'site'), {
+    setHeaders: (res, filePath) => {
+        if (filePath.endsWith('.mp4')) {
+            res.setHeader('Content-Type', 'video/mp4');
+        }
+    }
+}));
 
 // Mock API endpoint for contact form (no actual email sending)
 app.post('/contact', express.json(), (req, res) => {

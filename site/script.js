@@ -210,6 +210,30 @@ if (rfqForm) {
     // Get form data
     const formData = new FormData(this);
     const data = Object.fromEntries(formData);
+
+    // Collect files as base64 attachments (limit total size ~7MB)
+    const filesInput = this.querySelector('#files');
+    const files = filesInput ? Array.from(filesInput.files || []) : [];
+    const MAX_TOTAL_BYTES = 7 * 1024 * 1024; // ~7MB
+    const attachments = [];
+    let totalBytes = 0;
+
+    const readFileAsBase64 = (file) => new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onload = () => {
+            // reader.result like 'data:<mime>;base64,XXXX'
+            const result = reader.result;
+            const base64 = result.split(',')[1] || '';
+            resolve({
+                filename: file.name,
+                contentType: file.type || 'application/octet-stream',
+                contentBase64: base64,
+                size: file.size
+            });
+        };
+        reader.onerror = reject;
+        reader.readAsDataURL(file);
+    });
     
     // Basic validation
     if (!data.name || !data.email || !data.project) {
@@ -231,38 +255,79 @@ if (rfqForm) {
     submitButton.textContent = 'Submitting...';
     submitButton.disabled = true;
     
-        // Send data to API
-        fetch('/contact', {
+        // Send data to API (use API Gateway endpoint)
+        const API_BASE = 'https://gqt6pbh1sk.execute-api.us-east-1.amazonaws.com/prod';
+        const endpoint = `${API_BASE}/contact`;
+        console.log('[RFQ] Submitting to:', endpoint);
+
+        // Prepare attachments asynchronously before sending
+        (async () => {
+            try {
+                for (const file of files) {
+                    totalBytes += file.size;
+                    if (totalBytes > MAX_TOTAL_BYTES) {
+                        alert('Attached files are too large. Please limit total size to under 7MB.');
+                        submitButton.textContent = originalText;
+                        submitButton.disabled = false;
+                        return;
+                    }
+                    const att = await readFileAsBase64(file);
+                    attachments.push(att);
+                }
+            } catch (e) {
+                console.error('[RFQ] File read error:', e);
+                alert('There was an error reading your file(s). Please try again.');
+                submitButton.textContent = originalText;
+                submitButton.disabled = false;
+                return;
+            }
+
+            fetch(endpoint, {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json',
+                'Content-Type': 'application/json'
             },
             body: JSON.stringify({
                 name: data.name,
                 email: data.email,
-                message: data.project, // Map project field to message for API
+                message: data.project,
                 company: data.company,
                 phone: data.phone,
-                serviceType: data['service-type'] // Include service type
+                serviceType: data['service-type'],
+                attachments: attachments
             })
         })
-    .then(response => response.json())
-    .then(result => {
-        if (result.ok) {
-            alert('Thank you for your RFQ submission! We will contact you within 24 hours.');
-            this.reset();
-        } else {
-            alert('Error: ' + (result.error || 'Failed to submit form. Please try again.'));
-        }
-    })
-    .catch(error => {
-        console.error('Error:', error);
-        alert('There was an error submitting your request. Please try again or contact us directly.');
-    })
-    .finally(() => {
-        submitButton.textContent = originalText;
-        submitButton.disabled = false;
-    });
+        .then(async (response) => {
+            const status = response.status;
+            let payload;
+            try {
+                payload = await response.json();
+            } catch (_) {
+                const text = await response.text();
+                console.warn('[RFQ] Non-JSON response', status, text);
+                throw new Error(`Non-JSON response (status ${status})`);
+            }
+            console.log('[RFQ] Response', status, payload);
+            return { status, payload };
+        })
+        .then(({ status, payload }) => {
+            if (status === 200 && payload && payload.ok) {
+                alert('Thank you for your RFQ submission! We will contact you within 24 hours.');
+                this.reset();
+            } else {
+                const msg = (payload && (payload.error || JSON.stringify(payload))) || 'Failed to submit form. Please try again.';
+                alert('Error: ' + msg);
+            }
+        })
+        .catch(error => {
+            console.error('[RFQ] Network/Error:', error);
+            alert('There was an error submitting your request. Please hard refresh and try again, or contact us directly.');
+        })
+        .finally(() => {
+            submitButton.textContent = originalText;
+            submitButton.disabled = false;
+        });
+        })();
     });
 }
 

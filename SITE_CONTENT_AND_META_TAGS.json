@@ -1,0 +1,480 @@
+{
+  "site_info": {
+    "company_name": "IDFS Integrated Design and Fabrication Solutions",
+    "alternate_names": ["IDFS", "IDFS Machine Shop Georgia"],
+    "base_url": "https://idfs.com",
+    "location": {
+      "address": "133 Bethea Rd. Suite 801",
+      "city": "Fayetteville",
+      "state": "GA",
+      "zip": "30214",
+      "country": "US",
+      "coordinates": {
+        "latitude": "33.4487",
+        "longitude": "-84.4549"
+      }
+    },
+    "contact": {
+      "phone": "(470) 409-9972",
+      "phone_formatted": "+1-470-409-9972",
+      "email": "Designs@idfsllc.com",
+      "office_hours": "Monday - Friday: 9:00 AM - 4:30 PM"
+    },
+    "business_identifiers": {
+      "cage_code": "109T0",
+      "duns": "110818579",
+      "entity_id": "WG82SYNRPDZ9"
+    }
+  },
+  "pages": [
+    {
+      "page": "index.html",
+      "url": "https://idfs.com/",
+      "title": "Custom Metal Fabrication & Design (Fayetteville, GA)",
+      "meta_tags": {
+        "description": "Expert custom metal fabrication and product design in Fayetteville, GA by IDFS - Custom metal work, prototyping, small run manufacturing, product design. Trusted by clients across the U.S.",
+        "keywords": "custom metal fabrication Georgia, custom metal fabrication GA, custom metal fabrication Fayetteville GA, custom metal fabrication Atlanta GA, custom metal fabrication Atlanta Georgia, metal fabrication Georgia, metal fabrication GA, fabrication shop Georgia, fabrication shop GA, CNC machining Georgia, CNC machining GA, design services Georgia, design services GA, prototyping services Georgia, prototyping services GA, scene work Georgia, scene work GA, scene shop services Georgia, scene shop services GA, entertainment fabrication Georgia, entertainment fabrication GA, theatrical fabrication Georgia, theatrical fabrication GA, Trilith Studios fabrication Georgia, Trilith Studios fabrication GA, Tyler Perry Studios fabrication Georgia, Tyler Perry Studios fabrication GA, Atlanta Metro Studios fabrication Georgia, Atlanta Metro Studios fabrication GA, film industry fabrication Georgia, film industry fabrication GA",
+        "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+        "language": "English",
+        "author": "IDFS Integrated Design and Fabrication Solutions",
+        "geo_region": "US-GA",
+        "geo_placename": "Fayetteville"
+      },
+      "open_graph": {
+        "og:title": "Custom Metal Fabrication Georgia | Fayetteville GA & Atlanta GA | IDFS",
+        "og:description": "Expert custom metal fabrication and product design in Fayetteville, GA by IDFS - Custom metal work, prototyping, small run manufacturing, product design. Trusted by clients across the U.S.",
+        "og:type": "website",
+        "og:url": "https://idfs.com",
+        "og:image": "https://idfs.com/assets/machine-shop-facility.webp",
+        "og:site_name": "IDFS Integrated Design and Fabrication Solutions",
+        "og:locale": "en_US"
+      },
+      "twitter_card": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Custom Metal Fabrication Georgia | Fayetteville GA & Atlanta GA | IDFS",
+        "twitter:description": "Expert custom metal fabrication and product design in Fayetteville, GA by IDFS - Custom metal work, prototyping, small run manufacturing, product design. Trusted by clients across the U.S.",
+        "twitter:image": "https://idfs.com/assets/machine-shop-facility.webp"
+      },
+      "structured_data": {
+        "@type": "LocalBusiness",
+        "identifier": "WG82SYNRPDZ9",
+        "name": "IDFS Integrated Design and Fabrication Solutions",
+        "alternateName": ["IDFS", "IDFS Machine Shop Georgia"],
+        "description": "Premier custom metal fabrication shop in Fayetteville, Georgia specializing in design, prototyping, and custom fabrication services serving the Atlanta metro area",
+        "services": [
+          "Custom Metal Fabrication",
+          "Design Services",
+          "Prototyping",
+          "CNC Machining",
+          "Welding Services",
+          "Scene Work",
+          "Entertainment Fabrication",
+          "Theatrical Fabrication",
+          "Sculptural Milling"
+        ]
+      },
+      "content": {
+        "hero": {
+          "heading": "From blueprint to beyond\nWith IDFS",
+          "subtitle": "Where design intelligence and fabrication expertise come together to build what's next",
+          "cta_buttons": [
+            "Get Free Quote",
+            "View Capabilities"
+          ]
+        },
+        "services_section": {
+          "title": "Our Services",
+          "services": [
+            {
+              "name": "Design & R&D / Prototyping",
+              "description": "Full service design, prototyping, and reverse engineering from concept to reality. Prototype and test ideas across materials and processes to validate concepts."
+            },
+            {
+              "name": "Fabrication",
+              "description": "Welding, cutting, machining, and assembly in aluminum, steel, and stainless steel."
+            },
+            {
+              "name": "Additive Manufacturing",
+              "description": "Industrial 3D printing for production-quality parts, functional prototypes, and end-use components using engineering-grade materials."
+            },
+            {
+              "name": "Plasma Cutting",
+              "description": "Precision cutting for aluminum, steel, and stainless steel materials."
+            }
+          ],
+          "cta_text": "Ready to start your next project? Contact us for a free quote and fast local service."
+        },
+        "gallery_section": {
+          "title": "Our Work",
+          "subtitle": "See the precision and quality that defines IDFS",
+          "items": [
+            {
+              "title": "CAD to Part",
+              "description": "From design to finished product"
+            },
+            {
+              "title": "Welding",
+              "description": "Expert fabrication services"
+            },
+            {
+              "title": "Machining",
+              "description": "Precision CNC milling operations"
+            }
+          ],
+          "cta_text": "Want to see more of our capabilities?"
+        },
+        "footer": {
+          "tagline": "Full-service design, engineering, and fabrication solutions bringing your ideas to life with precision and creativity.",
+          "services_links": [
+            "Design & Engineering",
+            "Fabrication",
+            "Machining",
+            "Plasma Cutting"
+          ],
+          "quick_links": [
+            "View Our Work",
+            "Our Capabilities",
+            "Get Quote",
+            "Contact Us",
+            "Privacy Policy"
+          ]
+        }
+      }
+    },
+    {
+      "page": "capabilities.html",
+      "url": "https://idfs.com/capabilities",
+      "title": "Manufacturing Capabilities Fayetteville GA | Atlanta Metro CNC Machining, Welding & Fabrication Services | IDFS",
+      "meta_tags": {
+        "description": "Comprehensive manufacturing capabilities in Fayetteville, GA serving Atlanta metro area. CNC machining, TIG/MIG welding, fabrication, industrial 3D printing, contract manufacturing services. Located near Trilith Studios, Tyler Perry Studios, and Atlanta Metro Studios. ±0.001\" precision, aerospace-grade quality. Get quote today!",
+        "keywords": "CNC machining Georgia, CNC machining GA, precision machining Fayetteville Georgia, precision machining Fayetteville GA, CNC machining Atlanta Georgia, CNC machining Atlanta GA, welding services Georgia, welding services GA, fabrication services Georgia, fabrication services GA, contract manufacturing Georgia, contract manufacturing GA, CNC milling Georgia, CNC milling GA, TIG welding Georgia, TIG welding GA, MIG welding Georgia, MIG welding GA, aerospace manufacturing Georgia, aerospace manufacturing GA, defense contractor Georgia, defense contractor GA, precision tolerances Georgia, precision tolerances GA, robotic milling Georgia, robotic milling GA, plasma cutting Georgia, plasma cutting GA, industrial 3D printing Georgia, industrial 3D printing GA, additive manufacturing Georgia, additive manufacturing GA, professional 3D printing Georgia, professional 3D printing GA, production 3D printing Georgia, production 3D printing GA, scene work Georgia, scene work GA, scene shop services Georgia, scene shop services GA, entertainment fabrication Georgia, entertainment fabrication GA, theatrical fabrication Georgia, theatrical fabrication GA, sculptural milling Georgia, sculptural milling GA, Trilith Studios fabrication Georgia, Trilith Studios fabrication GA, Tyler Perry Studios fabrication Georgia, Tyler Perry Studios fabrication GA, Atlanta Metro Studios fabrication Georgia, Atlanta Metro Studios fabrication GA, film industry fabrication Georgia, film industry fabrication GA",
+        "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+        "language": "English",
+        "author": "IDFS Integrated Design and Fabrication Solutions",
+        "geo_region": "US-GA",
+        "geo_placename": "Fayetteville"
+      },
+      "structured_data": {
+        "@type": "Service",
+        "name": "Manufacturing Capabilities",
+        "description": "CNC machining, welding, and fabrication services in Fayetteville, Georgia",
+        "services": [
+          "CNC Machining",
+          "Welding Services",
+          "Fabrication Services",
+          "Industrial 3D Printing & Additive Manufacturing"
+        ]
+      },
+      "content": {
+        "hero": {
+          "heading": "Our Capabilities",
+          "subtitle": "We are a design & fabrication firm focused on using advanced technology, robotics, and experience to bring ideas to life. We provide full service fabrication and specialize in product design, scene work, and sculptural milling."
+        },
+        "sections": [
+          {
+            "title": "Design & Engineering Services",
+            "description": "Full service design, prototyping, and reverse engineering services. We take your ideas from concept to reality and leverage years of experience in engineering and manufacturing.",
+            "features": [
+              "Design & Engineering in CAD/CAM",
+              "Prototyping",
+              "Reverse Engineering"
+            ]
+          },
+          {
+            "title": "Fabrication and Machining",
+            "description": "Full Scale Fabrication and machining capabilities located in Fayetteville, Georgia. We can fabricate and machine anything from a small part to a large scale project.",
+            "features": [
+              "Fabrication",
+              "Machining",
+              "Welding"
+            ]
+          },
+          {
+            "title": "Industrial 3D Printing & Additive Manufacturing",
+            "description": "Professional-grade additive manufacturing using industrial 3D printing systems for production-quality parts, functional prototypes, and end-use components. Our facility features small and large resin bath SLA (stereolithography) printers, delivering precision, durability, and material properties suitable for manufacturing applications, aerospace, defense, and industrial use.",
+            "features": [
+              "Industrial-Grade Equipment & Materials",
+              "Production-Quality Parts & Components",
+              "Engineering-Grade Plastics & Composites",
+              "Functional Prototyping & End-Use Manufacturing"
+            ]
+          },
+          {
+            "title": "Specialty Services",
+            "description": "Located in Fayetteville, GA, IDFS delivers precision fabrication and design solutions across Georgia and the U.S. Our facility combines CNC, robotic, and custom fabrication capabilities — minutes from Trilith, Tyler Perry, and Atlanta Metro Studios.",
+            "features": [
+              "Scene Work & Entertainment Fabrication",
+              "Robotic Milling & Sculptural Milling",
+              "Plasma Cutting",
+              "Theatrical & Event Fabrication"
+            ]
+          }
+        ],
+        "cta": {
+          "heading": "Let's get started on your next project",
+          "button_text": "Get Quote"
+        }
+      }
+    },
+    {
+      "page": "contact.html",
+      "url": "https://idfs.com/contact",
+      "title": "Contact IDFS Custom Fabrication & Design Fayetteville GA | Atlanta Metro Custom Fabrication Quote Request | CNC Robotic Fabrication Design",
+      "meta_tags": {
+        "description": "Contact IDFS for custom fabrication, part cutting, design, and prototyping services in Fayetteville, GA serving Atlanta area. With tons of experience in design, fabrication, and prototyping, we're your go-to for all your custom fabrication needs. Call (470) 409-9972 or email Designs@idfsllc.com",
+        "keywords": "custom fabrication Georgia, custom fabrication GA, Atlanta custom fabrication Georgia, Atlanta custom fabrication GA, custom fabrication in atlanta Georgia, custom fabrication in atlanta GA, custom fabrication in ga Georgia, custom fabrication in ga GA, custom design Georgia, custom design GA, CNC machining Georgia, CNC machining GA, robotic capabilities Georgia, robotic capabilities GA, welding Georgia, welding GA, custom fabrication ga Georgia, custom fabrication ga GA, design fabrication Georgia, design fabrication GA, scene work Georgia, scene work GA, scene shop Georgia, scene shop GA, entertainment fabrication Georgia, entertainment fabrication GA, theatrical fabrication Georgia, theatrical fabrication GA, Trilith Studios Georgia, Trilith Studios GA, Tyler Perry Studios Georgia, Tyler Perry Studios GA, Atlanta Metro Studios Georgia, Atlanta Metro Studios GA, film industry fabrication Georgia, film industry fabrication GA",
+        "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+        "language": "English",
+        "author": "IDFS Integrated Design and Fabrication Solutions",
+        "geo_region": "US-GA",
+        "geo_placename": "Fayetteville"
+      },
+      "structured_data": {
+        "@type": "ContactPage",
+        "name": "Contact IDFS Custom Fabrication & Design Georgia",
+        "description": "Contact page for IDFS Custom Fabrication & Design Georgia - CNC Machining Georgia, Custom Metal Fabrication Georgia, Defense Fabrication Georgia services"
+      },
+      "content": {
+        "contact_info": {
+          "heading": "Get in Touch",
+          "phone": "(470) 409-9972",
+          "email": "Designs@idfsllc.com",
+          "email_purpose": "For general inquiries and quote requests",
+          "address": "IDFS Integrated Design and Fabrication Solutions\n133 Bethea Rd. Suite 801\nFayetteville, GA 30214",
+          "office_hours": "Monday - Friday: 9:00 AM - 4:30 PM\nSaturday & Sunday: Closed"
+        },
+        "location_description": "Located in Fayetteville, GA, IDFS delivers precision fabrication and design solutions across Georgia and the U.S. Our facility combines CNC, robotic, and custom fabrication capabilities — minutes from Trilith, Tyler Perry, and Atlanta Metro Studios.",
+        "rfq_form": {
+          "heading": "Request for Quote",
+          "subheading": "Submit Your Manufacturing Project Details",
+          "form_fields": [
+            "Name *",
+            "Email *",
+            "Company",
+            "Phone",
+            "Service Type *",
+            "Project Description *",
+            "Upload Files (PDF, DXF, STEP)"
+          ],
+          "service_types": [
+            "Design",
+            "Fabrication",
+            "Plasma Cutting",
+            "R&D / Prototyping",
+            "Robotic Milling",
+            "Scenic Work",
+            "Other"
+          ],
+          "submit_button": "Submit RFQ - Fast Local Service"
+        },
+        "rfq_info": {
+          "heading": "What to Include in Your Quote Request",
+          "items": [
+            "Part Drawings: Detailed design drawings with dimensions and tolerances",
+            "Material Specifications: Type of material, grade, and any special requirements",
+            "Quantities: Prototype quantities, production volumes, and delivery schedule",
+            "Quality Requirements: Inspection requirements and documentation needs",
+            "Timeline: Required delivery dates and any critical milestones",
+            "Special Requirements: Packaging or other specifications"
+          ],
+          "quote_process": {
+            "heading": "Our Quote Process",
+            "steps": [
+              "Submit RFQ with project details and files",
+              "Design team reviews requirements",
+              "Detailed quote provided within 24 hours",
+              "Schedule meeting to discuss project",
+              "Begin manufacturing upon approval"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "page": "industries.html",
+      "url": "https://idfs.com/industries",
+      "title": "Industries Served | Government Defense Aerospace Manufacturing | Fayetteville GA Atlanta Metro | IDFS",
+      "meta_tags": {
+        "description": "Industries served by IDFS: Government & Defense, Aerospace, Automotive, Energy, Entertainment. Contract manufacturing services in Fayetteville, Georgia serving Atlanta metro area for government contractors and industrial clients.",
+        "keywords": "government contractor Georgia, defense manufacturing, aerospace manufacturing, contract manufacturing Georgia, automotive manufacturing, entertainment industry fabrication, scene shop services, job shop manufacturing, defense contractor Georgia, aerospace supplier Georgia, Atlanta manufacturing, Atlanta machine shop, scene work Georgia, entertainment fabrication Georgia, theatrical fabrication Georgia, event fabrication Georgia",
+        "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+        "language": "English",
+        "author": "IDFS Integrated Design and Fabrication Solutions",
+        "geo_region": "US-GA",
+        "geo_placename": "Fayetteville"
+      },
+      "structured_data": {
+        "@type": "Organization",
+        "description": "Manufacturing services for government, defense, aerospace, automotive, and energy industries",
+        "knowsAbout": [
+          "Government Contracting",
+          "Defense Manufacturing",
+          "Aerospace Manufacturing",
+          "Contract Manufacturing"
+        ]
+      },
+      "content": {
+        "hero": {
+          "heading": "Our Gallery",
+          "subtitle": "Where precision meets creativity. Explore the exceptional work that defines IDFS."
+        },
+        "gallery_items": [
+          {
+            "title": "Design to Production",
+            "description": "From concept to finished product"
+          },
+          {
+            "title": "Welding",
+            "description": "Professional fabrication services"
+          },
+          {
+            "title": "Cutting",
+            "description": "Advanced cutting technology"
+          },
+          {
+            "title": "Machining",
+            "description": "Precision CNC operations"
+          },
+          {
+            "title": "Custom Work",
+            "description": "Unique project solutions"
+          }
+        ],
+        "cta": {
+          "text": "Interested in our capabilities?",
+          "button_text": "View Our Capabilities"
+        }
+      }
+    },
+    {
+      "page": "privacy-policy.html",
+      "url": "https://idfs.com/privacy-policy",
+      "title": "Privacy Policy | IDFS Integrated Design and Fabrication Solutions",
+      "meta_tags": {
+        "description": "Privacy Policy for IDFS Integrated Design and Fabrication Solutions. Learn how we collect, use, and protect your personal information.",
+        "keywords": "privacy policy, data protection, IDFS privacy, custom fabrication privacy",
+        "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+        "language": "English",
+        "author": "IDFS Integrated Design and Fabrication Solutions",
+        "geo_region": "US-GA",
+        "geo_placename": "Fayetteville"
+      },
+      "structured_data": {
+        "@type": "WebPage",
+        "name": "Privacy Policy",
+        "description": "Privacy Policy for IDFS Integrated Design and Fabrication Solutions"
+      },
+      "content": {
+        "last_updated": "January 1, 2024",
+        "sections": [
+          {
+            "title": "Information We Collect",
+            "content": "We may collect information that you provide directly to us when you request a quote, submit project information, communicate with us, or visit our website. Types include: Personal Information (name, email, phone, company, address), Project Information (descriptions, specifications, drawings, files), Technical Information (IP address, browser type, device info, usage data)."
+          },
+          {
+            "title": "How We Use Your Information",
+            "content": "We use information solely for internal business purposes: responding to inquiries, processing proposals, communicating about projects, improving services, complying with legal obligations. We do not sell, rent, or share personal information with third parties for marketing purposes."
+          },
+          {
+            "title": "Data Storage and Security",
+            "content": "We implement appropriate technical and organizational measures to protect personal information. Information is stored on secure servers accessible only to authorized personnel."
+          },
+          {
+            "title": "Information Sharing and Disclosure",
+            "content": "We do not share personal information except: with trusted service providers (under confidentiality agreements), when required by law, or in business transfers (merger, acquisition, sale)."
+          },
+          {
+            "title": "Cookies and Tracking Technologies",
+            "content": "Our website may use cookies and similar tracking technologies to enhance browsing experience and analyze traffic. You can control cookie preferences through browser settings."
+          },
+          {
+            "title": "Your Rights and Choices",
+            "content": "You have the right to: access and review personal information, request corrections, request deletion (subject to legal obligations), opt-out of certain communications."
+          },
+          {
+            "title": "Data Retention",
+            "content": "We retain personal information as long as necessary to fulfill purposes outlined in this policy, unless longer retention is required by law. Project-related information may be retained for business and legal purposes."
+          },
+          {
+            "title": "Children's Privacy",
+            "content": "Our website and services are not directed to individuals under 18. We do not knowingly collect personal information from children."
+          },
+          {
+            "title": "Changes to This Privacy Policy",
+            "content": "We may update this Privacy Policy from time to time. We will notify you of material changes by posting the new policy and updating the 'Last Updated' date."
+          },
+          {
+            "title": "Contact Us",
+            "content": "For questions about this Privacy Policy or data practices, contact: IDFS Integrated Design and Fabrication Solutions, 133 Bethea Rd. Suite 801, Fayetteville, GA 30214, Phone: (470) 409-9972, Email: Designs@idfsllc.com"
+          }
+        ]
+      }
+    }
+  ],
+  "navigation": {
+    "main_menu": [
+      "Home",
+      "Capabilities",
+      "Gallery",
+      "Contact",
+      "Get Quote"
+    ],
+    "footer_services": [
+      "Design & Engineering",
+      "Fabrication",
+      "Machining",
+      "Plasma Cutting",
+      "Industrial 3D Printing"
+    ],
+    "footer_quick_links": [
+      "View Our Work",
+      "Our Capabilities",
+      "Get Quote",
+      "Contact Us",
+      "Privacy Policy"
+    ]
+  },
+  "common_content": {
+    "company_tagline": "Integrated Design and Fabrication Solutions",
+    "footer_description": "Full-service design, engineering, and fabrication solutions bringing your ideas to life with precision and creativity.",
+    "footer_copyright": "2024 IDFS Integrated Design and Fabrication Solutions. All rights reserved.",
+    "cta_phrases": [
+      "Get Free Quote",
+      "Get Quote",
+      "View Capabilities",
+      "View Full Capabilities",
+      "Fast Local Service"
+    ]
+  },
+  "key_messaging": {
+    "value_propositions": [
+      "Design intelligence and fabrication expertise",
+      "Advanced technology, robotics, and experience",
+      "Full service fabrication",
+      "Precision and quality",
+      "Production-quality parts",
+      "Industrial-grade equipment",
+      "Engineering-grade materials"
+    ],
+    "specializations": [
+      "Product design",
+      "Scene work",
+      "Sculptural milling",
+      "Entertainment fabrication",
+      "Theatrical fabrication",
+      "Custom metal fabrication",
+      "CNC machining",
+      "Welding services",
+      "Industrial 3D printing",
+      "Additive manufacturing"
+    ],
+    "location_advantages": [
+      "Located in Fayetteville, GA",
+      "Serving Atlanta metro area",
+      "Minutes from Trilith Studios",
+      "Minutes from Tyler Perry Studios",
+      "Minutes from Atlanta Metro Studios"
+    ]
+  }
+}
+

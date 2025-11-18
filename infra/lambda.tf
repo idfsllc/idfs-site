@@ -55,7 +55,8 @@ resource "aws_iam_role_policy" "lambda_policy" {
       {
         Effect = "Allow"
         Action = [
-          "ses:SendEmail"
+          "ses:SendEmail",
+          "ses:SendRawEmail"
         ]
         Resource = "*"  # Allow sending to any verified email for testing
       }

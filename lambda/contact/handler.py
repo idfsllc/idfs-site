@@ -5,6 +5,11 @@ import boto3
 import urllib.request
 import urllib.parse
 from datetime import datetime
+import base64
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+from email.mime.base import MIMEBase
+from email import encoders
 from typing import Dict, Any, Optional
 
 # Initialize SES client
@@ -47,8 +52,11 @@ def lambda_handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
             if not verify_recaptcha(recaptcha_token):
                 return create_cors_response(400, {'ok': False, 'error': 'reCAPTCHA verification failed'})
         
-        # Send email via SES
-        success = send_contact_email(name, email, message, company, phone, event)
+        # Optional attachments
+        attachments = body.get('attachments', [])
+
+        # Send email via SES (with optional attachments)
+        success = send_contact_email(name, email, message, company, phone, attachments, event)
         
         if success:
             return create_cors_response(200, {'ok': True})
@@ -129,7 +137,7 @@ def verify_recaptcha(token: str) -> bool:
         return False
 
 
-def send_contact_email(name: str, email: str, message: str, company: str, phone: str, event: Dict[str, Any]) -> bool:
+def send_contact_email(name: str, email: str, message: str, company: str, phone: str, attachments: Any, event: Dict[str, Any]) -> bool:
     """
     Send contact form email via SES.
     """
@@ -148,8 +156,8 @@ def send_contact_email(name: str, email: str, message: str, company: str, phone:
         # Create email content
         timestamp = datetime.utcnow().isoformat() + 'Z'
         
-        subject = f"Contact Form Submission from {name}"
-        
+        subject = f"RFQ: {name}"
+
         body_text = f"""
 New contact form submission:
 
@@ -157,6 +165,7 @@ Name: {name}
 Email: {email}
 Company: {company if company else 'Not provided'}
 Phone: {phone if phone else 'Not provided'}
+Service Type: {event.get('body', '') and (json.loads(event['body']).get('serviceType', 'Not provided'))}
 Message: {message}
 
 ---
@@ -165,15 +174,41 @@ Timestamp: {timestamp}
 Client IP: {client_ip}
 User Agent: {user_agent}
         """.strip()
-        
-        # Send email via SES
-        response = ses_client.send_email(
+
+        # Build MIME message for optional attachments
+        msg = MIMEMultipart()
+        msg['Subject'] = subject
+        msg['From'] = from_email
+        msg['To'] = to_email
+
+        msg.attach(MIMEText(body_text, 'plain', 'utf-8'))
+
+        total_attachment_bytes = 0
+        try:
+            for att in attachments or []:
+                filename = att.get('filename')
+                content_type = att.get('contentType', 'application/octet-stream')
+                content_b64 = att.get('contentBase64', '')
+                size = int(att.get('size', 0))
+                if not filename or not content_b64:
+                    continue
+                total_attachment_bytes += size
+                if total_attachment_bytes > 7 * 1024 * 1024:
+                    print("Skipping attachments: total size exceeds limit ~7MB")
+                    break
+                part = MIMEBase(*content_type.split('/', 1)) if '/' in content_type else MIMEBase('application', 'octet-stream')
+                part.set_payload(base64.b64decode(content_b64))
+                encoders.encode_base64(part)
+                part.add_header('Content-Disposition', f'attachment; filename="{filename}"')
+                msg.attach(part)
+        except Exception as e:
+            print(f"Attachment processing error: {str(e)}")
+
+        # Send raw email via SES
+        response = ses_client.send_raw_email(
             Source=from_email,
-            Destination={'ToAddresses': [to_email]},
-            Message={
-                'Subject': {'Data': subject, 'Charset': 'UTF-8'},
-                'Body': {'Text': {'Data': body_text, 'Charset': 'UTF-8'}}
-            }
+            Destinations=[to_email],
+            RawMessage={'Data': msg.as_string()}
         )
         
         print(f"Email sent successfully: {response['MessageId']}")
