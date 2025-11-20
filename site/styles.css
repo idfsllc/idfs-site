@@ -635,6 +635,93 @@ p {
     min-height: 100vh;
 }
 
+/* Contact Page Hero - More Compact and Modern */
+.contact-hero {
+    background: url('assets/image.png') !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    min-height: 60vh !important;
+    padding: 140px 0 100px !important;
+    border-bottom: 3px solid var(--kratos-accent);
+}
+
+.contact-hero::before {
+    display: none !important;
+}
+
+.contact-hero::after {
+    display: none !important;
+}
+
+.contact-hero .hero-content h1 {
+    color: var(--kratos-white) !important;
+    text-shadow: 
+        0 0 14px rgba(0, 0, 0, 0.75),
+        0 0 22px rgba(0, 0, 0, 0.75),
+        0 0 28px rgba(0, 0, 0, 0.71),
+        0 2px 8px rgba(0, 0, 0, 0.75),
+        0 4px 26px rgba(0, 0, 0, 0.75),
+        0 6px 38px rgba(0, 0, 0, 0.71) !important;
+    font-size: 3.5rem !important;
+    margin-bottom: 1.5rem !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.02em !important;
+    line-height: 1.2 !important;
+    text-transform: none !important;
+}
+
+.contact-hero .hero-subtitle {
+    color: rgba(255, 255, 255, 1) !important;
+    text-shadow: 
+        0 0 14px rgba(0, 0, 0, 1),
+        0 0 22px rgba(0, 0, 0, 1),
+        0 0 28px rgba(0, 0, 0, 0.95),
+        0 2px 8px rgba(0, 0, 0, 1),
+        0 4px 26px rgba(0, 0, 0, 1),
+        0 6px 38px rgba(0, 0, 0, 0.95) !important;
+    font-size: 1.3rem !important;
+    margin-bottom: 2.5rem !important;
+    font-weight: 500 !important;
+    line-height: 1.6 !important;
+    max-width: 700px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.contact-hero .hero-actions {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .contact-hero {
+        min-height: 50vh !important;
+        padding: 120px 0 80px !important;
+    }
+    
+    .contact-hero .hero-content h1 {
+        font-size: 2.5rem !important;
+    }
+    
+    .contact-hero .hero-subtitle {
+        font-size: 1.1rem !important;
+    }
+    
+    .contact-hero .hero-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-hero .hero-actions .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
 @supports (height: 100svh) {
     .hero {
         min-height: 100svh;
@@ -693,7 +780,7 @@ p {
 
 /* Hero section for capabilities page with background image */
 .capabilities-page .hero {
-    background: url('assets/mattie-grinding-hero.webp') !important;
+    background: url('assets/Mattie-grinding-1920.jpg') !important;
     background-size: cover !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
@@ -715,10 +802,54 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('assets/mattie-grinding-hero.webp');
+    background: url('assets/Mattie-grinding-1920.jpg');
     background-size: cover;
     background-position: center center;
     filter: brightness(1.15) contrast(1.2) saturate(1.4);
+    z-index: 0;
+    animation: none !important;
+}
+
+/* Hero section for services page with background image */
+.services-page .hero {
+    background: url('assets/Todd Welding - Best.jpeg') !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px solid var(--kratos-accent);
+    min-height: 80vh;
+    padding: 120px 0 100px;
+}
+
+.services-page .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('assets/Todd Welding - Best.jpeg');
+    background-size: cover;
+    background-position: center center;
+    filter: brightness(1.15) contrast(1.2) saturate(1.4);
+    z-index: 0;
+    animation: none !important;
+}
+
+.services-page .hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(15, 23, 42, 0.15), rgba(15, 23, 42, 0.125));
     z-index: 0;
     animation: none !important;
 }
@@ -787,6 +918,56 @@ p {
     margin: 0 auto;
 }
 
+/* Services page hero content styling */
+.services-page .hero-container {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.services-page .hero-content {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.services-page .hero-content h1 {
+    color: var(--kratos-white) !important;
+    text-shadow: 
+        0 0 14px rgba(0, 0, 0, 0.75),
+        0 0 22px rgba(0, 0, 0, 0.75),
+        0 0 28px rgba(0, 0, 0, 0.71),
+        0 2px 8px rgba(0, 0, 0, 0.75),
+        0 4px 26px rgba(0, 0, 0, 0.75),
+        0 6px 38px rgba(0, 0, 0, 0.71) !important;
+    font-size: 4.5rem !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.02em !important;
+    line-height: 1.1 !important;
+    margin-bottom: 2rem !important;
+    text-transform: uppercase;
+}
+
+.services-page .hero-subtitle {
+    color: rgba(255, 255, 255, 1) !important;
+    text-shadow: 
+        0 0 14px rgba(0, 0, 0, 1),
+        0 0 22px rgba(0, 0, 0, 1),
+        0 0 28px rgba(0, 0, 0, 0.95),
+        0 2px 8px rgba(0, 0, 0, 1),
+        0 4px 26px rgba(0, 0, 0, 1),
+        0 6px 38px rgba(0, 0, 0, 0.95) !important;
+    font-size: 1.4rem !important;
+    font-weight: 500 !important;
+    line-height: 1.7 !important;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 @media (max-width: 768px) {
     .capabilities-page .hero {
         min-height: 60vh;
@@ -799,6 +980,34 @@ p {
     }
     
     .capabilities-page .hero-subtitle {
+        font-size: 1.15rem !important;
+    }
+    
+    .services-page .hero {
+        min-height: 60vh;
+        padding: 100px 0 80px;
+        background-attachment: scroll !important;
+    }
+    
+    .services-page .hero-content h1 {
+        font-size: 2.8rem !important;
+    }
+    
+    .services-page .hero-subtitle {
+        font-size: 1.15rem !important;
+    }
+    
+    .industries-page .hero {
+        min-height: 60vh;
+        padding: 100px 0 80px;
+        background-attachment: scroll !important;
+    }
+    
+    .industries-page .hero-content h1 {
+        font-size: 2.8rem !important;
+    }
+    
+    .industries-page .hero-subtitle {
         font-size: 1.15rem !important;
     }
 }
@@ -1002,13 +1211,97 @@ p {
     border-radius: 0;
 }
 
-/* Override hero section for industries page to match carousel exactly */
+/* Override hero section for industries page with background image */
 .industries-page .hero {
-    padding: 0 !important;
-    height: 70vh !important;
-    min-height: 500px !important;
-    max-height: 800px !important;
-    background: none !important;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url('assets/Industrial Hero Section.jpeg') !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    padding: 120px 0 100px !important;
+    min-height: 80vh !important;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px solid var(--kratos-accent);
+}
+
+.industries-page .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('assets/Industrial Hero Section.jpeg');
+    background-size: cover;
+    background-position: center center;
+    filter: brightness(1.15) contrast(1.2) saturate(1.4);
+    z-index: 0;
+    animation: none !important;
+}
+
+.industries-page .hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(15, 23, 42, 0.15), rgba(15, 23, 42, 0.125));
+    z-index: 0;
+    animation: none !important;
+}
+
+.industries-page .hero-container {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.industries-page .hero-content {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.industries-page .hero-content h1 {
+    color: var(--kratos-white) !important;
+    text-shadow: 
+        0 0 14px rgba(0, 0, 0, 0.75),
+        0 0 22px rgba(0, 0, 0, 0.75),
+        0 0 28px rgba(0, 0, 0, 0.71),
+        0 2px 8px rgba(0, 0, 0, 0.75),
+        0 4px 26px rgba(0, 0, 0, 0.75),
+        0 6px 38px rgba(0, 0, 0, 0.71) !important;
+    font-size: 4.5rem !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.02em !important;
+    line-height: 1.1 !important;
+    margin-bottom: 2rem !important;
+    text-transform: uppercase;
+}
+
+.industries-page .hero-subtitle {
+    color: rgba(255, 255, 255, 1) !important;
+    text-shadow: 
+        0 0 14px rgba(0, 0, 0, 1),
+        0 0 22px rgba(0, 0, 0, 1),
+        0 0 28px rgba(0, 0, 0, 0.95),
+        0 2px 8px rgba(0, 0, 0, 1),
+        0 4px 26px rgba(0, 0, 0, 1),
+        0 6px 38px rgba(0, 0, 0, 0.95) !important;
+    font-size: 1.4rem !important;
+    font-weight: 500 !important;
+    line-height: 1.7 !important;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .hero-carousel-track-full {
@@ -1248,6 +1541,22 @@ p {
     position: relative;
     z-index: 1;
     margin-top: 1.5rem;
+}
+
+/* Index page hero button styling - make secondary button more visible */
+.index-page .hero-buttons .btn-secondary {
+    background: transparent !important;
+    color: var(--kratos-white) !important;
+    border: 2px solid var(--kratos-white) !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important;
+}
+
+.index-page .hero-buttons .btn-secondary:hover {
+    background: var(--kratos-white) !important;
+    color: var(--kratos-navy) !important;
+    border-color: var(--kratos-white) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4) !important;
 }
 
 /* Hero buttons now use unified button component */

@@ -101,9 +101,42 @@ Thumbs.db
 *.tfstate
 *.tfstate.*
 .terraform/
+*.tfvars.backup
+terraform.tfvars.backup
+
+# Terraform binaries and installers
+terraform.exe
+AWSCLIV2.msi
+*.msi
+
+# Lambda deployment packages
+*.zip
+!package.json
+!package-lock.json
+
+# Build artifacts
+dist/
+build/
+*.min.js
+*.min.css
 
 # Local development files
 convert-*.js
 create-*.js
 download-*.js
 resize-*.js
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+
+# Windows
+*.lnk
+desktop.ini
