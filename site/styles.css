@@ -296,7 +296,22 @@ html {
 }
 
 /* Remove default visited link styling - visited links should look the same as unvisited */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:active {
     color: inherit;
     text-decoration: none;
 }
@@ -637,7 +652,7 @@ p {
 
 /* Contact Page Hero - More Compact and Modern */
 .contact-hero {
-    background: url('assets/image.png') !important;
+    background: url('assets/Metal_Stock_Photo.jpeg') !important;
     background-size: cover !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
@@ -695,6 +710,21 @@ p {
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 2rem;
+}
+
+.contact-hero .hero-actions .btn-secondary {
+    background: var(--kratos-white) !important;
+    color: var(--kratos-navy) !important;
+    border-color: var(--kratos-white) !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important;
+}
+
+.contact-hero .hero-actions .btn-secondary:hover {
+    background: var(--kratos-white) !important;
+    color: var(--kratos-navy) !important;
+    border-color: var(--kratos-white) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4) !important;
 }
 
 @media (max-width: 768px) {
@@ -812,7 +842,7 @@ p {
 
 /* Hero section for services page with background image */
 .services-page .hero {
-    background: url('assets/Todd Welding - Best.jpeg') !important;
+    background: url('assets/Todd_Welding_Best.jpeg') !important;
     background-size: cover !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
@@ -834,7 +864,7 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('assets/Todd Welding - Best.jpeg');
+    background: url('assets/Todd_Welding_Best.jpeg');
     background-size: cover;
     background-position: center center;
     filter: brightness(1.15) contrast(1.2) saturate(1.4);
@@ -1213,7 +1243,7 @@ p {
 
 /* Override hero section for industries page with background image */
 .industries-page .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url('assets/Industrial Hero Section.jpeg') !important;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url('assets/Industrial_Hero_Section.jpeg') !important;
     background-size: cover !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
@@ -1235,7 +1265,7 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('assets/Industrial Hero Section.jpeg');
+    background: url('assets/Industrial_Hero_Section.jpeg');
     background-size: cover;
     background-position: center center;
     filter: brightness(1.15) contrast(1.2) saturate(1.4);
@@ -1545,8 +1575,8 @@ p {
 
 /* Index page hero button styling - make secondary button more visible */
 .index-page .hero-buttons .btn-secondary {
-    background: transparent !important;
-    color: var(--kratos-white) !important;
+    background: var(--kratos-white) !important;
+    color: var(--kratos-navy) !important;
     border: 2px solid var(--kratos-white) !important;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important;
 }
@@ -1641,14 +1671,16 @@ p {
 .btn-secondary {
     background: var(--kratos-white);
     color: var(--kratos-navy);
-    border-color: var(--kratos-gray);
+    border-color: var(--kratos-white);
     box-shadow: var(--shadow-md);
 }
 
 .btn-secondary:hover {
-    background: var(--kratos-light);
-    border-color: var(--kratos-accent);
-    color: var(--kratos-accent);
+    background: var(--kratos-white);
+    border-color: var(--kratos-white);
+    color: var(--kratos-navy);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
 }
 
 .btn-outline {
@@ -2384,8 +2416,8 @@ a[href^="tel:"]:visited {
 }
 
 a[href^="tel:"]:hover {
-    color: var(--blue-accent);
-    text-decoration: underline;
+    color: inherit;
+    text-decoration: none;
 }
 
 a[href^="mailto:"] {
@@ -2400,8 +2432,8 @@ a[href^="mailto:"]:visited {
 }
 
 a[href^="mailto:"]:hover {
-    color: var(--blue-accent);
-    text-decoration: underline;
+    color: inherit;
+    text-decoration: none;
 }
 
 @media (max-width: 768px) {
@@ -3738,8 +3770,8 @@ textarea:focus {
 }
 
 .contact-info-box a:hover {
-    color: var(--kratos-accent);
-    text-decoration: underline;
+    color: inherit;
+    text-decoration: none;
 }
 
 .privacy-footer {
