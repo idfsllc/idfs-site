@@ -403,6 +403,11 @@ p {
     line-height: 1.7;
 }
 
+/* Lists */
+ul {
+    padding-left: 2rem;
+}
+
 /* Kratos-Inspired Navigation */
 .navbar {
     background-color: var(--kratos-white);
@@ -1241,6 +1246,180 @@ p {
     border-radius: 0;
 }
 
+/* Industries Carousel */
+.industries-carousel-container {
+    margin: 3rem 0;
+    padding: 0 1rem;
+}
+
+.industries-carousel {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-xl);
+}
+
+.industries-carousel-track {
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.industries-carousel-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.industries-carousel-slide.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.industries-carousel-slide img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+.industries-carousel-content {
+    background: var(--kratos-light);
+    padding: 2rem;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.industries-carousel-content h3 {
+    color: var(--kratos-navy);
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.industries-carousel-content p {
+    color: var(--kratos-dark-gray);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.industries-carousel-controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.industries-carousel-btn {
+    background: rgba(26, 26, 46, 0.8);
+    border: 2px solid var(--kratos-navy);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-lg);
+    pointer-events: all;
+}
+
+.industries-carousel-btn:hover {
+    background: var(--kratos-accent);
+    border-color: var(--kratos-accent);
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: var(--shadow-xl);
+}
+
+.industries-carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 1.5rem;
+    background: var(--kratos-white);
+}
+
+.industries-carousel-dots .dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--kratos-gray);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.industries-carousel-dots .dot.active {
+    background: var(--kratos-navy);
+    border-color: var(--kratos-accent);
+    transform: scale(1.2);
+}
+
+.industries-carousel-dots .dot:hover {
+    background: var(--kratos-accent);
+    transform: scale(1.1);
+}
+
+/* Responsive Industries Carousel */
+@media (max-width: 768px) {
+    .industries-carousel-track {
+        min-height: 400px;
+    }
+    
+    .industries-carousel-slide img {
+        height: 300px;
+    }
+    
+    .industries-carousel-content {
+        padding: 1.5rem;
+    }
+    
+    .industries-carousel-content h3 {
+        font-size: 1.5rem;
+    }
+    
+    .industries-carousel-content p {
+        font-size: 1rem;
+    }
+    
+    .industries-carousel-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+    
+    .industries-carousel-dots .dot {
+        width: 12px;
+        height: 12px;
+    }
+}
+
 /* Override hero section for industries page with background image */
 .industries-page .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url('assets/Industrial_Hero_Section.jpeg') !important;
@@ -1656,7 +1835,7 @@ p {
 
 .btn-primary {
     background: linear-gradient(135deg, var(--kratos-navy) 0%, var(--kratos-blue) 100%);
-    color: var(--kratos-white);
+    color: #ffffff !important;
     border-color: var(--kratos-navy);
     box-shadow: var(--shadow-lg);
 }
@@ -1664,13 +1843,13 @@ p {
 .btn-primary:hover {
     background: linear-gradient(135deg, var(--kratos-accent) 0%, var(--kratos-blue) 100%);
     border-color: var(--kratos-accent);
-    color: var(--kratos-white);
+    color: #ffffff !important;
     box-shadow: var(--shadow-xl);
 }
 
 .btn-secondary {
     background: var(--kratos-white);
-    color: var(--kratos-navy);
+    color: #000000 !important;
     border-color: var(--kratos-white);
     box-shadow: var(--shadow-md);
 }
@@ -1678,7 +1857,7 @@ p {
 .btn-secondary:hover {
     background: var(--kratos-white);
     border-color: var(--kratos-white);
-    color: var(--kratos-navy);
+    color: #000000 !important;
     transform: translateY(-2px);
     box-shadow: var(--shadow-lg);
 }
@@ -2154,8 +2333,8 @@ p {
 
 .footer-content {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-    gap: 3rem;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1.2fr;
+    gap: 2.5rem;
     margin-bottom: 2rem;
     align-items: start;
 }
@@ -2777,6 +2956,14 @@ textarea:focus {
     margin-bottom: 3rem;
 }
 
+/* Center CTA sections */
+#contact-cta .capability-content {
+    display: block;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
 .capability-text h3 {
     color: var(--navy-primary);
     margin-bottom: 1.5rem;
@@ -2832,6 +3019,73 @@ textarea:focus {
 
 .capability-image:hover img {
     transform: scale(1.05);
+}
+
+/* Why Choose IDFS Section */
+.why-choose-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.why-choose-card {
+    background: linear-gradient(135deg, var(--kratos-white) 0%, var(--kratos-light) 100%);
+    padding: 2.5rem 2rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    border: 2px solid var(--kratos-gray);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.why-choose-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--kratos-accent) 0%, var(--kratos-blue) 100%);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.why-choose-card:hover::before {
+    transform: scaleX(1);
+}
+
+.why-choose-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--kratos-accent);
+    background: linear-gradient(135deg, var(--kratos-white) 0%, rgba(233, 69, 96, 0.05) 100%);
+}
+
+.why-choose-card h4 {
+    color: var(--kratos-navy);
+    margin: 0 0 1rem 0;
+    font-weight: 700;
+    font-size: 1.3rem;
+    letter-spacing: -0.01em;
+    line-height: 1.3;
+}
+
+.why-choose-card p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-medium);
+}
+
+.why-choose-header h2 {
+    color: var(--navy-primary);
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
 }
 
 .materials-section {
@@ -3103,6 +3357,144 @@ textarea:focus {
     gap: 2rem;
 }
 
+/* What We Do Section */
+.what-we-do-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.what-we-do-card {
+    background: var(--kratos-white);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+    padding: 0;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(26, 26, 46, 0.1);
+    overflow: hidden;
+    display: flex;
+}
+
+.what-we-do-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-xl);
+    border-color: rgba(26, 26, 46, 0.2);
+}
+
+.what-we-do-accent {
+    width: 5px;
+    background: rgba(26, 26, 46, 0.15);
+    flex-shrink: 0;
+    transition: width 0.4s ease;
+}
+
+.what-we-do-card:hover .what-we-do-accent {
+    width: 6px;
+    background: rgba(26, 26, 46, 0.25);
+}
+
+.what-we-do-content {
+    padding: 2.5rem 2rem;
+    flex: 1;
+}
+
+.what-we-do-content h3 {
+    color: var(--kratos-navy);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 0 1rem 0;
+    letter-spacing: -0.02em;
+    position: relative;
+}
+
+.what-we-do-content h3::after {
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background: rgba(26, 26, 46, 0.2);
+    border-radius: 2px;
+}
+
+.what-we-do-lead {
+    color: var(--kratos-navy);
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 1.5rem 0 1rem 0;
+}
+
+.what-we-do-detail {
+    color: var(--kratos-dark-gray);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0 0 1.5rem 0;
+}
+
+.what-we-do-link {
+    display: inline-block;
+    color: var(--kratos-blue);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 1rem;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.what-we-do-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--kratos-blue);
+    transition: width 0.3s ease;
+}
+
+.what-we-do-link:hover {
+    opacity: 1;
+    color: var(--kratos-navy);
+}
+
+.what-we-do-link:hover::after {
+    width: 100%;
+}
+
+.what-we-do-card:hover .what-we-do-link {
+    opacity: 1;
+}
+
+.service-card:hover .what-we-do-link {
+    opacity: 1;
+}
+
+/* Responsive What We Do */
+@media (max-width: 768px) {
+    .what-we-do-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .what-we-do-content {
+        padding: 2rem 1.5rem;
+    }
+    
+    .what-we-do-content h3 {
+        font-size: 1.3rem;
+    }
+    
+    .what-we-do-lead {
+        font-size: 1rem;
+    }
+}
+
 .service-card {
     background: linear-gradient(135deg, var(--kratos-white) 0%, var(--kratos-light) 100%);
     padding: 2rem 1.5rem;
@@ -3150,7 +3542,7 @@ textarea:focus {
 }
 
 .service-card p {
-    margin: 0;
+    margin: 0 0 1.5rem 0;
     font-size: 0.95rem;
     line-height: 1.5;
     color: var(--kratos-navy);
@@ -3269,6 +3661,7 @@ textarea:focus {
     padding: 100px 0;
     background-color: white;
     position: relative;
+    scroll-margin-top: 200px;
 }
 
 .rfq-section::before {
@@ -3294,6 +3687,10 @@ textarea:focus {
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-lg);
     border: 1px solid var(--navy-border);
+}
+
+#rfqForm {
+    scroll-margin-top: 200px;
 }
 
 .rfq-form h3 {
@@ -3569,8 +3966,22 @@ textarea:focus {
     .cert-summary,
     .registration-grid,
     .industry-cert-grid,
-    .docs-grid {
+    .docs-grid,
+    .why-choose-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .why-choose-header h2 {
+        font-size: 1.75rem;
+    }
+    
+    .why-choose-header p {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+    
+    .why-choose-card {
+        padding: 2rem 1.5rem;
     }
     
     .service-row {

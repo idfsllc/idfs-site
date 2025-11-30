@@ -43,6 +43,18 @@
         </image:image>
     </url>
     <url>
+        <loc>https://idfsllc.com/capabilities-statement.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://idfsllc.com/one-page-capabilities.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://idfsllc.com/industries.html</loc>
         <lastmod>2024-12-20</lastmod>
         <changefreq>monthly</changefreq>
@@ -76,7 +88,26 @@
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://idfsllc.com/3d-printing.html</loc>
+        <loc>https://idfsllc.com/privacy-policy.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    <!-- Services Pages -->
+    <url>
+        <loc>https://idfsllc.com/services/design-engineering.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://idfsllc.com/services/metal-fabrication.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://idfsllc.com/services/3d-printing.html</loc>
         <lastmod>2024-12-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -87,7 +118,13 @@
         </image:image>
     </url>
     <url>
-        <loc>https://idfsllc.com/prop-fabrication.html</loc>
+        <loc>https://idfsllc.com/services/part-cutting.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://idfsllc.com/services/prop-fabrication.html</loc>
         <lastmod>2024-12-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -98,11 +135,155 @@
         </image:image>
     </url>
     <url>
-        <loc>https://idfsllc.com/privacy-policy.html</loc>
+        <loc>https://idfsllc.com/services/production-runs.html</loc>
         <lastmod>2024-12-20</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.3</priority>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
     </url>
+    <url>
+        <loc>https://idfsllc.com/services/overflow-production-support.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://idfsllc.com/services/repairs.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://idfsllc.com/services/cnc-machining.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://idfsllc.com/services/welding-services.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <!-- Industry Pages -->
+    <url>
+        <loc>https://idfsllc.com/industries/aerospace-fabrication.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://idfsllc.com/industries/industrial-fabrication.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://idfsllc.com/industries/automotive-fabrication.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://idfsllc.com/industries/film-fabrication.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://idfsllc.com/industries/commercial-consumer-fabrication.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <!-- Capability Pages -->
+    <url>
+        <loc>https://idfsllc.com/capabilities/additive-manufacturing.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://idfsllc.com/capabilities/cad-modeling.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://idfsllc.com/capabilities/cnc-machining.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://idfsllc.com/capabilities/production-support.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://idfsllc.com/capabilities/prop-making.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://idfsllc.com/capabilities/research-development.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://idfsllc.com/capabilities/welding-fabrication.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <!-- Location Pages -->
+    <url>
+        <loc>https://idfsllc.com/locations/atlanta-ga-metal-fabrication.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://idfsllc.com/locations/fayetteville-ga-metal-fabrication.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <!-- Project Pages -->
+    <url>
+        <loc>https://idfsllc.com/projects/custom-metal-project-1.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <!-- Resource Pages -->
+    <url>
+        <loc>https://idfsllc.com/resources/3d-printing-material-guide.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://idfsllc.com/resources/cad-file-preparation-guide.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://idfsllc.com/resources/cutting-vs-machining.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://idfsllc.com/resources/metal-material-guide.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <!-- PDF Documents -->
     <url>
         <loc>https://idfsllc.com/capabilities-statement.pdf</loc>
         <lastmod>2024-12-20</lastmod>

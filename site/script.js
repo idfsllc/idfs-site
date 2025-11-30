@@ -136,17 +136,89 @@ document.addEventListener('DOMContentLoaded', function() {
         // Auto-advance carousel every 6 seconds for more dynamic feel
         setInterval(nextSlideFull, 6000);
     }
+
+    // Industries Carousel functionality
+    const industriesCarousel = document.querySelector('.industries-carousel');
+    if (industriesCarousel) {
+        const slides = industriesCarousel.querySelectorAll('.industries-carousel-slide');
+        const dots = industriesCarousel.querySelectorAll('.industries-carousel-dots .dot');
+        const prevBtn = industriesCarousel.querySelector('.industries-carousel-btn.prev');
+        const nextBtn = industriesCarousel.querySelector('.industries-carousel-btn.next');
+        let currentSlide = 0;
+        let autoSlideInterval;
+
+        function updateCarousel() {
+            slides.forEach((slide, index) => {
+                slide.classList.toggle('active', index === currentSlide);
+            });
+            
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentSlide);
+            });
+        }
+
+        function goToSlide(slideIndex) {
+            currentSlide = slideIndex;
+            updateCarousel();
+            resetAutoSlide();
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            updateCarousel();
+            resetAutoSlide();
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            updateCarousel();
+            resetAutoSlide();
+        }
+
+        function startAutoSlide() {
+            autoSlideInterval = setInterval(nextSlide, 5000);
+        }
+
+        function resetAutoSlide() {
+            clearInterval(autoSlideInterval);
+            startAutoSlide();
+        }
+
+        // Event listeners
+        if (nextBtn) nextBtn.addEventListener('click', nextSlide);
+        if (prevBtn) prevBtn.addEventListener('click', prevSlide);
+        
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => goToSlide(index));
+        });
+
+        // Start auto-slide
+        startAutoSlide();
+
+        // Pause on hover
+        industriesCarousel.addEventListener('mouseenter', () => {
+            clearInterval(autoSlideInterval);
+        });
+
+        industriesCarousel.addEventListener('mouseleave', () => {
+            startAutoSlide();
+        });
+    }
 });
 
 // Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
+        const href = this.getAttribute('href');
+        const target = document.querySelector(href);
         if (target) {
-            const offsetTop = target.offsetTop - 70; // Account for fixed navbar
+            e.preventDefault();
+            // Use 200px offset for rfqForm, 70px for other anchors
+            const offset = href === '#rfqForm' ? 200 : 70;
+            const elementPosition = target.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - offset;
             window.scrollTo({
-                top: offsetTop,
+                top: offsetPosition,
                 behavior: 'smooth'
             });
         }
