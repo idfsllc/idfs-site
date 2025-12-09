@@ -65,10 +65,10 @@ Part cutting services including CNC plasma cutting, router cutting, robotic mill
 `https://idfsllc.com/services/prop-fabrication.html`  
 Custom prop fabrication for film and TV productions. Metal props, scenic elements, larger-than-life sculptures, and set pieces. Located near Atlanta studios.
 
-### Small Production Runs
-**Small Production Runs | Fayetteville, GA | IDFS**  
+### Short Production Runs
+**Short Production Runs | Fayetteville, GA | IDFS**  
 `https://idfsllc.com/services/production-runs.html`  
-Small production runs and end-to-end product support. Full design expertise, DFM/DFA optimization, and quick turnaround for small-batch manufacturing in Fayetteville, GA.
+Short Production runs and end-to-end product support. Full design expertise, DFM/DFA optimization, and quick turnaround for short run manufacturing in Fayetteville, GA.
 
 ### Overflow & Production Support
 **Overflow & Production Support | Fayetteville, GA | IDFS**  
@@ -83,7 +83,7 @@ Professional repair services for trailers, gates, metal equipment, and industria
 ### CNC Machining
 **CNC Machining | Precision Milling Fayetteville, GA | IDFS**  
 `https://idfsllc.com/services/cnc-machining.html`  
-Small production runs with full end-to-end product support. Design expertise, DFM optimization, and consistent results for small-batch manufacturing in Fayetteville, GA.
+Short Production runs with full end-to-end product support. Design expertise, DFM optimization, and consistent results for short run manufacturing in Fayetteville, GA.
 
 ### Welding Services
 **Welding Services | MIG TIG Welding Fayetteville, GA | IDFS**  
@@ -117,16 +117,16 @@ Film and entertainment fabrication services. Custom props, scenic elements, set 
 ### Commercial & Consumer Fabrication
 **Commercial & Consumer Fabrication | Fayetteville, GA | IDFS**  
 `https://idfsllc.com/industries/commercial-consumer-fabrication.html`  
-Commercial and consumer fabrication services for small businesses and personal projects. Custom metalwork, small-batch production, prototypes, and one-off builds.
+Commercial and consumer fabrication services for small businesses and personal projects. Custom metalwork, short run production, prototypes, and one-off builds.
 
 ---
 
 ## Capability Pages
 
 ### CAD Modeling
-**CAD Modeling | Fusion 360, SolidWorks, Rhino, Catia | IDFS**  
+**CAD Modeling | Fusion 360, SolidWorks, Rhino | IDFS**  
 `https://idfsllc.com/capabilities/cad-modeling.html`  
-CAD modeling capabilities including Fusion 360, SolidWorks, Rhino, and Catia. Product development, reverse engineering, and design optimization in Fayetteville, GA.
+CAD modeling capabilities including Fusion 360, SolidWorks, and Rhino. Product development, reverse engineering, and design optimization in Fayetteville, GA.
 
 ### Welding & Metal Fabrication
 **Welding & Metal Fabrication | IDFS**  

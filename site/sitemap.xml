@@ -251,34 +251,21 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
-    <!-- Project Pages -->
-    <url>
-        <loc>https://idfsllc.com/projects/custom-metal-project-1.html</loc>
-        <lastmod>2024-12-20</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
     <!-- Resource Pages -->
     <url>
-        <loc>https://idfsllc.com/resources/3d-printing-material-guide.html</loc>
+        <loc>https://idfsllc.com/resources/why-dfm-matters.html</loc>
         <lastmod>2024-12-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://idfsllc.com/resources/cad-file-preparation-guide.html</loc>
+        <loc>https://idfsllc.com/resources/what-is-additive-manufacturing.html</loc>
         <lastmod>2024-12-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://idfsllc.com/resources/cutting-vs-machining.html</loc>
-        <lastmod>2024-12-20</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://idfsllc.com/resources/metal-material-guide.html</loc>
+        <loc>https://idfsllc.com/resources/design-to-fabrication-process.html</loc>
         <lastmod>2024-12-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>

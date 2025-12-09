@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDFS Capabilities Statement</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        @page {
+            size: letter;
+            margin: 0.4in;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+            font-size: 8.5pt;
+            line-height: 1.4;
+            color: #374151;
+            background: #ffffff;
+        }
+        
+        .header {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 12px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #0f3460;
+        }
+        
+        .header-logo {
+            width: 60px;
+            height: auto;
+            margin-right: 12px;
+            flex-shrink: 0;
+        }
+        
+        .header-content {
+            flex: 1;
+        }
+        
+        .company-name {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18pt;
+            font-weight: 700;
+            color: #0f3460;
+            margin: 0;
+            letter-spacing: -0.3px;
+            line-height: 1.1;
+        }
+        
+        .company-tagline {
+            font-size: 8.5pt;
+            color: #6b7280;
+            margin: 2px 0 4px 0;
+            font-style: italic;
+        }
+        
+        .contact-info {
+            font-size: 7.5pt;
+            color: #6b7280;
+            line-height: 1.5;
+        }
+        
+        .government-info {
+            background: #f8fafc;
+            border-left: 3px solid #0f3460;
+            padding: 6px 8px;
+            margin-top: 6px;
+            font-size: 7pt;
+        }
+        
+        .government-info strong {
+            color: #0f3460;
+            font-weight: 600;
+        }
+        
+        .main-content {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 14px;
+            margin-bottom: 10px;
+        }
+        
+        .left-column, .right-column {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .section {
+            margin-bottom: 10px;
+        }
+        
+        .section-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 9.5pt;
+            font-weight: 700;
+            color: #0f3460;
+            margin-bottom: 6px;
+            border-bottom: 1.5px solid #0f3460;
+            padding-bottom: 3px;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+        
+        .capability-item {
+            background: #f8fafc;
+            padding: 6px 8px;
+            border-left: 3px solid #0f3460;
+            border-radius: 3px;
+            margin-bottom: 5px;
+            font-size: 7.5pt;
+        }
+        
+        .capability-item h4 {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0 0 3px 0;
+            font-size: 8.5pt;
+            color: #0f3460;
+            font-weight: 600;
+        }
+        
+        .capability-item p {
+            margin: 2px 0;
+            font-size: 7.5pt;
+            color: #374151;
+            line-height: 1.3;
+        }
+        
+        .capability-item ul {
+            margin: 3px 0 0 0;
+            padding-left: 14px;
+        }
+        
+        .capability-item li {
+            margin-bottom: 1px;
+            font-size: 7pt;
+            color: #374151;
+            line-height: 1.3;
+        }
+        
+        .equipment-list {
+            background: #f8fafc;
+            padding: 6px 8px;
+            border-radius: 3px;
+            margin: 4px 0;
+            font-size: 7pt;
+            border-left: 2px solid #e94560;
+        }
+        
+        .equipment-list strong {
+            color: #0f3460;
+            display: block;
+            margin-bottom: 2px;
+            font-weight: 600;
+            font-size: 7.5pt;
+        }
+        
+        .why-choose-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4px;
+            margin-top: 6px;
+        }
+        
+        .why-choose-item {
+            background: #f8fafc;
+            padding: 5px 6px;
+            border-left: 2px solid #e94560;
+            border-radius: 3px;
+            font-size: 7pt;
+        }
+        
+        .why-choose-item strong {
+            color: #0f3460;
+            display: block;
+            margin-bottom: 1px;
+            font-weight: 600;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 7.5pt;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border: 1px solid #f59e0b;
+            border-left: 3px solid #e94560;
+            padding: 6px 8px;
+            border-radius: 3px;
+            margin: 6px 0;
+            font-size: 7.5pt;
+        }
+        
+        .highlight-box strong {
+            color: #92400e;
+            font-weight: 600;
+        }
+        
+        .contact-section {
+            background: #f8fafc;
+            padding: 6px 8px;
+            border-radius: 3px;
+            margin: 5px 0;
+            font-size: 7.5pt;
+            border-left: 2px solid #0f3460;
+        }
+        
+        .contact-section strong {
+            color: #0f3460;
+            font-weight: 600;
+        }
+        
+        .footer {
+            margin-top: 8px;
+            text-align: center;
+            font-size: 6.5pt;
+            color: #6b7280;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 6px;
+        }
+        
+        .footer strong {
+            color: #0f3460;
+            font-weight: 600;
+        }
+        
+        .accent-line {
+            height: 2px;
+            background: linear-gradient(90deg, #0f3460 0%, #e94560 100%);
+            margin: 8px 0;
+        }
+        
+        .compact-list {
+            font-size: 7pt;
+            line-height: 1.3;
+        }
+        
+        .compact-list li {
+            margin-bottom: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="assets/Logo2-buffered.webp" alt="IDFS Logo" class="header-logo">
+        
+        <div class="header-content">
+            <div class="company-name">IDFS</div>
+            <div class="company-tagline">Integrated Design and Fabrication Solutions</div>
+            <div class="contact-info">
+                133 Bethea Rd. Suite 801, Fayetteville, GA 30214 | (470) 409-9972 | Designs@idfsllc.com | www.idfsllc.com
+            </div>
+            
+            <div class="government-info">
+                <strong>Government Contracting:</strong> CAGE Code: 109T0 | D-U-N-S: 110818579 | Entity ID: WG82SYNRPDZ9
+            </div>
+        </div>
+    </div>
+
+    <div class="accent-line"></div>
+
+    <div class="main-content">
+        <div class="left-column">
+            <div class="section">
+                <div class="section-title">Manufacturing Capabilities</div>
+                
+                <div class="capability-item">
+                    <h4>Metal Fabrication</h4>
+                    <p>Structural and cosmetic welds, simple repairs to complex assemblies.</p>
+                    <ul class="compact-list">
+                        <li>In-house design</li>
+                        <li>MIG & TIG welding</li>
+                        <li>Part cutting</li>
+                        <li>Assembly & finishing</li>
+                    </ul>
+                </div>
+                
+                <div class="capability-item">
+                    <h4>CAD Design & CAM Programming</h4>
+                    <p>Transform concepts into detailed CAD models ready for fabrication.</p>
+                    <ul class="compact-list">
+                        <li>CAD modeling (Fusion 360, SolidWorks, Rhino)</li>
+                        <li>CAM programming (Mastercam, RobotMaster, Fusion360)</li>
+                        <li>Reverse engineering & 3D scanning</li>
+                        <li>Design for manufacturability (DFM) and assembly (DFA)</li>
+                    </ul>
+                </div>
+                
+                <div class="capability-item">
+                    <h4>Robotic / Cutting Capabilities</h4>
+                    <p>Robotic milling and cutting for metals, plastics, composites, and specialty materials.</p>
+                    <div class="equipment-list">
+                        <strong>Equipment:</strong>
+                        4 Kuka robots • Robotic 7-axis milling cell with rotary table • CNC plasma cutter • Shop Sabre CNC Router • Horizontal bandsaw
+                    </div>
+                    <div class="equipment-list">
+                        <strong>Materials:</strong>
+                        Aluminum, mild steels, stainless steels, plastics, composites, urethane foam, and more
+                    </div>
+                </div>
+                
+                <div class="capability-item">
+                    <h4>Additive Manufacturing (Industrial 3D Printing)</h4>
+                    <p>High-resolution, production-quality resin printing with Formlabs 3L using engineering-grade materials.</p>
+                    <p><strong>Applications:</strong> Product development, props, scenic fabrication, functional testing, tooling, medical/veterinarian/dental models, prototypes, subassemblies, and production assemblies.</p>
+                </div>
+                
+                <div class="capability-item">
+                    <h4>Machining</h4>
+                    <p>Basic machining capabilities for in-house work and short Production runs.</p>
+                    <ul class="compact-list">
+                        <li>Mini mill</li>
+                        <li>Manual lathe</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Why Companies Choose IDFS</div>
+                
+                <div class="why-choose-grid">
+                    <div class="why-choose-item">
+                        <strong>Hybrid design + fabrication workflows</strong>
+                        Faster turnaround and full control from concept to production.
+                    </div>
+                    <div class="why-choose-item">
+                        <strong>Advanced manufacturing tools</strong>
+                        Robotics, CNC equipment, SLA industrial printers, modern fabrication processes.
+                    </div>
+                    <div class="why-choose-item">
+                        <strong>Consistent quality</strong>
+                        We strive to build every part with consistency and reliability. 
+                    </div>
+                    <div class="why-choose-item">
+                        <strong>Flexible, small-shop responsiveness</strong>
+                        Fast quotes, fast turnaround, real communication.
+                    </div>
+                    <div class="why-choose-item">
+                        <strong>Diverse industry experience</strong>
+                        Aerospace, industrial, entertainment, automotive, and R&D.
+                    </div>
+                    <div class="why-choose-item">
+                        <strong>Deep Knowledge</strong>
+                        Decades of combined design expertise, technical depth, and problem-solving experience to every project.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-column">
+            <div class="section">
+                <div class="section-title">Industries Served</div>
+                
+                <div class="capability-item">
+                    <h4>Aerospace</h4>
+                    <p>Commercial and military aircraft components, precision manufacturing, security protocols.</p>
+                </div>
+                
+                <div class="capability-item">
+                    <h4>Industrial</h4>
+                    <p>Manufacturing equipment, machinery components, industrial fabrication.</p>
+                </div>
+                
+                <div class="capability-item">
+                    <h4>Automotive</h4>
+                    <p>Engine components, transmission parts, custom automotive fabrication.</p>
+                </div>
+                
+                <div class="capability-item">
+                    <h4>Entertainment & Film</h4>
+                    <p>Scene shop fabrication, custom props, scenic work, entertainment industry solutions.</p>
+                </div>
+                
+                <div class="capability-item">
+                    <h4>Commercial & Consumer</h4>
+                    <p>Product development, prototypes, production runs, consumer goods.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Process & Workflow</div>
+                
+                <div class="highlight-box">
+                    <strong>From Concept to Completion:</strong><br>
+                    We combine technology, robotics, and experience to deliver precision fabrication, design services, and solutions for industries that demand excellence.
+                </div>
+                
+                <div class="contact-section">
+                    <strong>Request a Quote:</strong><br>
+                    Send us your files, drawings, or ideas—we'll take it from concept to completion. Fast quotes and responsive service.
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Contact Information</div>
+                
+                <div class="contact-section">
+                    <strong>Phone:</strong> (470) 409-9972<br>
+                    <strong>Email:</strong> Designs@idfsllc.com<br>
+                    <strong>Website:</strong> www.idfsllc.com<br>
+                    <strong>Address:</strong> 133 Bethea Rd. Suite 801, Fayetteville, GA 30214
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="accent-line"></div>
+
+    <div class="footer">
+        <p><strong>IDFS - Integrated Design and Fabrication Solutions</strong> | Precision Manufacturing Excellence</p>
+        <p>This capabilities statement is current as of December 2024. For the most up-to-date information, please visit www.idfsllc.com or contact us directly.</p>
+    </div>
+</body>
+</html>

@@ -31,7 +31,7 @@
     
     /* Borders */
     --border-radius: 8px;
-    --border-radius-lg: 12px;
+    --border-radius-lg: 9.6px;
 }
 
 /* Map Container Styling */
@@ -113,7 +113,6 @@
 
 .map-fallback a:hover {
     background: #bfdbfe;
-    transform: translateY(-1px);
 }
 /* Gallery Section */
 .gallery-section {
@@ -164,7 +163,6 @@
 }
 
 .gallery-item:hover {
-    transform: translateY(-8px);
     box-shadow: var(--shadow-xl);
     border-color: var(--kratos-accent);
 }
@@ -451,7 +449,6 @@ ul {
 .nav-logo:hover {
     text-decoration: none;
     color: inherit;
-    transform: scale(1.02);
 }
 
 .logo-img {
@@ -463,7 +460,7 @@ ul {
 }
 
 .nav-logo:hover .logo-img {
-    transform: scale(1.05);
+    /* Transform removed */
 }
 
 .logo-text h2 {
@@ -505,7 +502,6 @@ ul {
 
 .nav-link:hover {
     color: var(--kratos-accent);
-    transform: translateY(-2px);
 }
 
 .nav-link.active {
@@ -552,7 +548,6 @@ ul {
 
 .cta-button:hover {
     background: linear-gradient(135deg, var(--navy-accent) 0%, var(--navy-light) 100%);
-    transform: translateY(-1px);
     box-shadow: 0 4px 12px rgba(30, 58, 138, 0.3);
 }
 
@@ -1097,7 +1092,7 @@ ul {
 }
 
 .hero-image img:hover {
-    transform: scale(1.02);
+    /* Transform removed - keeping overlay effects only */
 }
 
 /* Hero Carousel */
@@ -1146,7 +1141,7 @@ ul {
 }
 
 .hero-carousel-slide:hover img {
-    transform: scale(1.02);
+    /* Transform removed - keeping overlay effects only */
 }
 
 .hero-carousel-controls {
@@ -1179,7 +1174,6 @@ ul {
 .hero-carousel-btn:hover {
     background: var(--kratos-accent);
     border-color: var(--kratos-accent);
-    transform: translateY(-2px);
     box-shadow: var(--shadow-lg);
 }
 
@@ -1206,7 +1200,6 @@ ul {
 
 .hero-carousel-dot:hover {
     background: var(--kratos-accent);
-    transform: scale(1.05);
 }
 
 /* Responsive Hero Carousel */
@@ -1353,7 +1346,6 @@ ul {
 .industries-carousel-btn:hover {
     background: var(--kratos-accent);
     border-color: var(--kratos-accent);
-    transform: translateY(-2px) scale(1.05);
     box-shadow: var(--shadow-xl);
 }
 
@@ -1383,7 +1375,6 @@ ul {
 
 .industries-carousel-dots .dot:hover {
     background: var(--kratos-accent);
-    transform: scale(1.1);
 }
 
 /* Responsive Industries Carousel */
@@ -1617,7 +1608,6 @@ ul {
 
 .hero-carousel-btn-full:hover {
     background: white;
-    transform: scale(1.1);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -1645,7 +1635,6 @@ ul {
 
 .hero-carousel-dot-full:hover {
     background: rgba(255, 255, 255, 0.8);
-    transform: scale(1.1);
 }
 
 @keyframes fadeInUp {
@@ -1824,7 +1813,6 @@ ul {
 .btn:hover {
     background: var(--kratos-accent);
     color: var(--kratos-white);
-    transform: translateY(-2px);
     box-shadow: var(--shadow-xl);
 }
 
@@ -1925,7 +1913,6 @@ ul {
 }
 
 .highlight-item:hover {
-    transform: translateY(-12px);
     box-shadow: var(--shadow-xl);
     border-color: var(--kratos-accent);
 }
@@ -2040,7 +2027,7 @@ ul {
 }
 
 .industry-item:hover {
-    transform: translateY(-5px);
+    /* Transform removed */
 }
 
 .industry-item h3 {
@@ -2134,7 +2121,7 @@ ul {
 }
 
 .case-study:hover {
-    transform: translateY(-5px);
+    /* Transform removed */
 }
 
 .case-study h3 {
@@ -2378,7 +2365,6 @@ ul {
 
 .footer-section a:hover {
     color: white;
-    transform: translateX(5px);
 }
 
 .footer-section p {
@@ -2526,7 +2512,6 @@ ul {
     border-color: var(--kratos-accent);
     color: var(--kratos-white) !important;
     box-shadow: var(--shadow-xl);
-    transform: translateY(-2px);
 }
 
 /* Services CTA Section */
@@ -3018,7 +3003,7 @@ textarea:focus {
 }
 
 .capability-image:hover img {
-    transform: scale(1.05);
+    /* Transform removed - keeping overlay effects only */
 }
 
 /* Why Choose IDFS Section */
@@ -3058,7 +3043,6 @@ textarea:focus {
 }
 
 .why-choose-card:hover {
-    transform: translateY(-8px);
     box-shadow: var(--shadow-xl);
     border-color: var(--kratos-accent);
     background: linear-gradient(135deg, var(--kratos-white) 0%, rgba(233, 69, 96, 0.05) 100%);
@@ -3211,7 +3195,7 @@ textarea:focus {
 }
 
 .industry-image:hover img {
-    transform: scale(1.05);
+    /* Transform removed - keeping overlay effects only */
 }
 
 .certifications-section {
@@ -3378,7 +3362,6 @@ textarea:focus {
 }
 
 .what-we-do-card:hover {
-    transform: translateY(-6px);
     box-shadow: var(--shadow-xl);
     border-color: rgba(26, 26, 46, 0.2);
 }
@@ -3524,7 +3507,6 @@ textarea:focus {
 }
 
 .service-card:hover {
-    transform: translateY(-8px);
     box-shadow: var(--shadow-xl);
     border-color: var(--kratos-accent);
     background: linear-gradient(135deg, var(--kratos-white) 0%, rgba(233, 69, 96, 0.05) 100%);
@@ -3624,7 +3606,6 @@ textarea:focus {
 }
 
 .contact-item:hover {
-    transform: translateY(-2px);
     box-shadow: var(--shadow-lg);
     border-left-color: var(--navy-light);
 }

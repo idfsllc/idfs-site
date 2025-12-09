@@ -451,7 +451,7 @@ Full privacy policy covering:
 - Welding services
 - Fayetteville GA / Atlanta metro
 - Film/prop fabrication
-- Prototyping and small production runs
+- Prototyping and short Production runs
 
 ### Content Gaps to Address:
 - More specific technical details on capabilities

@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn what additive manufacturing (3D printing) is, how it works, and its applications in industrial manufacturing. SLA, resin printing, and production-quality 3D printing explained.">
+    <meta name="keywords" content="additive manufacturing, 3D printing, SLA printing, resin printing, industrial 3D printing, Formlabs, rapid prototyping, Fayetteville GA">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <meta name="bingbot" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <meta name="distribution" content="global">
+    <meta name="rating" content="general">
+    <meta name="author" content="IDFS Integrated Design and Fabrication Solutions">
+    <meta name="geo.region" content="US-GA">
+    <meta name="geo.placename" content="Fayetteville">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="What is Additive Manufacturing? | 3D Printing Guide | IDFS">
+    <meta property="og:description" content="Learn what additive manufacturing (3D printing) is, how it works, and its applications in industrial manufacturing. SLA, resin printing, and production-quality 3D printing explained.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://idfsllc.com/resources/what-is-additive-manufacturing">
+    <meta property="og:image" content="https://idfsllc.com/assets/cad-design-to-finished-part.webp">
+    <meta property="og:site_name" content="IDFS Integrated Design and Fabrication Solutions">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="What is Additive Manufacturing? | 3D Printing Guide | IDFS">
+    <meta name="twitter:description" content="Learn what additive manufacturing (3D printing) is, how it works, and its applications in industrial manufacturing. SLA, resin printing, and production-quality 3D printing explained.">
+    <meta name="twitter:image" content="https://idfsllc.com/assets/cad-design-to-finished-part.webp">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/webp" href="../assets/favicon.webp">
+    <link rel="shortcut icon" type="image/webp" href="../assets/favicon.webp">
+    
+    <title>What is Additive Manufacturing? | 3D Printing Guide | IDFS</title>
+    
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Article-style layout */
+        .article-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .article-content {
+            font-size: 1.125rem;
+            line-height: 1.8;
+            color: var(--kratos-dark-gray);
+        }
+        
+        .article-content h1 {
+            font-size: 2.75rem;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        
+        .article-content h2 {
+            font-size: 2rem;
+            line-height: 1.3;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        
+        .article-content h3 {
+            font-size: 1.5rem;
+            line-height: 1.4;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .article-content h4 {
+            font-size: 1.25rem;
+            line-height: 1.4;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        .article-content p {
+            margin-bottom: 1.5rem;
+            text-align: left;
+        }
+        
+        .article-content ul,
+        .article-content ol {
+            margin: 1.5rem 0;
+            padding-left: 2rem;
+        }
+        
+        .article-content li {
+            margin-bottom: 0.75rem;
+            line-height: 1.7;
+        }
+        
+        .article-section {
+            padding: 4rem 0;
+        }
+        
+        .article-section.alt {
+            background-color: #f8fafc;
+        }
+        
+        .article-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            margin: 2rem 0;
+            border-left: 4px solid var(--kratos-blue);
+        }
+        
+        .article-card h4 {
+            margin-top: 0;
+            color: var(--kratos-blue);
+        }
+        
+        .article-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        @media (min-width: 768px) {
+            .article-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        .article-intro {
+            font-size: 1.25rem;
+            line-height: 1.7;
+            color: var(--kratos-gray);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        .article-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 2rem 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    <link rel="canonical" href="https://idfsllc.com/resources/what-is-additive-manufacturing">
+    <link rel="alternate" hreflang="en-us" href="https://idfsllc.com/resources/what-is-additive-manufacturing">
+    <link rel="alternate" hreflang="x-default" href="https://idfsllc.com/resources/what-is-additive-manufacturing">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "What is Additive Manufacturing? A Guide to 3D Printing",
+        "description": "Learn what additive manufacturing (3D printing) is, how it works, and its applications in industrial manufacturing. SLA, resin printing, and production-quality 3D printing explained.",
+        "author": {
+            "@type": "Organization",
+            "name": "IDFS Integrated Design and Fabrication Solutions"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "IDFS Integrated Design and Fabrication Solutions",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://idfsllc.com/assets/Logo2-buffered.webp"
+            }
+        },
+        "datePublished": "2024-12-20",
+        "dateModified": "2024-12-20"
+    }
+    </script>
+</head>
+<body class="capabilities-page">
+    <!-- Header -->
+    <header>
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <img src="../assets/Logo2-buffered.webp" alt="IDFS Machine Shop Georgia Logo" class="logo-img">
+                <div class="logo-text">
+                    <h2>IDFS</h2>
+                    <span>Integrated Design and Fabrication Solutions</span>
+                </div>
+            </a>
+                <ul class="nav-menu">
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="../capabilities.html" class="nav-link">Capabilities</a></li>
+                    <li><a href="../services.html" class="nav-link">Services</a></li>
+                    <li><a href="../industries.html" class="nav-link">Industries</a></li>
+                    <li><a href="../contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="../contact.html#rfqForm" class="nav-link nav-cta">Get Quote</a></li>
+                </ul>
+                <div class="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main style="padding-top: 120px;">
+        <!-- Introduction Section -->
+        <article class="article-section" id="introduction">
+            <div class="article-container">
+                <div class="article-content">
+                    <h1>Understanding Additive Manufacturing</h1>
+                    <p class="article-intro">Additive manufacturing (AM) is the process of creating three-dimensional objects by adding material layer by layer, based on a digital 3D model. Unlike traditional subtractive manufacturing (like machining, where material is removed), additive manufacturing builds parts by adding material only where needed.</p>
+                    <p>The term "3D printing" is often used interchangeably with additive manufacturing, though 3D printing technically refers to the consumer and hobbyist applications, while additive manufacturing is the industrial term.</p>
+                    <img src="../assets/cad-design-to-finished-part.webp" alt="Additive Manufacturing Process" loading="lazy" class="article-image">
+                </div>
+            </div>
+        </article>
+
+        <!-- How It Works Section -->
+        <article class="article-section alt" id="how-it-works">
+            <div class="article-container">
+                <div class="article-content">
+                    <h2>How Additive Manufacturing Works</h2>
+                    
+                    <h3>The Process</h3>
+                    <p>Additive manufacturing follows these general steps:</p>
+                    <div class="article-card">
+                        <ol>
+                            <li><strong>3D Model Creation:</strong> Start with a digital 3D model (CAD file) of the part you want to create</li>
+                            <li><strong>File Preparation:</strong> The CAD file is processed (sliced) into thin horizontal layers</li>
+                            <li><strong>Printing:</strong> The 3D printer builds the part layer by layer, following the sliced model</li>
+                            <li><strong>Post-Processing:</strong> Support material is removed, and the part may be sanded, cured, or finished as needed</li>
+                        </ol>
+                    </div>
+                    
+                    <h3>Types of Additive Manufacturing</h3>
+                    <p>There are several types of additive manufacturing processes:</p>
+                    <div class="article-grid">
+                        <div class="article-card" style="border-left-color: var(--kratos-blue);">
+                            <h4>SLA (Stereolithography)</h4>
+                            <p>Uses UV light to cure liquid resin layer by layer. Produces high-resolution, smooth surface finishes. <strong>This is what we use at IDFS with our Formlabs 3L printer.</strong></p>
+                        </div>
+                        
+                        <div class="article-card">
+                            <h4>FDM/FFF (Fused Deposition Modeling)</h4>
+                            <p>Extrudes melted plastic filament layer by layer. Common in desktop 3D printers.</p>
+                        </div>
+                        
+                        <div class="article-card">
+                            <h4>SLS (Selective Laser Sintering)</h4>
+                            <p>Uses a laser to sinter powdered material. Good for functional parts.</p>
+                        </div>
+                        
+                        <div class="article-card">
+                            <h4>Metal 3D Printing</h4>
+                            <p>Various processes for printing metal parts, including DMLS and binder jetting.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Advantages Section -->
+        <article class="article-section" id="advantages">
+            <div class="article-container">
+                <div class="article-content">
+                    <h2>Advantages of Additive Manufacturing</h2>
+                    
+                    <ol style="list-style: decimal; padding-left: 2rem; margin: 2rem 0;">
+                        <li style="margin-bottom: 2rem;">
+                            <h4 style="margin-bottom: 0.75rem; margin-top: 0;">Design Freedom</h4>
+                            <p>Additive manufacturing allows for complex geometries that would be difficult or impossible to create with traditional manufacturing methods. Internal channels, organic shapes, and intricate details are all possible.</p>
+                        </li>
+                        
+                        <li style="margin-bottom: 2rem;">
+                            <h4 style="margin-bottom: 0.75rem; margin-top: 0;">Rapid Prototyping</h4>
+                            <p>3D printing enables quick iteration and testing of designs. You can go from CAD model to physical part in hours or days, rather than weeks.</p>
+                        </li>
+                        
+                        <li style="margin-bottom: 2rem;">
+                            <h4 style="margin-bottom: 0.75rem; margin-top: 0;">Low Volume Production</h4>
+                            <p>For short Production runs, 3D printing can be more cost-effective than traditional manufacturing because there's no need for expensive tooling or molds.</p>
+                        </li>
+                        
+                        <li style="margin-bottom: 2rem;">
+                            <h4 style="margin-bottom: 0.75rem; margin-top: 0;">Material Efficiency</h4>
+                            <p>Additive manufacturing only uses material where it's needed, reducing waste compared to subtractive processes that remove material.</p>
+                        </li>
+                        
+                        <li style="margin-bottom: 2rem;">
+                            <h4 style="margin-bottom: 0.75rem; margin-top: 0;">Customization</h4>
+                            <p>Each part can be customized without additional tooling costs, making it ideal for personalized products, medical devices, and one-off designs.</p>
+                        </li>
+                        
+                        <li style="margin-bottom: 2rem;">
+                            <h4 style="margin-bottom: 0.75rem; margin-top: 0;">Reduced Assembly</h4>
+                            <p>Complex assemblies can often be printed as single parts, reducing the need for fasteners and assembly steps.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </article>
+
+        <!-- Applications Section -->
+        <article class="article-section alt" id="applications">
+            <div class="article-container">
+                <div class="article-content">
+                    <h2>Applications of Additive Manufacturing</h2>
+                    
+                    <ol style="list-style: decimal; padding-left: 2rem; margin: 2rem 0;">
+                        <li style="margin-bottom: 2rem;">
+                            <h4 style="margin-bottom: 0.75rem; margin-top: 0;">Prototyping</h4>
+                            <p>Rapid prototyping is one of the most common uses of 3D printing. Designers and engineers can quickly create physical models to test form, fit, and function before committing to expensive production tooling.</p>
+                        </li>
+                        
+                        <li style="margin-bottom: 2rem;">
+                            <h4 style="margin-bottom: 0.75rem; margin-top: 0;">Functional Parts</h4>
+                            <p>With high-quality materials and processes like SLA, 3D printed parts can be used as functional components in end products, not just prototypes.</p>
+                        </li>
+                        
+                        <li style="margin-bottom: 2rem;">
+                            <h4 style="margin-bottom: 0.75rem; margin-top: 0;">Tooling and Jigs</h4>
+                            <p>Custom tooling, fixtures, and jigs can be 3D printed quickly and cost-effectively for manufacturing operations.</p>
+                        </li>
+                        
+                        <li style="margin-bottom: 2rem;">
+                            <h4 style="margin-bottom: 0.75rem; margin-top: 0;">Medical and Dental</h4>
+                            <p>3D printing is widely used for medical models, surgical guides, dental trays, and custom prosthetics.</p>
+                        </li>
+                        
+                        <li style="margin-bottom: 2rem;">
+                            <h4 style="margin-bottom: 0.75rem; margin-top: 0;">Entertainment and Props</h4>
+                            <p>The film and entertainment industry uses 3D printing extensively for prop fabrication, allowing for detailed, custom pieces that would be expensive to create by hand.</p>
+                        </li>
+                        
+                        <li style="margin-bottom: 2rem;">
+                            <h4 style="margin-bottom: 0.75rem; margin-top: 0;">Low-Volume Production</h4>
+                            <p>For production runs of 1-1000+ pieces, 3D printing can be more economical than injection molding or other traditional processes.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </article>
+
+        <!-- SLA at IDFS Section -->
+        <article class="article-section" id="idfs-capabilities">
+            <div class="article-container">
+                <div class="article-content">
+                    <h2>Industrial SLA 3D Printing at IDFS</h2>
+                    <p>At IDFS, we use Formlabs 3L printers for industrial-grade SLA (stereolithography) 3D printing. This process offers:</p>
+                    <div class="article-card">
+                        <ul style="list-style: none; padding: 0; margin: 0;">
+                            <li style="padding: 0.75rem 0; padding-left: 2rem; position: relative; border-bottom: 1px solid rgba(15, 52, 96, 0.1);">
+                                <span style="position: absolute; left: 0; color: var(--kratos-blue); font-weight: 700;">✓</span>
+                                <strong>High Resolution:</strong> Fine details and smooth surface finishes
+                            </li>
+                            <li style="padding: 0.75rem 0; padding-left: 2rem; position: relative; border-bottom: 1px solid rgba(15, 52, 96, 0.1);">
+                                <span style="position: absolute; left: 0; color: var(--kratos-blue); font-weight: 700;">✓</span>
+                                <strong>Large Format:</strong> Parts up to 13.5" x 7.6" x 9.8" build volume
+                            </li>
+                            <li style="padding: 0.75rem 0; padding-left: 2rem; position: relative; border-bottom: 1px solid rgba(15, 52, 96, 0.1);">
+                                <span style="position: absolute; left: 0; color: var(--kratos-blue); font-weight: 700;">✓</span>
+                                <strong>Engineering Materials:</strong> Production-quality resins with various mechanical properties
+                            </li>
+                            <li style="padding: 0.75rem 0; padding-left: 2rem; position: relative;">
+                                <span style="position: absolute; left: 0; color: var(--kratos-blue); font-weight: 700;">✓</span>
+                                <strong>Production Quality:</strong> Parts suitable for functional use, not just prototyping
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="article-card" style="background: linear-gradient(135deg, rgba(15, 52, 96, 0.05) 0%, rgba(233, 69, 96, 0.02) 100%); border-left-color: var(--kratos-accent);">
+                        <p style="margin: 0;"><strong>Applications we serve:</strong> Product development, props, scenic fabrication, functional testing, tooling, medical/veterinarian/dental models, engineering prototypes, subassemblies, and production assemblies.</p>
+                    </div>
+                    <img src="../assets/cad-design-to-finished-part.webp" alt="Formlabs 3L 3D Printing" loading="lazy" class="article-image">
+                </div>
+            </div>
+        </article>
+
+        <!-- When to Use Section -->
+        <article class="article-section alt" id="when-to-use">
+            <div class="article-container">
+                <div class="article-content">
+                    <h2>When to Choose Additive Manufacturing</h2>
+                    
+                    <div class="article-grid">
+                        <div class="article-card" style="border-left-color: var(--kratos-blue);">
+                            <h4>Good Fit For:</h4>
+                            <ul style="list-style: none; padding: 0; margin-top: 1rem;">
+                                <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--kratos-blue); font-weight: 700;">•</span>
+                                    Prototypes and design validation
+                                </li>
+                                <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--kratos-blue); font-weight: 700;">•</span>
+                                    Complex geometries difficult to machine
+                                </li>
+                                <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--kratos-blue); font-weight: 700;">•</span>
+                                    Low to medium volume production (1-1000+ pieces)
+                                </li>
+                                <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--kratos-blue); font-weight: 700;">•</span>
+                                    Custom or personalized parts
+                                </li>
+                                <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--kratos-blue); font-weight: 700;">•</span>
+                                    Parts with internal features or channels
+                                </li>
+                                <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--kratos-blue); font-weight: 700;">•</span>
+                                    Quick turnaround requirements
+                                </li>
+                                <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--kratos-blue); font-weight: 700;">•</span>
+                                    Reducing assembly complexity
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="article-card" style="border-left-color: var(--kratos-accent);">
+                            <h4>Consider Alternatives When:</h4>
+                            <ul style="list-style: none; padding: 0; margin-top: 1rem;">
+                                <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--kratos-accent); font-weight: 700;">•</span>
+                                    Very high volume production (thousands of identical parts)
+                                </li>
+                                <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--kratos-accent); font-weight: 700;">•</span>
+                                    Parts require specific material properties only available through traditional processes
+                                </li>
+                                <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--kratos-accent); font-weight: 700;">•</span>
+                                    Cost per part needs to be extremely low for high volumes
+                                </li>
+                                <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;">
+                                    <span style="position: absolute; left: 0; color: var(--kratos-accent); font-weight: 700;">•</span>
+                                    Parts are simple geometries that are faster/cheaper to machine
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="article-card" style="background: linear-gradient(135deg, rgba(15, 52, 96, 0.05) 0%, rgba(233, 69, 96, 0.02) 100%); border-left-color: var(--kratos-blue);">
+                        <p style="margin: 0;"><strong>Pro Tip:</strong> The best approach is often a hybrid: use 3D printing for prototypes and low volumes, then transition to traditional manufacturing for high-volume production.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- CTA Section -->
+        <article class="article-section" id="contact-cta">
+            <div class="article-container">
+                <div class="article-content" style="text-align: center;">
+                    <h2>Ready to Explore 3D Printing for Your Project?</h2>
+                    <p>Send us your CAD files or drawings, and we'll help determine if additive manufacturing is the right choice for your project. We offer design support, material recommendations, and production-quality 3D printing services.</p>
+                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+                        <a href="../contact.html#rfqForm" class="btn btn-primary">Request a 3D Printing Quote</a>
+                        <a href="../services/3d-printing.html" class="btn btn-secondary">Learn About Our 3D Printing Services</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="../assets/Logo2-buffered.webp" alt="IDFS Machine Shop Georgia Logo" class="footer-logo-img">
+                        <div class="footer-logo-text">
+                            <h3>IDFS</h3>
+                            <p>Integrated Design and Fabrication Solutions</p>
+                        </div>
+                    </div>
+                    <p>Design, engineering, and fabrication solutions bringing your ideas to life with precision and creativity.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="../services/design-engineering.html">Design & Engineering</a></li>
+                        <li><a href="../services/metal-fabrication.html">Metal Fabrication</a></li>
+                        <li><a href="../services/cnc-machining.html">CNC Machining</a></li>
+                        <li><a href="../services/3d-printing.html">3D Printing</a></li>
+                        <li><a href="../services/part-cutting.html">Part Cutting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../industries.html">View Our Work</a></li>
+                        <li><a href="../capabilities.html">Our Capabilities</a></li>
+                        <li><a href="../contact.html">Get Quote</a></li>
+                        <li><a href="../contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="why-dfm-matters.html">Why DFM Matters</a></li>
+                        <li><a href="what-is-additive-manufacturing.html">What is Additive Manufacturing</a></li>
+                        <li><a href="design-to-fabrication-process.html">Design-to-Fabrication Process</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact-section">
+                    <h4>Contact</h4>
+                    <p>Phone: <a href="tel:+14704099972">(470) 409-9972</a></p>
+                    <p>Email: <a href="mailto:Designs@idfsllc.com">Designs@idfsllc.com</a></p>
+                    <p><a href="https://maps.google.com/maps?q=133+Bethea+Rd+Suite+801+Fayetteville+GA+30214" target="_blank">133 Bethea Rd. Suite 801<br>Fayetteville, GA 30214</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>2024 IDFS Integrated Design and Fabrication Solutions. All rights reserved.</p>
+                <p>CAGE Code: 109T0 | D-U-N-S: 110818579 | Entity ID: WG82SYNRPDZ9</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
+

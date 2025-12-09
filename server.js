@@ -6,6 +6,7 @@
 const express = require('express');
 const path = require('path');
 const cors = require('cors');
+const puppeteer = require('puppeteer');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -19,6 +20,57 @@ app.use((req, res, next) => {
     res.set('Pragma', 'no-cache');
     res.set('Expires', '0');
     next();
+});
+
+// Generate and serve capabilities statement as PDF (must be before static middleware)
+app.get('/capabilities-statement.pdf', async (req, res) => {
+  try {
+    // Use request host or fallback to localhost for local dev
+    const protocol = req.protocol || 'http';
+    const host = req.get('host') || `localhost:${PORT}`;
+    const htmlUrl = `${protocol}://${host}/one-page-capabilities-pdf.html`;
+    
+    console.log(`📄 Generating PDF from: ${htmlUrl}`);
+    
+    // Launch browser
+    const browser = await puppeteer.launch({
+      headless: true,
+      args: ['--no-sandbox', '--disable-setuid-sandbox']
+    });
+    
+    const page = await browser.newPage();
+    
+    // Load the HTML file via HTTP
+    await page.goto(htmlUrl, {
+      waitUntil: 'networkidle0',
+      timeout: 30000
+    });
+    
+    // Generate PDF
+    const pdfBuffer = await page.pdf({
+      format: 'Letter',
+      margin: {
+        top: '0.5in',
+        right: '0.5in',
+        bottom: '0.5in',
+        left: '0.5in'
+      },
+      printBackground: true
+    });
+    
+    await browser.close();
+    
+    console.log(`✅ PDF generated successfully (${pdfBuffer.length} bytes)`);
+    
+    // Send PDF as download
+    res.setHeader('Content-Type', 'application/pdf');
+    res.setHeader('Content-Disposition', 'attachment; filename="IDFS-Capabilities-Statement.pdf"');
+    res.setHeader('Content-Length', pdfBuffer.length);
+    res.end(pdfBuffer, 'binary');
+  } catch (error) {
+    console.error('❌ Error generating PDF:', error);
+    res.status(500).send('Error generating PDF: ' + error.message);
+  }
 });
 
 // Serve static files from the site directory with proper MIME types
@@ -58,13 +110,6 @@ app.options('/contact', (req, res) => {
 // Serve index.html for root route
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'site', 'index.html'));
-});
-
-// Serve capabilities statement as HTML (served as PDF route for compatibility)
-app.get('/capabilities-statement.pdf', (req, res) => {
-  res.setHeader('Content-Type', 'text/html');
-  res.setHeader('Content-Disposition', 'inline; filename="IDFS-Capabilities-Statement.html"');
-  res.sendFile(path.join(__dirname, 'site', 'capabilities-statement.html'));
 });
 
 // Serve one-page capabilities as HTML (served as PDF route for compatibility)
