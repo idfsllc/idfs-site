@@ -64,35 +64,13 @@
         ]
     }
     </script>
+    <script src="components/loader.js" defer></script>
 </head>
 <body class="industries-page">
     <!-- Header -->
     <header>
-        <!-- Navigation -->
-        <nav class="navbar">
-            <div class="nav-container">
-            <a href="index.html" class="nav-logo">
-                <img src="assets/Logo2-buffered.webp" alt="IDFS Machine Shop Georgia Logo - Aerospace Fabrication Georgia Services" class="logo-img">
-                <div class="logo-text">
-                    <h2>IDFS</h2>
-                    <span>Integrated Design and Fabrication Solutions</span>
-                </div>
-            </a>
-                <ul class="nav-menu">
-                    <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="capabilities.html" class="nav-link">Capabilities</a></li>
-                    <li><a href="services.html" class="nav-link">Services</a></li>
-                    <li><a href="industries.html" class="nav-link active">Industries</a></li>
-                    <li><a href="contact.html" class="nav-link">Contact</a></li>
-                    <li><a href="contact.html#rfqForm" class="nav-link nav-cta">Get Quote</a></li>
-                </ul>
-                <div class="nav-toggle">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </div>
-        </nav>
+                <!-- Navigation Component -->
+        <div data-component="navbar"></div>
     </header>
 
     <!-- Main Content -->
@@ -111,140 +89,86 @@
             </div>
         </section>
 
-        <!-- Industries Sections -->
-        <section class="capability-section" id="aerospace">
+        <!-- Industries Overview Section -->
+        <section class="capability-section" id="industries-overview">
             <div class="container">
-                <div class="capability-content">
-                    <div class="capability-text">
+                <div class="why-choose-header" style="text-align: center; margin-bottom: 4rem;">
+                    <h2 style="color: var(--navy-primary); font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem; letter-spacing: -0.02em;">Industries We Serve</h2>
+                    <p style="font-size: 1.2rem; color: var(--text-medium); max-width: 700px; margin: 0 auto; line-height: 1.6;">IDFS supports aerospace, industrial, automotive, film, commercial, and consumer clients with accurate, reliable, and fast-turnaround fabrication services.</p>
+                </div>
+                
+                <div class="why-choose-grid">
+                    <div class="service-card">
+                        <img src="assets/industry-card-pics/aerospace.webp" alt="Aerospace Fabrication" class="service-card-image" loading="lazy">
                         <h3>Aerospace</h3>
-                        <p>Assemblies, components, and ground support equipment for aerospace applications.</p>
-                        <p><strong>Typical work includes:</strong></p>
-                        <ul>
+                        <p class="service-deliverables">Assemblies, components, and ground support equipment for aerospace applications.</p>
+                        <ul class="service-deliverables">
                             <li>Metal components and brackets</li>
                             <li>Ground support equipment</li>
                             <li>Prototype components & R&D parts</li>
                             <li>Fabricated assemblies</li>
                         </ul>
-                        <br>
-                        <hr>
-                        <br>
-                        <p><strong>Why aerospace clients work with IDFS:</strong><br>Fast communication, experience, and the ability to move from idea to physical part efficiently.</p>
-                        <br>
-                        <a href="industries/aerospace-fabrication.html" class="btn btn-primary">Learn more about Aerospace Fabrication</a>
+                        <p class="service-credibility"><strong>Why aerospace clients work with IDFS:</strong> Fast communication, experience, and the ability to move from idea to physical part efficiently.</p>
+                        <a href="industries/aerospace-fabrication.html" class="what-we-do-link">Learn more →</a>
                     </div>
-                    <div class="capability-image">
-                        <img src="assets/industry-card-pics/aerospace.webp" alt="Aerospace Fabrication" loading="lazy">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="capability-section alt" id="industrial">
-            <div class="container">
-                <div class="capability-content">
-                    <div class="capability-image">
-                        <img src="assets/industry-card-pics/Industrial_Stock_Img_crop.webp" alt="Industrial Manufacturing" loading="lazy">
-                    </div>
-                    <div class="capability-text">
+                    
+                    <div class="service-card">
+                        <img src="assets/industry-card-pics/Industrial_Stock_Img_crop.webp" alt="Industrial Manufacturing" class="service-card-image" loading="lazy">
                         <h3>Industrial & Manufacturing</h3>
-                        <p>We produce components, replacement parts, assemblies, and support equipment for manufacturing & industrial environments.</p>
-                        <p><strong>Typical work includes:</strong></p>
-                        <ul>
+                        <p class="service-deliverables">We produce components, replacement parts, assemblies, and support equipment for manufacturing & industrial environments.</p>
+                        <ul class="service-deliverables">
                             <li>Machine components</li>
                             <li>Mounts, brackets, and hardware</li>
                             <li>Replacement or upgraded parts</li>
                             <li>Production support items</li>
                             <li>Custom fabricated solutions</li>
                         </ul>
-                        <br>
-                        <hr>
-                        <br>
-                        <p><strong>What industrial clients value:</strong><br>Durability, consistent quality, and rapid turnaround when equipment needs support.</p>
-                        <br>
-                        <a href="industries/industrial-fabrication.html" class="btn btn-primary">Learn more about Industrial Fabrication</a>
+                        <p class="service-credibility"><strong>What industrial clients value:</strong> Durability, consistent quality, and rapid turnaround when equipment needs support.</p>
+                        <a href="industries/industrial-fabrication.html" class="what-we-do-link">Learn more →</a>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="capability-section" id="automotive">
-            <div class="container">
-                <div class="capability-content">
-                    <div class="capability-text">
+                    
+                    <div class="service-card">
+                        <img src="assets/industry-card-pics/Automotive_Stock_cropped.webp" alt="Automotive Fabrication" class="service-card-image" loading="lazy">
                         <h3>Automotive</h3>
-                        <p>Fabricated and machined components for automotive projects, prototypes, and specialty builds. Custom parts, boxes, and designed solutions.</p>
-                     
-                        <p><strong>Typical work includes:</strong></p>
-                        <ul>
+                        <p class="service-deliverables">Fabricated and machined components for automotive projects, prototypes, and specialty builds. Custom parts, boxes, and designed solutions.</p>
+                        <ul class="service-deliverables">
                             <li>Brackets, mounts, and hardware</li>
                             <li>Custom chasis design</li>
                             <li>Prototype components</li>
                             <li>Small machined parts</li>
                             <li>Custom fabricated pieces</li>
                         </ul>
-                        <br>
-                        <hr>
-                        <br>
-                        <p><strong>Why automotive clients choose IDFS:</strong><br>Accurate fitment, clean fabrication, and flexible small-run manufacturing.</p>
-                        <br>
-                        <a href="industries/automotive-fabrication.html" class="btn btn-primary">Learn more about Automotive Fabrication</a>
+                        <p class="service-credibility"><strong>Why automotive clients choose IDFS:</strong> Accurate fitment, clean fabrication, and flexible small-run manufacturing.</p>
+                        <a href="industries/automotive-fabrication.html" class="what-we-do-link">Learn more →</a>
                     </div>
-                    <div class="capability-image">
-                        <img src="assets/industry-card-pics/Automotive_Stock_cropped.webp" alt="Automotive Fabrication" loading="lazy">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="capability-section" id="film-entertainment">
-            <div class="container">
-                <div class="capability-content">
-                    <div class="capability-text">
+                    
+                    <div class="service-card">
+                        <img src="assets/industry-card-pics/Film_Stock_Img_cropped.webp" alt="Film and Entertainment Fabrication" class="service-card-image" loading="lazy">
                         <h3>Film & Entertainment</h3>
-                        <p>Custom fabrication for Atlanta's film and television industry.
-                         IDFS is located minutes from Trilith Studios, Tyler Perry Studios, and Atlanta Metro Studios, offering fast-turnaround metalwork and custom builds.</p>
-                   <p><strong>Typical work includes:</strong></p>
-                   <ul>
-                    <li>Props and scenic elements</li>
-                    <li>Set design</li>
-                    <li>Custom fabricated structures</li>
-                    <li>Large format sculptures</li>
-                   </ul>
-                         <br>
-                   <hr>
-                   <br>
-                        <p><strong>Why productions choose IDFS:</strong><br>Speed, communication, creative problem-solving, and proximity to major studios.</p>
-                        
-                        <a href="industries/film-fabrication.html" class="btn btn-primary">Learn more about Film & Entertainment Fabrication</a>
+                        <p class="service-deliverables">Custom fabrication for Atlanta's film and television industry. IDFS is located minutes from Trilith Studios, Tyler Perry Studios, and Atlanta Metro Studios, offering fast-turnaround metalwork and custom builds.</p>
+                        <ul class="service-deliverables">
+                            <li>Props and scenic elements</li>
+                            <li>Set design</li>
+                            <li>Custom fabricated structures</li>
+                            <li>Large format sculptures</li>
+                        </ul>
+                        <p class="service-credibility"><strong>Why productions choose IDFS:</strong> Speed, communication, creative problem-solving, and proximity to major studios.</p>
+                        <a href="industries/film-fabrication.html" class="what-we-do-link">Learn more →</a>
                     </div>
-                    <div class="capability-image">
-                        <img src="assets/industry-card-pics/Film_Stock_Img_cropped.webp" alt="Film and Entertainment Fabrication" loading="lazy">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="capability-section alt" id="commercial-consumer">
-            <div class="container">
-                <div class="capability-content">
-                    <div class="capability-image">
-                        <img src="assets/industry-card-pics/Commercial_Consumer_Stock_Img_Copy.webp" alt="Commercial and Consumer Fabrication" loading="lazy">
-                    </div>
-                    <div class="capability-text">
+                    
+                    <div class="service-card">
+                        <img src="assets/industry-card-pics/Commercial_Consumer_Stock_Img_Copy.webp" alt="Commercial and Consumer Fabrication" class="service-card-image" loading="lazy">
                         <h3>Commercial & Consumer</h3>
-                        <p>Versatile fabrication and machining for small businesses and personal projects. We take ideas and turn them into reality. Our design team is here to help you every step of the way.</p>
-                        <p><strong>Typical work includes:</strong></p>
-                        <ul>
+                        <p class="service-deliverables">Versatile fabrication and machining for small businesses and personal projects. We take ideas and turn them into reality. Our design team is here to help you every step of the way.</p>
+                        <ul class="service-deliverables">
                             <li>Custom metalwork</li>
                             <li>Short run production</li>
                             <li>Product prototypes</li>
                             <li>Hardware and brackets</li>
                             <li>One-off custom builds</li>
                         </ul>
-                        <br>
-                        <p><strong>Why consumers choose IDFS:</strong><br>Straightforward communication, fast service, and quality work from a professional fabrication shop.</p>
-                        <br>
-                        <a href="industries/commercial-consumer-fabrication.html" class="btn btn-primary">Learn more about Commercial & Consumer Fabrication</a>
+                        <p class="service-credibility"><strong>Why consumers choose IDFS:</strong> Straightforward communication, fast service, and quality work from a professional fabrication shop.</p>
+                        <a href="industries/commercial-consumer-fabrication.html" class="what-we-do-link">Learn more →</a>
                     </div>
                 </div>
             </div>
@@ -253,12 +177,10 @@
         <!-- CTA Section -->
         <section class="capability-section alt" id="contact-cta">
             <div class="container">
-                <div class="capability-content">
-                    <h3>Have a project in mind?</h3>
-                    <br>
-                    <p>Whether you're building for aerospace, film, industrial, automotive, or commercial use—IDFS can help.</p>
-                    <br>
-                    <a href="contact.html#rfqForm" class="btn btn-primary" style="margin-top: 1.5rem;">Request a Quote</a>
+                <div class="capability-content" style="text-align: center; max-width: 700px; margin: 0 auto;">
+                    <h2 style="color: var(--navy-primary); font-size: 2.25rem; font-weight: 700; margin-bottom: 1rem; letter-spacing: -0.02em;">Have a project in mind?</h2>
+                    <p style="font-size: 1.2rem; color: var(--text-medium); margin-bottom: 2rem; line-height: 1.6;">Whether you're building for aerospace, film, industrial, automotive, or commercial use—IDFS can help.</p>
+                    <a href="contact.html#rfqForm" class="btn btn-primary">Request a Quote</a>
                 </div>
             </div>
         </section>

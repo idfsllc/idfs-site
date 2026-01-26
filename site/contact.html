@@ -39,6 +39,8 @@
     
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Google reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <link rel="canonical" href="https://idfsllc.com/contact">
     <link rel="alternate" hreflang="en-us" href="https://idfsllc.com/contact">
     <link rel="alternate" hreflang="x-default" href="https://idfsllc.com/contact">
@@ -161,35 +163,13 @@
         }
     }
     </script>
+    <script src="components/loader.js" defer></script>
 </head>
 <body>
     <!-- Header -->
     <header>
-        <!-- Navigation -->
-        <nav class="navbar">
-            <div class="nav-container">
-            <a href="index.html" class="nav-logo">
-                <img src="assets/Logo2-buffered.webp" alt="IDFS Custom Fabrication & Design Georgia Logo - Contact Custom Fabrication Shop Georgia" class="logo-img">
-                <div class="logo-text">
-                    <h2>IDFS</h2>
-                    <span>Integrated Design and Fabrication Solutions</span>
-                </div>
-            </a>
-                <ul class="nav-menu">
-                    <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="capabilities.html" class="nav-link">Capabilities</a></li>
-                    <li><a href="services.html" class="nav-link">Services</a></li>
-                    <li><a href="industries.html" class="nav-link">Industries</a></li>
-                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
-                    <li><a href="#rfqForm" class="nav-link nav-cta">Get Quote</a></li>
-                </ul>
-                <div class="nav-toggle">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </div>
-        </nav>
+                <!-- Navigation Component -->
+        <div data-component="navbar"></div>
     </header>
 
     <!-- Main Content -->
@@ -272,6 +252,40 @@
             </div>
         </section>
 
+        <!-- Badge Bar -->
+        <section class="badge-bar">
+            <div class="badge-bar-container">
+                <div class="badge-item">
+                    <svg class="badge-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="badge-label">Design to Delivery</span>
+                </div>
+                <div class="badge-item">
+                    <svg class="badge-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                        <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <span class="badge-label">Fast Turnaround</span>
+                </div>
+                <div class="badge-item">
+                    <svg class="badge-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="badge-label">Precision Quality</span>
+                </div>
+                <div class="badge-item">
+                    <svg class="badge-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                        <path d="M9 9H15M9 15H15M9 12H15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <span class="badge-label">Advanced Technology</span>
+                </div>
+            </div>
+        </section>
+
         <!-- RFQ Form Section -->
         <section class="rfq-section">
             <div class="container">
@@ -323,29 +337,24 @@
                                 <input type="file" id="files" name="files" multiple accept=".pdf,.dxf,.step,.stp">
                                 <small>Maximum file size: 10MB per file. Supported formats: PDF, DXF, STEP</small>
                             </div>
+                            <div class="form-group">
+                                <div class="g-recaptcha" data-sitekey="6LdsYVUsAAAAAJpV-FL4Y_N9i4Hq8CVyUp0Vjn39"></div>
+                            </div>
                             <button type="submit" class="btn btn-primary">Submit Quote Request</button>
                         </form>
                     </div>
                     <div class="rfq-info">
-                        <h3>Please be as detailed as possible in your project description.</h3>
-                        <p><strong>What to include:</strong></p>
-                        <ul>
-                            <li>Part drawings with dimensions and tolerances</li>
-                            <li>Material specifications</li>
-                            <li>Quantities</li>
-                            <li>Timeline</li>
-                        </ul>
+                        <h3>What to Include</h3>
+                        <p>Please provide part drawings, material specs, quantities, and timeline for faster quotes.</p>
                         <div class="quote-process">
-                            <h4>Our Quote Process</h4>
+                            <h4>Our Process</h4>
                             <ol>
-                                <li><strong>Submit RFQ</strong><br>Send your project details and files through the form or email.</li>
-                                <li><strong>Internal Review</strong><br>Our design and fabrication team reviews all specifications and requirements.</li>
-                                <li><strong>Receive Quote (Typically within 24 hours)</strong><br>You'll receive a detailed quote outlining scope, pricing, and scheduling.</li>
-                                <li><strong>Optional Project Discussion</strong><br>We can schedule a call or meeting if your project requires clarification or engineering support.</li>
-                                <li><strong>Begin Manufacturing</strong><br>Once approved, your project enters production and you'll receive updates as needed.</li>
+                                <li><strong>Submit RFQ</strong> — Send project details and files</li>
+                                <li><strong>Review</strong> — Our team evaluates your requirements</li>
+                                <li><strong>Quote</strong> — Receive detailed quote within 24 hours</li>
+                                <li><strong>Approve & Build</strong> — Production begins after approval</li>
                             </ol>
                         </div>
-                       
                     </div>
                 </div>
             </div>

@@ -126,35 +126,13 @@
         }
     }
     </script>
+    <script src="components/loader.js" defer></script>
 </head>
 <body class="capabilities-page">
     <!-- Header -->
     <header>
-        <!-- Navigation -->
-        <nav class="navbar">
-            <div class="nav-container">
-            <a href="index.html" class="nav-logo">
-                <img src="assets/Logo2-buffered.webp" alt="IDFS Machine Shop Georgia Logo - CNC Machining Georgia Services" class="logo-img">
-                <div class="logo-text">
-                    <h2>IDFS</h2>
-                    <span>Integrated Design and Fabrication Solutions</span>
-                </div>
-            </a>
-                <ul class="nav-menu">
-                    <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="capabilities.html" class="nav-link active">Capabilities</a></li>
-                    <li><a href="services.html" class="nav-link">Services</a></li>
-                    <li><a href="industries.html" class="nav-link">Industries</a></li>
-                    <li><a href="contact.html" class="nav-link">Contact</a></li>
-                    <li><a href="contact.html#rfqForm" class="nav-link nav-cta">Get Quote</a></li>
-                </ul>
-                <div class="nav-toggle">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </div>
-        </nav>
+                <!-- Navigation Component -->
+        <div data-component="navbar"></div>
     </header>
 
     <!-- Main Content -->
@@ -182,71 +160,79 @@
                 </div>
                 
                 <div class="why-choose-grid">
-                    <div class="why-choose-card" style="display: flex; flex-direction: column;">
-                        <img src="assets/robotic-milling-operations.webp" alt="Robotic & Cutting Equipment" style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--radius-lg); margin-bottom: 1.5rem;" loading="lazy">
-                        <h4 style="margin-bottom: 1rem;">Robotic & Cutting Equipment</h4>
-                        <ul style="text-align: left; margin-top: 0; margin-bottom: 1.5rem; padding-left: 1.5rem;">
-                            <li style="margin-bottom: 0.5rem;">4 Kuka robots</li>
-                            <li style="margin-bottom: 0.5rem;">Robotic 7-axis milling cell with rotary table</li>
-                            <li style="margin-bottom: 0.5rem;">CNC plasma cutter</li>
-                            <li style="margin-bottom: 0.5rem;">Shop Sabre CNC Router</li>
-                            <li style="margin-bottom: 0;">Horizontal bandsaw</li>
+                    <div class="service-card">
+                        <img src="assets/robotic-milling-operations.webp" alt="Robotic & Cutting Equipment" class="service-card-image" loading="lazy">
+                        <h3>Robotic & Cutting Equipment</h3>
+                        <ul class="service-deliverables">
+                            <li>4 Kuka robots</li>
+                            <li>Robotic 7-axis milling cell with rotary table</li>
+                            <li>CNC plasma cutter</li>
+                            <li>Shop Sabre CNC Router</li>
+                            <li>Horizontal bandsaw</li>
                         </ul>
-                        <p style="margin-top: 0; margin-bottom: 2rem;"><strong>Materials:</strong> Aluminum, mild steels, stainless steels, plastics, composites, urethane foam, and more.</p>
-                        <a href="services/part-cutting.html" class="btn btn-primary" style="margin-top: auto; width: 100%; text-align: center;">Learn More</a>
+                        <p class="service-materials"><strong>Materials:</strong> Aluminum, mild steels, stainless steels, plastics, composites, urethane foam, and more.</p>
+                        <a href="services/part-cutting.html" class="what-we-do-link">Learn more →</a>
                     </div>
                     
-                    <div class="why-choose-card" style="display: flex; flex-direction: column;">
-                        <img src="assets/cnc-machining-precision-milling.webp" alt="Machining Equipment" style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--radius-lg); margin-bottom: 1.5rem;" loading="lazy">
-                        <h4 style="margin-bottom: 1rem;">Machining Equipment</h4>
-                        <p style="margin-top: 0; margin-bottom: 1.5rem;">Precision CNC milling & turning machines for in-house machining and short Production runs.</p>
-                        <ul style="text-align: left; margin-top: 0; margin-bottom: 2rem; padding-left: 1.5rem;">
-                            <li style="margin-bottom: 0.5rem;">Milling, surfacing, pocketing, and contouring</li>
-                            <li style="margin-bottom: 0.5rem;">Threading</li>
-                            <li style="margin-bottom: 0;">Custom shapes and profiles</li>
+                    <div class="service-card">
+                        <img src="assets/cnc-machining-precision-milling.webp" alt="Machining Equipment" class="service-card-image" loading="lazy">
+                        <h3>Machining Equipment</h3>
+                        <p class="service-deliverables">Precision CNC milling & turning machines for in-house machining and short Production runs.</p>
+                        <ul class="service-deliverables">
+                            <li>Milling, surfacing, pocketing, and contouring</li>
+                            <li>Threading</li>
+                            <li>Custom shapes and profiles</li>
                         </ul>
-                        <a href="services/cnc-machining.html" class="btn btn-primary" style="margin-top: auto; width: 100%; text-align: center;">Learn More</a>
+                        <a href="services/cnc-machining.html" class="what-we-do-link">Learn more →</a>
                     </div>
                     
-                    <div class="why-choose-card" style="display: flex; flex-direction: column;">
-                        <img src="assets/welding-services-mig-tig.webp" alt="Welding & Fabrication" style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--radius-lg); margin-bottom: 1.5rem;" loading="lazy">
-                        <h4 style="margin-bottom: 1rem;">Welding & Fabrication</h4>
-                        <p style="margin-top: 0; margin-bottom: 1.5rem;">Our welders have all the equipment and experience needed for structural and cosmetic welds.</p>
-                        <ul style="text-align: left; margin-top: 0; margin-bottom: 2rem; padding-left: 1.5rem;">
-                            <li style="margin-bottom: 0.5rem;">MIG & TIG welding</li>
-                            <li style="margin-bottom: 0.5rem;">Part cutting</li>
-                            <li style="margin-bottom: 0;">Assembly & finishing</li>
+                    <div class="service-card">
+                        <img src="assets/welding-services-mig-tig.webp" alt="Welding & Fabrication" class="service-card-image" loading="lazy">
+                        <h3>Welding & Fabrication</h3>
+                        <p class="service-deliverables">Our welders have all the equipment and experience needed for structural and cosmetic welds.</p>
+                        <ul class="service-deliverables">
+                            <li>MIG & TIG welding</li>
+                            <li>Part cutting</li>
+                            <li>Assembly & finishing</li>
                         </ul>
-                        <a href="services/metal-fabrication.html" class="btn btn-primary" style="margin-top: auto; width: 100%; text-align: center;">Learn More</a>
+                        <a href="services/metal-fabrication.html" class="what-we-do-link">Learn more →</a>
+                    </div>
+                </div>
+                
+                <!-- Software Banner -->
+                <div class="equipment-software-banner">
+                    <img src="assets/software.png" alt="Software & Technology Partners - CAD CAM Robotics Manufacturing Software" loading="lazy">
+                    <a href="contact.html#rfqForm" class="btn btn-primary software-banner-btn">Software →</a>
+                </div>
+                
+                <div class="why-choose-grid">
+                    <div class="service-card">
+                        <img src="assets/3d-printing-formlabs-sla.webp" alt="Additive Manufacturing" class="service-card-image" loading="lazy">
+                        <h3>Additive Manufacturing</h3>
+                        <p class="service-deliverables">High-resolution, production-quality resin printing equipment with engineering-grade materials using Formlabs 3L.</p>
+                        <a href="services/3d-printing.html" class="what-we-do-link">Learn more →</a>
                     </div>
                     
-                    <div class="why-choose-card" style="display: flex; flex-direction: column;">
-                        <img src="assets/3d-printing-formlabs-sla.webp" alt="Additive Manufacturing" style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--radius-lg); margin-bottom: 1.5rem;" loading="lazy">
-                        <h4 style="margin-bottom: 1rem;">Additive Manufacturing</h4>
-                        <p style="margin-top: 0; margin-bottom: 2rem;">High-resolution, production-quality resin printing equipment with engineering-grade materials using Formlabs 3L.</p>
-                        <a href="services/3d-printing.html" class="btn btn-primary" style="margin-top: auto; width: 100%; text-align: center;">Learn More</a>
-                    </div>
-                    
-                    <div class="why-choose-card" style="display: flex; flex-direction: column;">
-                        <img src="assets/cad-design-cam-programming.webp" alt="CAD Design & CAM Programming" style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--radius-lg); margin-bottom: 1.5rem;" loading="lazy">
-                        <h4 style="margin-bottom: 1rem;">CAD Design & CAM Programming</h4>
-                        <ul style="text-align: left; margin-top: 0; margin-bottom: 2rem; padding-left: 1.5rem;">
-                            <li style="margin-bottom: 0.5rem;">CAD modeling (Fusion 360, SolidWorks, Rhino, etc.)</li>
-                            <li style="margin-bottom: 0.5rem;">CAM programming in Mastercam, RobotMaster, and Fusion360</li>
-                            <li style="margin-bottom: 0.5rem;">Reverse engineering & 3D scanning</li>
-                            <li style="margin-bottom: 0;">Design for manufacturability (DFM) and design for assembly (DFA)</li>
+                    <div class="service-card">
+                        <img src="assets/cad-design-cam-programming.webp" alt="CAD Design & CAM Programming" class="service-card-image" loading="lazy">
+                        <h3>CAD Design & CAM Programming</h3>
+                        <ul class="service-deliverables">
+                            <li>CAD modeling (Fusion 360, SolidWorks, Rhino, etc.)</li>
+                            <li>CAM programming in Mastercam, RobotMaster, and Fusion360</li>
+                            <li>Reverse engineering & 3D scanning</li>
+                            <li>Design for manufacturability (DFM) and design for assembly (DFA)</li>
                         </ul>
-                        <a href="services/design-engineering.html" class="btn btn-primary" style="margin-top: auto; width: 100%; text-align: center;">Learn More</a>
+                        <a href="services/design-engineering.html" class="what-we-do-link">Learn more →</a>
                     </div>
                     
-                    <div class="why-choose-card" style="display: flex; flex-direction: column;">
-                        <img src="assets/Aerospace_Stock_Img.webp" alt="Government & Defense Contracting" style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--radius-lg); margin-bottom: 1.5rem;" loading="lazy">
-                        <h4 style="margin-bottom: 1rem;">Government & Defense Contracting</h4>
-                        <p style="margin-top: 0; margin-bottom: 1.5rem;">IDFS holds a CAGE code and is registered to perform government work. We have experience working with prime contractors on government projects.</p>
-                        <p style="margin-top: 0; margin-bottom: 0.75rem;"><strong>CAGE Code:</strong> 109T0</p>
-                        <p style="margin-top: 0; margin-bottom: 0.75rem;"><strong>D-U-N-S:</strong> 110818579</p>
-                        <p style="margin-top: 0; margin-bottom: 2rem;"><strong>Entity ID:</strong> WG82SYNRPDZ9</p>
-                        <a href="industries/aerospace-fabrication.html" class="btn btn-primary" style="margin-top: auto; width: 100%; text-align: center;">Learn More</a>
+                    <div class="service-card">
+                        <img src="assets/Aerospace_Stock_Img.webp" alt="Government & Defense Contracting" class="service-card-image" loading="lazy">
+                        <h3>Government & Defense Contracting</h3>
+                        <p class="service-deliverables">IDFS holds a CAGE code and is registered to perform government work. We have experience working with prime contractors on government projects.</p>
+                        <p class="service-credibility"><strong>CAGE Code:</strong> 109T0</p>
+                        <p class="service-credibility"><strong>D-U-N-S:</strong> 110818579</p>
+                        <p class="service-credibility"><strong>Entity ID:</strong> WG82SYNRPDZ9</p>
+                        <a href="industries/aerospace-fabrication.html" class="what-we-do-link">Learn more →</a>
                     </div>
                 </div>
             </div>
@@ -259,31 +245,41 @@
                     <h2 style="color: var(--navy-primary); font-size: 2.25rem; font-weight: 700; margin-bottom: 1rem; letter-spacing: -0.02em;">Why Companies Choose IDFS</h2>
                     <p style="font-size: 1.2rem; color: var(--text-medium); max-width: 700px; margin: 0 auto; line-height: 1.6;">We combine design expertise, modern manufacturing capabilities, and responsive service to deliver results that exceed expectations.</p>
                 </div>
+                
                 <div class="why-choose-grid">
-                    <div class="why-choose-card">
-                        <h4>Hybrid design + fabrication workflows</h4>
-                        <p>Faster turnaround and full control from concept to production.</p>
+                    <div class="why-choose-feature-image">
+                        <img src="assets/perfect-weld.jpeg" alt="Robotic Milling Operations - Advanced Manufacturing Capabilities" loading="lazy">
                     </div>
                     <div class="why-choose-card">
-                        <h4>Advanced manufacturing tools</h4>
-                        <p>Robotics, CNC equipment, SLA industrial printers, modern fabrication processes.</p>
+                        <div class="why-choose-accent"></div>
+                        <div class="why-choose-content">
+                            <h4>Uncompromising Quality</h4>
+                            <p>We care deeply about quality. Every part we build meets rigorous standards for precision, durability, and reliability.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="why-choose-card">
+                        <div class="why-choose-accent"></div>
+                        <div class="why-choose-content">
+                            <h4>Relationships That Matter</h4>
+                            <p>We build lasting relationships with our customers. Your success is our success, and we're committed to being a trusted partner you can rely on.</p>
+                        </div>
                     </div>
                     <div class="why-choose-card">
-                        <h4>Consistent quality</h4>
-                        <p>We strive to build every part with consistency and reliability.</p>
+                        <div class="why-choose-accent"></div>
+                        <div class="why-choose-content">
+                            <h4>Expert Knowledge & Experience</h4>
+                            <p>Deep expertise in DFM, metal fabrication, and product development. We bring decades of combined experience to every project.</p>
+                        </div>
                     </div>
                     <div class="why-choose-card">
-                        <h4>Flexible, small-shop responsiveness</h4>
-                        <p>Fast quotes, fast turnaround, real communication.</p>
+                        <div class="why-choose-accent"></div>
+                        <div class="why-choose-content">
+                            <h4>Flexible Small Shop Advantage</h4>
+                            <p>Fast quotes, quick turnaround, and real communication. Our size means we're agile, responsive, and focused on your success.</p>
+                        </div>
                     </div>
-                    <div class="why-choose-card">
-                        <h4>Diverse industry experience</h4>
-                        <p>Aerospace, industrial, entertainment, automotive, and R&D.</p>
-                    </div>
-                    <div class="why-choose-card">
-                        <h4>Deep Knowledge</h4>
-                        <p>Our team brings decades of combined design expertise, technical depth, and problem-solving experience to every project.</p>
-                    </div>
+                    
                 </div>
             </div>
         </section>

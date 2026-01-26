@@ -46,35 +46,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <script src="components/loader.js" defer></script>
 </head>
 <body class="services-page">
     <!-- Header -->
     <header>
-        <!-- Navigation -->
-        <nav class="navbar">
-            <div class="nav-container">
-            <a href="index.html" class="nav-logo">
-                <img src="assets/Logo2-buffered.webp" alt="IDFS Machine Shop Georgia Logo" class="logo-img">
-                <div class="logo-text">
-                    <h2>IDFS</h2>
-                    <span>Integrated Design and Fabrication Solutions</span>
-                </div>
-            </a>
-                <ul class="nav-menu">
-                    <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="capabilities.html" class="nav-link">Capabilities</a></li>
-                    <li><a href="services.html" class="nav-link active">Services</a></li>
-                    <li><a href="industries.html" class="nav-link">Industries</a></li>
-                    <li><a href="contact.html" class="nav-link">Contact</a></li>
-                    <li><a href="contact.html#rfqForm" class="nav-link nav-cta">Get Quote</a></li>
-                </ul>
-                <div class="nav-toggle">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </div>
-        </nav>
+                <!-- Navigation Component -->
+        <div data-component="navbar"></div>
     </header>
 
     <!-- Main Content -->
@@ -85,7 +63,7 @@
                 <div class="hero-content">
                     <h1>Our Services</h1>
                     <p class="hero-subtitle" style="margin-top: 1rem; font-size: 1rem;">From one-off prototypes to production runs, IDFS delivers precision metalwork, design support, and advanced manufacturing solutions for every industry.</p>
-                    <div class="hero-buttons">
+                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
                         <a href="contact.html#rfqForm" class="btn btn-primary">Get a Quote</a>
                         <a href="capabilities.html" class="btn btn-secondary">View Our Capabilities</a>
                     </div>
@@ -93,231 +71,215 @@
             </div>
         </section>
 
-        <!-- Services Sections -->
-        <section class="capability-section" id="design-engineering">
+        <!-- Services Navigation Badge Bar -->
+        <section class="badge-bar">
+            <div class="badge-bar-container">
+                <a href="#core-services" class="badge-item badge-nav-item">
+                    <svg class="badge-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="badge-label">Core Services</span>
+                </a>
+                <a href="#manufacturing-services" class="badge-item badge-nav-item">
+                    <svg class="badge-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                        <path d="M9 9H15M9 15H15M9 12H15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <span class="badge-label">Manufacturing Services</span>
+                </a>
+                <a href="#specialized-services" class="badge-item badge-nav-item">
+                    <svg class="badge-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="badge-label">Specialty Services</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Core Services Section -->
+        <section class="capability-section" id="core-services">
             <div class="container">
-                <div class="capability-content">
-                    <div class="capability-text">
-                        <h3>Design, Product Development, & Prototyping</h3>
-                        <p>Turning concepts into manufacturable, production-ready solutions.</p>
-                        <p>We provide CAD modeling, product development, and design support for projects ranging from simple components to full assemblies.</p>
-                        
-                        <p><strong>Capabilities include:</strong></p>
-                        <ul>
-                            <li>CAD modeling (Fusion 360, SolidWorks, Rhino, etc.)</li>
-                            <li>Product development</li>
-                            <li>Reverse engineering</li>
-                            <li>Research and development</li>
+                <div class="why-choose-header" style="text-align: center; margin-bottom: 3rem;">
+                    <h2 style="color: var(--navy-primary); font-size: 2.25rem; font-weight: 700; margin-bottom: 1rem; letter-spacing: -0.02em;">Core Services</h2>
+                    <p style="font-size: 1.2rem; color: var(--text-medium); max-width: 700px; margin: 0 auto; line-height: 1.6;">Comprehensive fabrication services from concept to completion, backed by advanced technology and decades of expertise.</p>
+                </div>
+                
+                <div class="why-choose-grid">
+                    <div class="service-card">
+                        <img src="assets/cad-design-cam-programming.webp" alt="Design, Product Development & Prototyping" class="service-card-image" loading="lazy">
+                        <h3>Design, Product Development & Prototyping</h3>
+                        <p class="service-deliverables">Turning concepts into manufacturable, production-ready solutions.</p>
+                        <ul class="service-deliverables">
+                            <li>CAD modeling (Fusion 360, SolidWorks, Rhino)</li>
+                            <li>Product development & R&D</li>
+                            <li>Reverse engineering & 3D scanning</li>
                             <li>Prototyping and design validation</li>
-                            <li>DFM/DFA optimization (design for manufacturability)</li>
+                            <li>DFM/DFA optimization</li>
                             <li>Rapid concept modeling via SLA printing</li>
                         </ul>
-                        <br>
-                        <hr>
-                        <br>
-                        <p><strong>Benefits:</strong><br>Shorter development cycles, reduced production cost, and clear, manufacturable designs from day one.</p>
-                        <br>
-                        <a href="services/design-engineering.html" class="btn btn-primary">Learn more about Design, Product Development, & Prototyping</a>
+                        <p class="service-materials"><strong>Benefits:</strong> Shorter development cycles, reduced production cost, and clear, manufacturable designs from day one.</p>
+                        <a href="services/design-engineering.html" class="what-we-do-link">Learn more →</a>
                     </div>
-                    <div class="capability-image">
-                        <img src="assets/cad-design-cam-programming.webp" alt="CAD Design Services" loading="lazy">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="capability-section alt" id="custom-fabrication">
-            <div class="container">
-                <div class="capability-content">
-                    <div class="capability-image">
-                        <img src="assets/service-card-pics/services-custom_metal_fab.webp" alt="Custom Metal Fabrication Services" loading="lazy">
-                    </div>
-                    <div class="capability-text">
-                        <h3>Custom Metal Fabrication (Welding, Machining, Cutting)</h3>
-                        
-                        <p>Metal fabrication for industrial, commercial, automotive, aerospace, and entertainment applications. We handle everything from complex frames and assemblies to brackets, fixtures, enclosures, and short Production runs.</p>
-                        <p><strong>Metal fabrication process:</strong></p>
-                        <ul>
+                    
+                    <div class="service-card">
+                        <img src="assets/service-card-pics/services-custom_metal_fab.webp" alt="Custom Metal Fabrication" class="service-card-image" loading="lazy">
+                        <h3>Custom Metal Fabrication</h3>
+                        <p class="service-deliverables">Metal fabrication for industrial, commercial, automotive, aerospace, and entertainment applications.</p>
+                        <ul class="service-deliverables">
                             <li>In-house design team</li>
                             <li>MIG & TIG welding</li>
-                            <li>Part cutting</li>
-                            <li>Assembly & finishing</li>
-                            <li>Packaging & shipping</li>
+                            <li>Part cutting & assembly</li>
+                            <li>Finishing & packaging</li>
                         </ul>
-                      
-                        <br>
-                        <hr>
-                        <br>
-                        <p><strong>Applications:</strong><br>Custom metal fabrication, frames, enclosures, trailers, brackets, assemblies, structural reinforcements, precision components, ground support equipment, and more.</p>
-                        <br>
-                      
-                        <a href="services/metal-fabrication.html" class="btn btn-primary">Learn more about Custom Metal Fabrication (Welding, Machining, Cutting)</a>
+                        <p class="service-materials"><strong>Applications:</strong> Custom metal fabrication, frames, enclosures, trailers, brackets, assemblies, structural reinforcements, precision components, and ground support equipment.</p>
+                        <a href="services/metal-fabrication.html" class="what-we-do-link">Learn more →</a>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="capability-section" id="3d-printing">
-            <div class="container">
-                <div class="capability-content">
-                    <div class="capability-text">
+                    
+                    <div class="service-card">
+                        <img src="assets/3d-printing-formlabs-sla.webp" alt="Additive Manufacturing" class="service-card-image" loading="lazy">
                         <h3>Additive Manufacturing (Industrial 3D Printing)</h3>
-                        <p>Large-format SLA printing services for production-quality parts, prototypes, and functional components using Formlabs 3L.</p>
-                        <p><strong>3D printing services:</strong></p>
-                        <ul>
+                        <p class="service-deliverables">Large-format SLA printing services for production-quality parts, prototypes, and functional components using Formlabs 3L.</p>
+                        <ul class="service-deliverables">
                             <li>Functional prototypes and parts</li>
                             <li>Complex geometries not feasible in machining</li>
                             <li>Wide range of materials and applications</li>
                             <li>Design and engineering support</li>
-                        </ul>    <br>
-                        <hr>
-                        <br>
-                        <p><strong>Applications:</strong><br>Product development, functional testing, tooling, medical, veterinarian, and dental models, trays, engineering prototypes, subassemblies, and production assemblies.</p>
-                        <br>
-                        <a href="services/3d-printing.html" class="btn btn-primary">Learn more about Additive Manufacturing (Industrial 3D Printing)</a>
-                    </div>
-                    <div class="capability-image">
-                        <img src="assets/3d-printing-formlabs-sla.webp" alt="Industrial 3D Printing" loading="lazy">
+                        </ul>
+                        <p class="service-materials"><strong>Applications:</strong> Product development, functional testing, tooling, medical/veterinary/dental models, trays, engineering prototypes, subassemblies, and production assemblies.</p>
+                        <a href="services/3d-printing.html" class="what-we-do-link">Learn more →</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="capability-section alt" id="cutting">
+        <!-- Manufacturing Services Section -->
+        <section class="capability-section alt" id="manufacturing-services">
             <div class="container">
-                <div class="capability-content">
-                    <div class="capability-image">
-                        <img src="assets/part-cutting-cnc-plasma-saw.webp" alt="Part Cutting Services" loading="lazy">
+                <div class="why-choose-header" style="text-align: center; margin-bottom: 3rem;">
+                    <h2 style="color: var(--navy-primary); font-size: 2.25rem; font-weight: 700; margin-bottom: 1rem; letter-spacing: -0.02em;">Manufacturing Services</h2>
+                    <p style="font-size: 1.2rem; color: var(--text-medium); max-width: 700px; margin: 0 auto; line-height: 1.6;">Precision cutting, machining, and production capabilities for projects of any scale.</p>
                     </div>
-                    <div class="capability-text">
-                        <h3>Part Cutting (Plasma, Router, Robotic Milling, Bandsaw)</h3>
-                        <p>We offer a wide range of cutting services for metals, plastics, composites, using a variety of tools and machines.</p>
-                    
-                        <p><strong>Cutting services:</strong></p>
-                        <ul>
+                
+                <div class="why-choose-grid">
+                    <div class="service-card">
+                        <img src="assets/part-cutting-cnc-plasma-saw.webp" alt="Part Cutting Services" class="service-card-image" loading="lazy">
+                        <h3>Part Cutting</h3>
+                        <p class="service-deliverables">Wide range of cutting services for metals, plastics, and composites using advanced equipment.</p>
+                        <ul class="service-deliverables">
                             <li>CNC plasma cutting</li>
                             <li>Shop Sabre CNC Router</li>
                             <li>7-Axis robotic aluminum milling cell w/ rotary table</li>
                             <li>Horizontal bandsaw</li>
                         </ul>
-                        <br>
-                        <hr>
-                        <br>
-                        <p><strong>Use cases:</strong><br>Base plates, gussets, brackets, signage, component blanks, templates, subassemblies, and production parts.</p>
-                        <br>
-                        <a href="services/part-cutting.html" class="btn btn-primary">Learn more about Part Cutting</a>
+                        <p class="service-materials"><strong>Use cases:</strong> Base plates, gussets, brackets, signage, component blanks, templates, subassemblies, and production parts.</p>
+                        <a href="services/part-cutting.html" class="what-we-do-link">Learn more →</a>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="capability-section" id="film-props">
-            <div class="container">
-                <div class="capability-content">
-                    <div class="capability-text">
-                        <h3>Entertainment, Props, and Sculptures (Normal, Large Format)</h3>
-                        <p>Custom props, set pieces, and larger-than-life sculptures for Atlanta's rapidly growing film and TV industry.</p>
-                        <p><strong>Prop fabrication services:</strong></p>
-                        <ul>
-                            <li>Metal props, scenic elements, custom designed props</li>
-                            <li>Structural pieces and rig-ready builds</li>
-                            <li>Larger than life sculptures</li>
-                            <li>Practical effects and mechanical components</li>
-                            <li>Fast turnaround for tight production schedules</li>
+                    
+                    <div class="service-card">
+                        <img src="assets/service-card-pics/short-production-runs-manufacturing.webp" alt="Short Production Runs" class="service-card-image" loading="lazy">
+                        <h3>Short Production Runs</h3>
+                        <p class="service-deliverables">Full end-to-end product support from design to delivery.</p>
+                        <ul class="service-deliverables">
+                            <li>Full end-to-end product support</li>
+                            <li>Design expertise and DFM/DFA optimization</li>
+                            <li>Short run and one-off production runs</li>
+                            <li>Quick turnaround and consistent results</li>
                         </ul>
-                        <br>
-                        <hr>
-                        <br>
-                        <p><strong>Why productions choose IDFS:</strong><br>Located near Trilith, Tyler Perry, and Atlanta Metro Studios. Decades of experience in the film and entertainment industry.</p>
-                        <br>
-                        <a href="services/prop-fabrication.html" class="btn btn-primary">Learn more about Entertainment, Props, and Sculptures</a>
+                        <p class="service-materials"><strong>Benefits:</strong> Quick turnaround, consistent results, and full end-to-end product support.</p>
+                        <a href="services/production-runs.html" class="what-we-do-link">Learn more →</a>
                     </div>
-                    <div class="capability-image" style="position: relative;">
-                        <img src="assets/service-card-pics/services-film.webp" alt="Film and Prop Fabrication" loading="lazy">
-                        <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(26, 26, 46, 0.9)); padding: 2rem 1.5rem 1.5rem; text-align: left;">
-                            <h3 style="color: white; margin-bottom: 0.5rem; font-size: 1.3rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;">Swamp Monster</h3>
-                            <p style="color: rgba(255, 255, 255, 0.9); margin: 0; font-size: 0.95rem; line-height: 1.4;">In collaboration with Bones Studio LLC in Fayetteville, Georgia</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="capability-section alt" id="production-support">
-            <div class="container">
-                <div class="capability-content">
-                    <div class="capability-image">
-                        <img src="assets/service-card-pics/part-cutting-services.webp" alt="Production & Overflow Support" loading="lazy">
-                    </div>
-                    <div class="capability-text">
+                    
+                    <div class="service-card">
+                        <img src="assets/service-card-pics/part-cutting-services.webp" alt="Overflow & Production Support" class="service-card-image" loading="lazy">
                         <h3>Overflow & Production Support</h3>
-                        <p>Production capabilities for low to mid volume manufacturing with repeatability and consistency.</p>
-                        <p><strong>Process capabilities:</strong></p>
-                        <ul>
+                        <p class="service-deliverables">Production capabilities for low to mid volume manufacturing with repeatability and consistency.</p>
+                        <ul class="service-deliverables">
                             <li>Repeatable part manufacturing</li>
                             <li>Assembly and sub-assembly builds</li>
                             <li>Prototyping-to-production transitions</li>
                             <li>Hardware installation</li>
                             <li>Overflow fabrication & design support</li>
                         </ul>
-                        <br>
-                        <br>
-                        <a href="services/overflow-production-support.html" class="btn btn-primary">Learn more about Overflow & Production Support</a>
+                        <a href="services/overflow-production-support.html" class="what-we-do-link">Learn more →</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="capability-section" id="small-production">
+        <!-- Services Divider Bar -->
+        <section class="badge-bar badge-bar-divider services-badge-bar-bg">
+            <div class="badge-bar-container">
+                <div class="badge-item badge-item-white">
+                    <svg class="badge-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="badge-label">Full Service</span>
+                </div>
+                <div class="badge-item badge-item-white">
+                    <svg class="badge-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="badge-label">Quality Assured</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Specialized Services Section -->
+        <section class="capability-section" id="specialized-services">
             <div class="container">
-                <div class="capability-content">
-                    <div class="capability-text">
-                        <h3>Short Production Runs</h3>
-                        <p>Our fabrication team is capable of handling short Production runs and helping you to develop your product from start to finish.</p>
-                        <p><strong>Short Production runs capabilities:</strong></p>
-                        <ul>
-                            <li>Full end-to-end product support</li>
-                            <li>Design expertise and DFM/DFA optimization</li>
-                            <li>Short run and one-off production runs</li>
-                            <li>Quick turnaround and consistent results</li>
+                <div class="why-choose-header" style="text-align: center; margin-bottom: 3rem;">
+                    <h2 style="color: var(--navy-primary); font-size: 2.25rem; font-weight: 700; margin-bottom: 1rem; letter-spacing: -0.02em;">Specialized Services</h2>
+                    <p style="font-size: 1.2rem; color: var(--text-medium); max-width: 700px; margin: 0 auto; line-height: 1.6;">Custom solutions for entertainment, repairs, and unique fabrication needs.</p>
+                </div>
+                
+                <div class="why-choose-grid">
+                    <div class="service-card">
+                        <img src="assets/service-card-pics/services-film.webp" alt="Entertainment, Props, and Sculptures" class="service-card-image" loading="lazy">
+                        <h3>Entertainment, Props & Sculptures</h3>
+                        <p class="service-deliverables">Custom props, set pieces, and larger-than-life sculptures for Atlanta's rapidly growing film and TV industry.</p>
+                        <ul class="service-deliverables">
+                            <li>Metal props, scenic elements, custom designed props</li>
+                            <li>Structural pieces and rig-ready builds</li>
+                            <li>Larger than life sculptures</li>
+                            <li>Practical effects and mechanical components</li>
+                            <li>Fast turnaround for tight production schedules</li>
                         </ul>
-                        <br>
-                        <hr>
-                        <br>
-                        <p><strong>Benefits:</strong><br>Quick turnaround, consistent results, and full end-to-end product support.</p>
-                        <br>
-                        <a href="services/production-runs.html" class="btn btn-primary">Learn more about Short Production Runs</a>
+                        <p class="service-materials"><strong>Why productions choose IDFS:</strong> Located near Trilith, Tyler Perry, and Atlanta Metro Studios. Decades of experience in the film and entertainment industry.</p>
+                        <a href="services/prop-fabrication.html" class="what-we-do-link">Learn more →</a>
                     </div>
-                    <div class="capability-image">
-                        <img src="assets/service-card-pics/short-production-runs-manufacturing.webp" alt="Short Production Runs" loading="lazy">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="capability-section alt" id="repairs">
-            <div class="container">
-                <div class="capability-content">
-                    <div class="capability-image">
-                        <img src="assets/service-card-pics/repair-services-trailer-gate.webp" alt="Repair Services" loading="lazy">
-                    </div>
-                    <div class="capability-text">
+                    
+                    <div class="service-card">
+                        <img src="assets/service-card-pics/repair-services-trailer-gate.webp" alt="Repair Services" class="service-card-image" loading="lazy">
                         <h3>Repair Services</h3>
-                        <p>Professional repair services for trailers, gates, metal equipment, and industrial machinery in Fayetteville, Georgia.</p>
-                        <p><strong>Repair services:</strong></p>
-                        <ul>
+                        <p class="service-deliverables">Professional repair services for trailers, gates, metal equipment, and industrial machinery in Fayetteville, Georgia.</p>
+                        <ul class="service-deliverables">
                             <li>Trailer repair</li>
                             <li>Gate repair</li>
                             <li>Metal equipment repair</li>
                             <li>Industrial and heavy machinery repair</li>
                             <li>Welding repairs and structural reinforcement</li>
                         </ul>
-                        <br>
-                        <hr>
-                        <br>
-                        <p><strong>Why choose IDFS for repairs:</strong><br>Expert welding, fabrication, and machining capabilities ensure durable, long-lasting repairs that restore your equipment to working condition.</p>
-                        <br>
-                        <a href="services/repairs.html" class="btn btn-primary">Learn more about Repair Services</a>
+                        <p class="service-materials"><strong>Why choose IDFS for repairs:</strong> Expert welding, fabrication, and machining capabilities ensure durable, long-lasting repairs that restore your equipment to working condition.</p>
+                        <a href="services/repairs.html" class="what-we-do-link">Learn more →</a>
+                    </div>
+                    
+                    <div class="service-card">
+                        <img src="assets/robotic-milling-operations.webp" alt="Robotic Welding, Milling, and WAAM" class="service-card-image" loading="lazy">
+                        <h3>Robotic Welding, Milling, and WAAM</h3>
+                        <p class="service-deliverables">Advanced robotic manufacturing capabilities using KUKA and Universal Robots, powered by Robotmaster, RoboDK, Mastercam, and more.</p>
+                        <ul class="service-deliverables">
+                            <li>KUKA robotic systems</li>
+                            <li>Universal Robots integration</li>
+                            <li>Robotic welding and milling</li>
+                            <li>Wire Arc Additive Manufacturing (WAAM)</li>
+                            <li>Robotmaster, RoboDK, and Mastercam programming</li>
+                        </ul>
+                        <p class="service-materials"><strong>Technology Partners:</strong> KUKA and Universal Robots, powered by Robotmaster, RoboDK, Mastercam, and more.</p>
+                        <a href="services/part-cutting.html" class="what-we-do-link">Learn more →</a>
                     </div>
                 </div>
             </div>
@@ -326,12 +288,13 @@
         <!-- CTA Section -->
         <section class="capability-section alt" id="contact-cta">
             <div class="container">
-                <div class="capability-content">
+                <div class="capability-content" style="text-align: center;">
                     <h3>Ready to get started?</h3>
-                    <br>
-                    <p>Tell us about your project, upload your files, and get a quick, accurate quote.</p>
-                    <br>
-                    <a href="contact.html#rfqForm" class="btn btn-primary" style="margin-top: 1.5rem;">Request a Quote</a>
+                    <p style="margin-top: 1rem; font-size: 1.1rem;">Tell us about your project, upload your files, and get a quick, accurate quote.</p>
+                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+                        <a href="contact.html#rfqForm" class="btn btn-primary">Request a Quote</a>
+                        <a href="capabilities.html" class="btn btn-secondary">View Our Capabilities</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -395,4 +358,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-

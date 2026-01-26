@@ -37,3 +37,10 @@ variable "recaptcha_secret_key" {
   default     = ""
   sensitive   = true
 }
+
+variable "turnstile_secret_key" {
+  description = "Cloudflare Turnstile secret key for backend verification (free alternative to reCAPTCHA)"
+  type        = string
+  default     = ""
+  sensitive   = true
+}

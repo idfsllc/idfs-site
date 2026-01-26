@@ -20,8 +20,9 @@ locals {
   lambda_env_vars = {
     TO_EMAIL         = var.to_email
     FROM_EMAIL       = var.from_email
-    ENABLE_RECAPTCHA = var.enable_recaptcha
+    ENABLE_RECAPTCHA = tostring(var.enable_recaptcha)
     RECAPTCHA_SECRET = var.recaptcha_secret_key
+    TURNSTILE_SECRET = var.turnstile_secret_key
     # ALLOWED_ORIGIN   = "https://${local.www_domain}"  # Commented out for testing
     ALLOWED_ORIGIN   = "*"  # Allow all origins for testing (will be CloudFront domain)
   }

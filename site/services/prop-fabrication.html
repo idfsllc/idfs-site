@@ -32,8 +32,8 @@
     <meta name="twitter:image" content="https://idfsllc.com/assets/robotic-milling-operations.webp">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/webp" href="assets/favicon.webp">
-    <link rel="shortcut icon" type="image/webp" href="assets/favicon.webp">
+    <link rel="icon" type="image/webp" href="../assets/favicon.webp">
+    <link rel="shortcut icon" type="image/webp" href="../assets/favicon.webp">
     
     <title>Film & Prop Fabrication | Custom Props, Metalwork, Set Fabrication | IDFS</title>
     
@@ -46,35 +46,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <script src="../components/loader.js" defer></script>
 </head>
 <body class="capabilities-page">
     <!-- Header -->
     <header>
-        <!-- Navigation -->
-        <nav class="navbar">
-            <div class="nav-container">
-            <a href="../index.html" class="nav-logo">
-                <img src="../assets/Logo2-buffered.webp" alt="IDFS Machine Shop Georgia Logo" class="logo-img">
-                <div class="logo-text">
-                    <h2>IDFS</h2>
-                    <span>Integrated Design and Fabrication Solutions</span>
-                </div>
-            </a>
-                <ul class="nav-menu">
-                    <li><a href="../index.html" class="nav-link">Home</a></li>
-                    <li><a href="../capabilities.html" class="nav-link">Capabilities</a></li>
-                    <li><a href="../services.html" class="nav-link">Services</a></li>
-                    <li><a href="../industries.html" class="nav-link">Industries</a></li>
-                    <li><a href="../contact.html" class="nav-link">Contact</a></li>
-                    <li><a href="../contact.html#rfqForm" class="nav-link nav-cta">Get Quote</a></li>
-                </ul>
-                <div class="nav-toggle">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </div>
-        </nav>
+                <!-- Navigation Component -->
+        <div data-component="navbar"></div>
     </header>
 
     <!-- Main Content -->
@@ -84,9 +62,10 @@
             <div class="hero-container">
                 <div class="hero-content">
                     <h1>Film & Prop Fabrication</h1>
-                    <p class="hero-subtitle">Custom props, larger than life sculptures, and set pieces for film, TV, and entertainment productions in Fayetteville, Georgia located minutes from Trilith, Tyler Perry, and Atlanta Metro Studios.</p>
-                    <div class="hero-buttons" style="margin-top: 2rem;">
-                        <a href="../services.html" class="btn btn-primary">Explore our Services</a>
+                    <p class="hero-subtitle" style="margin-top: 1rem; font-size: 1rem;">Custom props, larger than life sculptures, and set pieces for film, TV, and entertainment productions in Fayetteville, Georgia located minutes from Trilith, Tyler Perry, and Atlanta Metro Studios.</p>
+                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+                        <a href="../contact.html#rfqForm" class="btn btn-primary">Request a Quote</a>
+                        <a href="../services.html" class="btn btn-secondary">Explore our Services</a>
                     </div>
                 </div>
             </div>
@@ -119,6 +98,20 @@
                             <h3 style="color: white; margin-bottom: 0.5rem; font-size: 1.3rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;">Swamp Monster</h3>
                             <p style="color: rgba(255, 255, 255, 0.9); margin: 0; font-size: 0.95rem; line-height: 1.4;">In collaboration with Bones Studio LLC in Fayetteville, Georgia</p>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="capability-section alt" id="contact-cta">
+            <div class="container">
+                <div class="capability-content" style="text-align: center;">
+                    <h3>Ready to create props for your production?</h3>
+                    <p>Get a fast, accurate quote for your prop fabrication needs in Fayetteville, GA.</p>
+                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 1.5rem;">
+                        <a href="../contact.html#rfqForm" class="btn btn-primary">Request a Quote</a>
+                        <a href="../contact.html" class="btn btn-secondary">Contact Us</a>
                     </div>
                 </div>
             </div>
@@ -179,7 +172,7 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>
 

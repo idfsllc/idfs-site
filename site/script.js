@@ -11,27 +11,30 @@ document.addEventListener('DOMContentLoaded', function() {
     const navMenu = document.querySelector('.nav-menu');
     const navLinks = document.querySelectorAll('.nav-link');
 
-    // Toggle mobile menu
-    navToggle.addEventListener('click', function() {
-        navMenu.classList.toggle('active');
-        navToggle.classList.toggle('active');
-    });
-
-    // Close mobile menu when clicking on a link
-    navLinks.forEach(link => {
-        link.addEventListener('click', function() {
-            navMenu.classList.remove('active');
-            navToggle.classList.remove('active');
+    // Only set up navigation if elements exist (navbar component may load later)
+    if (navToggle && navMenu) {
+        // Toggle mobile menu
+        navToggle.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+            navToggle.classList.toggle('active');
         });
-    });
 
-    // Close mobile menu when clicking outside
-    document.addEventListener('click', function(event) {
-        if (!navToggle.contains(event.target) && !navMenu.contains(event.target)) {
-            navMenu.classList.remove('active');
-            navToggle.classList.remove('active');
-        }
-    });
+        // Close mobile menu when clicking on a link
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                navMenu.classList.remove('active');
+                navToggle.classList.remove('active');
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!navToggle.contains(event.target) && !navMenu.contains(event.target)) {
+                navMenu.classList.remove('active');
+                navToggle.classList.remove('active');
+            }
+        });
+    }
 
     // Hero Carousel functionality
     const heroCarouselTrack = document.getElementById('heroCarouselTrack');
@@ -325,6 +328,14 @@ if (rfqForm) {
         return;
     }
     
+    // Check reCAPTCHA token
+    const recaptchaToken = document.querySelector('textarea[name="g-recaptcha-response"]')?.value || 
+                          grecaptcha?.getResponse?.();
+    if (!recaptchaToken) {
+        alert('Please complete the security verification.');
+        return;
+    }
+    
     // Simulate form submission
     const submitButton = this.querySelector('button[type="submit"]');
     const originalText = submitButton.textContent;
@@ -371,7 +382,8 @@ if (rfqForm) {
                 company: data.company,
                 phone: data.phone,
                 serviceType: data['service-type'],
-                attachments: attachments
+                attachments: attachments,
+                token: recaptchaToken
             })
         })
         .then(async (response) => {
@@ -391,6 +403,10 @@ if (rfqForm) {
             if (status === 200 && payload && payload.ok) {
                 alert('Thank you for your RFQ submission! We will contact you within 24 hours.');
                 this.reset();
+                // Reset reCAPTCHA
+                if (window.grecaptcha) {
+                    grecaptcha.reset();
+                }
             } else {
                 const msg = (payload && (payload.error || JSON.stringify(payload))) || 'Failed to submit form. Please try again.';
                 alert('Error: ' + msg);
@@ -408,15 +424,8 @@ if (rfqForm) {
     });
 }
 
-// Enhanced Navbar scroll effect with class-based approach
-window.addEventListener('scroll', function() {
-    const navbar = document.querySelector('.navbar');
-    if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
-    }
-});
+// Navbar scroll effect is handled by components/loader.js
+// This ensures no duplicate event listeners
 
 // Intersection Observer for animations
 const observerOptions = {
@@ -445,26 +454,29 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// File upload validation
-document.getElementById('files').addEventListener('change', function(e) {
-    const files = e.target.files;
-    const maxSize = 10 * 1024 * 1024; // 10MB
-    const allowedTypes = ['application/pdf', 'image/vnd.dxf', 'application/step', 'application/octet-stream'];
-    
-    for (let file of files) {
-        if (file.size > maxSize) {
-            alert(`File ${file.name} is too large. Maximum size is 10MB.`);
-            this.value = '';
-            return;
-        }
+// File upload validation (only on pages with file input)
+const filesInput = document.getElementById('files');
+if (filesInput) {
+    filesInput.addEventListener('change', function(e) {
+        const files = e.target.files;
+        const maxSize = 10 * 1024 * 1024; // 10MB
+        const allowedTypes = ['application/pdf', 'image/vnd.dxf', 'application/step', 'application/octet-stream'];
         
-        if (!allowedTypes.includes(file.type) && !file.name.toLowerCase().endsWith('.dxf') && !file.name.toLowerCase().endsWith('.step') && !file.name.toLowerCase().endsWith('.stp')) {
-            alert(`File ${file.name} is not a supported format. Please upload PDF, DXF, or STEP files.`);
-            this.value = '';
-            return;
+        for (let file of files) {
+            if (file.size > maxSize) {
+                alert(`File ${file.name} is too large. Maximum size is 10MB.`);
+                this.value = '';
+                return;
+            }
+            
+            if (!allowedTypes.includes(file.type) && !file.name.toLowerCase().endsWith('.dxf') && !file.name.toLowerCase().endsWith('.step') && !file.name.toLowerCase().endsWith('.stp')) {
+                alert(`File ${file.name} is not a supported format. Please upload PDF, DXF, or STEP files.`);
+                this.value = '';
+                return;
+            }
         }
-    }
-});
+    });
+}
 
 // Lazy loading for images (if any are added later)
 if ('IntersectionObserver' in window) {
@@ -497,19 +509,7 @@ function debounce(func, wait) {
     };
 }
 
-// Apply debouncing to scroll events
-const debouncedScrollHandler = debounce(function() {
-    const navbar = document.querySelector('.navbar');
-    if (window.scrollY > 50) {
-        navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
-        navbar.style.backdropFilter = 'blur(10px)';
-    } else {
-        navbar.style.backgroundColor = '#fff';
-        navbar.style.backdropFilter = 'none';
-    }
-}, 10);
-
-window.addEventListener('scroll', debouncedScrollHandler);
+// Removed conflicting inline style scroll handler - using class-based approach instead
 
 // Add loading states and error handling
 function showLoading(element) {
@@ -569,3 +569,67 @@ const navMenu = document.querySelector('.nav-menu');
 if (navMenu) {
     trapFocus(navMenu);
 }
+
+// Equalize card heights across all grids in Equipment & Processes section
+function equalizeCardHeights() {
+    const equipmentSection = document.querySelector('#equipment-overview');
+    if (!equipmentSection) return;
+    
+    const allCards = equipmentSection.querySelectorAll('.why-choose-card');
+    if (allCards.length === 0) return;
+    
+    // Reset heights to get natural heights
+    allCards.forEach(card => {
+        card.style.height = '';
+        card.style.minHeight = '';
+    });
+    
+    // Force layout recalculation
+    void equipmentSection.offsetHeight;
+    
+    // Wait for layout recalculation
+    setTimeout(function() {
+        const heights = Array.from(allCards).map(card => card.offsetHeight);
+        const maxHeight = Math.max(...heights);
+        
+        // Set all cards to the maximum height
+        allCards.forEach(card => {
+            card.style.height = maxHeight + 'px';
+        });
+    }, 100);
+}
+
+// Run when DOM is ready
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function() {
+        setTimeout(equalizeCardHeights, 200);
+    });
+} else {
+    setTimeout(equalizeCardHeights, 200);
+}
+
+// Also run on window load to catch late-loading content
+window.addEventListener('load', function() {
+    setTimeout(equalizeCardHeights, 100);
+});
+
+// Re-run on window resize (debounced)
+let resizeTimeout;
+window.addEventListener('resize', function() {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(equalizeCardHeights, 250);
+});
+
+// Re-run when images load (in case they affect card height)
+document.addEventListener('DOMContentLoaded', function() {
+    const images = document.querySelectorAll('#equipment-overview .why-choose-card img');
+    images.forEach(img => {
+        if (img.complete) {
+            setTimeout(equalizeCardHeights, 50);
+        } else {
+            img.addEventListener('load', function() {
+                setTimeout(equalizeCardHeights, 50);
+            });
+        }
+    });
+});

@@ -19,7 +19,7 @@ def lambda_handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
     """
     Lambda handler for contact form submissions.
     
-    Validates form data, optionally verifies reCAPTCHA, and sends email via SES.
+    Validates form data, optionally verifies Turnstile/reCAPTCHA, and sends email via SES.
     Returns JSON response with CORS headers.
     """
     
@@ -42,15 +42,23 @@ def lambda_handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
         message = body.get('message', '').strip()
         company = body.get('company', '').strip()
         phone = body.get('phone', '').strip()
-        recaptcha_token = body.get('token', '')
         
-        # Verify reCAPTCHA if enabled
-        if os.environ.get('ENABLE_RECAPTCHA', 'false').lower() == 'true':
-            if not recaptcha_token:
-                return create_cors_response(400, {'ok': False, 'error': 'reCAPTCHA token required'})
-            
+        # Check for reCAPTCHA token (primary) or Turnstile token (backward compatibility)
+        recaptcha_token = body.get('token', '')
+        turnstile_token = body.get('turnstileToken', '')
+        
+        # Verify captcha - prioritize reCAPTCHA if available
+        if recaptcha_token and os.environ.get('ENABLE_RECAPTCHA', 'false').lower() == 'true':
+            # Verify Google reCAPTCHA
             if not verify_recaptcha(recaptcha_token):
                 return create_cors_response(400, {'ok': False, 'error': 'reCAPTCHA verification failed'})
+        elif turnstile_token:
+            # Fallback to Cloudflare Turnstile if available
+            if not verify_turnstile(turnstile_token, event):
+                return create_cors_response(400, {'ok': False, 'error': 'Security verification failed'})
+        else:
+            # Require some form of captcha verification
+            return create_cors_response(400, {'ok': False, 'error': 'Security verification required'})
         
         # Optional attachments
         attachments = body.get('attachments', [])
@@ -107,6 +115,49 @@ def is_valid_email(email: str) -> bool:
     return re.match(pattern, email) is not None
 
 
+def verify_turnstile(token: str, event: Dict[str, Any]) -> bool:
+    """
+    Verify Cloudflare Turnstile token with Cloudflare's siteverify API.
+    """
+    try:
+        secret_key = os.environ.get('TURNSTILE_SECRET', '')
+        if not secret_key:
+            print("Warning: Turnstile secret key not configured")
+            return False
+        
+        # Get client IP from event if available
+        client_ip = get_client_ip(event)
+        if client_ip == 'Unknown':
+            client_ip = None
+        
+        data = {
+            'secret': secret_key,
+            'response': token
+        }
+        if client_ip:
+            data['remoteip'] = client_ip
+        
+        data_encoded = urllib.parse.urlencode(data).encode('utf-8')
+        
+        request = urllib.request.Request(
+            'https://challenges.cloudflare.com/turnstile/v0/siteverify',
+            data=data_encoded,
+            method='POST'
+        )
+        
+        with urllib.request.urlopen(request, timeout=10) as response:
+            result = json.loads(response.read().decode('utf-8'))
+            success = result.get('success', False)
+            if not success:
+                error_codes = result.get('error-codes', [])
+                print(f"Turnstile verification failed: {error_codes}")
+            return success
+            
+    except Exception as e:
+        print(f"Turnstile verification error: {str(e)}")
+        return False
+
+
 def verify_recaptcha(token: str) -> bool:
     """
     Verify reCAPTCHA token with Google's siteverify API.
@@ -135,6 +186,8 @@ def verify_recaptcha(token: str) -> bool:
     except Exception as e:
         print(f"reCAPTCHA verification error: {str(e)}")
         return False
+
+
 
 
 def send_contact_email(name: str, email: str, message: str, company: str, phone: str, attachments: Any, event: Dict[str, Any]) -> bool:

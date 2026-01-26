@@ -103,6 +103,7 @@ Thumbs.db
 .terraform/
 *.tfvars.backup
 terraform.tfvars.backup
+terraform.tfvars
 
 # Terraform binaries and installers
 terraform.exe
