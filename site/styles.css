@@ -1112,17 +1112,23 @@ ul {
     }
     
     .industries-page .hero {
-        min-height: 60vh;
-        padding: 100px 0 80px;
+        min-height: 45vh;
+        padding: 80px 0 60px;
         background-attachment: scroll !important;
     }
     
     .industries-page .hero-content h1 {
-        font-size: 2.8rem !important;
+        font-size: 2.2rem !important;
+        margin-bottom: 1.25rem !important;
     }
     
     .industries-page .hero-subtitle {
-        font-size: 1.15rem !important;
+        font-size: 1rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+    
+    .industries-page .hero-container {
+        padding: 0 1rem;
     }
 }
 
@@ -2611,10 +2617,11 @@ ul {
 }
 
 .navbar:not(.scrolled) .nav-cta {
-    background: rgba(255, 255, 255, 0.2) !important;
-    border: 2px solid rgba(255, 255, 255, 0.5) !important;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background: linear-gradient(135deg, var(--kratos-navy) 0%, var(--kratos-blue) 100%) !important;
+    border: 2px solid var(--kratos-navy) !important;
+    color: var(--kratos-white) !important;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
 }
 
 .nav-cta:hover {
@@ -2625,8 +2632,9 @@ ul {
 }
 
 .navbar:not(.scrolled) .nav-cta:hover {
-    background: rgba(255, 255, 255, 0.3) !important;
-    border-color: rgba(255, 255, 255, 0.8) !important;
+    background: linear-gradient(135deg, var(--kratos-accent) 0%, var(--kratos-blue) 100%) !important;
+    border-color: var(--kratos-accent) !important;
+    color: var(--kratos-white) !important;
 }
 
 /* Services CTA Section */
@@ -2817,6 +2825,32 @@ a[href^="mailto:"]:hover {
 
     .nav-menu.active {
         left: 0;
+    }
+    
+    .nav-menu .nav-link {
+        color: var(--kratos-blue) !important;
+        text-shadow: none !important;
+    }
+    
+    .nav-menu .nav-link:hover {
+        color: var(--kratos-accent) !important;
+    }
+    
+    .nav-menu .nav-link.active {
+        color: var(--kratos-blue) !important;
+        font-weight: 700;
+    }
+    
+    .nav-menu .nav-cta {
+        color: var(--kratos-white) !important;
+        background: linear-gradient(135deg, var(--kratos-navy) 0%, var(--kratos-blue) 100%) !important;
+        border-color: var(--kratos-navy) !important;
+    }
+    
+    .nav-menu .nav-cta:hover {
+        color: var(--kratos-white) !important;
+        background: linear-gradient(135deg, var(--kratos-accent) 0%, var(--kratos-blue) 100%) !important;
+        border-color: var(--kratos-accent) !important;
     }
 
     .nav-toggle {
@@ -3061,6 +3095,34 @@ a[href^="mailto:"]:hover {
     .hero-image img {
         max-width: 350px;
     }
+    
+    .industries-page .hero {
+        min-height: 40vh;
+        padding: 70px 0 50px;
+    }
+    
+    .industries-page .hero-content h1 {
+        font-size: 1.9rem !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    .industries-page .hero-subtitle {
+        font-size: 0.95rem !important;
+        margin-bottom: 1.25rem !important;
+    }
+    
+    .industries-page .hero-container {
+        padding: 0 1rem;
+    }
+    
+    .what-we-do-video-container {
+        min-height: 400px;
+    }
+    
+    .what-we-do-video {
+        min-height: 400px;
+        max-height: 550px;
+    }
 
     .highlight-item,
     .capability-item,
@@ -3234,6 +3296,9 @@ textarea:focus {
     background: linear-gradient(135deg, var(--kratos-accent) 0%, var(--kratos-blue) 100%) !important;
     color: #ffffff !important;
     border-color: var(--kratos-accent) !important;
+    padding: clamp(0.4rem, 1.5vw, 1rem) clamp(0.8rem, 3vw, 2rem);
+    font-size: clamp(0.65rem, 1.2vw, 0.9rem);
+    min-height: auto;
 }
 
 .software-banner-btn:hover {
@@ -4184,15 +4249,19 @@ textarea:focus {
         grid-row: auto;
         position: relative;
         top: auto;
-        max-width: 400px;
+        max-width: 100%;
+        width: 100%;
         margin: 0 auto;
         height: auto;
-        min-height: 400px;
+        min-height: 450px;
     }
     
     .what-we-do-video {
+        width: 100%;
         height: auto;
-        object-fit: contain;
+        min-height: 450px;
+        max-height: 600px;
+        object-fit: cover;
     }
     
     .what-we-do-content {
@@ -4797,8 +4866,11 @@ textarea:focus {
     }
     
     .capabilities-feature-image {
+        width: 100%;
+        max-width: 100%;
         height: auto;
-        aspect-ratio: 16/9;
+        aspect-ratio: auto;
+        object-fit: contain;
     }
     
     .capabilities-feature-text {
@@ -4866,10 +4938,11 @@ textarea:focus {
     }
     
     .software-banner-btn {
-        bottom: 1rem;
-        right: 1rem;
-        padding: 0.75rem 1.5rem;
-        font-size: 0.9rem;
+        bottom: 0.75rem;
+        right: 0.75rem;
+        padding: 0.5rem 1rem;
+        font-size: 0.75rem;
+        min-height: auto;
     }
     
     .service-row {
@@ -4955,6 +5028,14 @@ textarea:focus {
     
     .contact-details h2 {
         font-size: 1.5rem;
+    }
+    
+    .software-banner-btn {
+        bottom: 0.5rem;
+        right: 0.5rem;
+        padding: 0.4rem 0.8rem;
+        font-size: 0.65rem;
+        min-height: auto;
     }
 }
 
