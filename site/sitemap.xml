@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" >
     <url>
         <loc>https://idfsllc.com/</loc>
         <lastmod>2024-12-20</lastmod>
@@ -7,8 +7,8 @@
         <priority>1.0</priority>
         <image:image>
             <image:loc>https://idfsllc.com/assets/machine-shop-facility.webp</image:loc>
-            <image:title>IDFS Custom Fabrication & Design Facility Fayetteville Georgia</image:title>
-            <image:caption>State-of-the-art custom fabrication & design shop in Georgia with CNC machining and robotic capabilities</image:caption>
+            <image:title>IDFS Custom Fabrication &amp; Design Facility Fayetteville Georgia</image:title>
+            <image:caption>State-of-the-art custom fabrication &amp; design shop in Georgia with CNC machining and robotic capabilities</image:caption>
         </image:image>
         <image:image>
             <image:loc>https://idfsllc.com/assets/robotic-milling-operations.webp</image:loc>
@@ -33,7 +33,7 @@
         <priority>0.9</priority>
         <image:image>
             <image:loc>https://idfsllc.com/assets/cad-design-to-finished-part.webp</image:loc>
-            <image:title>Custom Design & Fabrication Georgia Services</image:title>
+            <image:title>Custom Design &amp; Fabrication Georgia Services</image:title>
             <image:caption>Advanced CAD design and CNC programming for custom fabrication Georgia and scenic work</image:caption>
         </image:image>
         <image:image>
@@ -269,18 +269,5 @@
         <lastmod>2024-12-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
-    </url>
-    <!-- PDF Documents -->
-    <url>
-        <loc>https://idfsllc.com/capabilities-statement.pdf</loc>
-        <lastmod>2024-12-20</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://idfsllc.com/one-page-capabilities.pdf</loc>
-        <lastmod>2024-12-20</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
     </url>
 </urlset>

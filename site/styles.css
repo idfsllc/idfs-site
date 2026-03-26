@@ -976,6 +976,464 @@ ul {
     animation: none !important;
 }
 
+/* Industrial hero — shared editorial style (left-aligned, eyebrow, strong overlay, CTA buttons). No bottom chevron (see powder-industrial for that). */
+.capabilities-page .hero.hero--industrial,
+.services-page .hero.hero--industrial,
+.industries-page .hero.hero--industrial {
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    min-height: 74vh;
+    padding: 148px 0 120px;
+    border-bottom: none;
+    overflow: hidden;
+    background-attachment: scroll !important;
+}
+
+.capabilities-page .hero.hero--industrial::before,
+.services-page .hero.hero--industrial::before,
+.industries-page .hero.hero--industrial::before {
+    filter: brightness(0.88) contrast(1.08) saturate(1.15);
+}
+
+.capabilities-page .hero.hero--industrial::after,
+.services-page .hero.hero--industrial::after,
+.industries-page .hero.hero--industrial::after {
+    background: linear-gradient(
+        98deg,
+        rgba(12, 14, 22, 0.88) 0%,
+        rgba(12, 14, 22, 0.55) 55%,
+        rgba(12, 14, 22, 0.38) 100%
+    );
+    z-index: 1;
+    animation: none !important;
+}
+
+.capabilities-page .hero.hero--industrial .hero-container,
+.services-page .hero.hero--industrial .hero-container,
+.industries-page .hero.hero--industrial .hero-container {
+    width: 100%;
+    text-align: left;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+.capabilities-page .hero.hero--industrial .hero-content--industrial,
+.services-page .hero.hero--industrial .hero-content--industrial,
+.industries-page .hero.hero--industrial .hero-content--industrial {
+    text-align: left;
+    margin: 0;
+    max-width: 44rem;
+}
+
+.capabilities-page .hero.hero--industrial .hero-eyebrow,
+.services-page .hero.hero--industrial .hero-eyebrow,
+.industries-page .hero.hero--industrial .hero-eyebrow {
+    font-family: 'Montserrat', 'Roboto', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--kratos-accent);
+    margin: 0 0 1rem;
+}
+
+.capabilities-page .hero.hero--industrial .hero-content h1,
+.services-page .hero.hero--industrial .hero-content h1,
+.industries-page .hero.hero--industrial .hero-content h1 {
+    font-family: 'Montserrat', 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: clamp(2.125rem, 4.8vw, 3.65rem) !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.02em !important;
+    line-height: 1.08 !important;
+    text-transform: uppercase;
+    color: var(--kratos-white) !important;
+    margin-bottom: 1.25rem !important;
+    text-shadow: 0 2px 28px rgba(0, 0, 0, 0.65) !important;
+}
+
+.capabilities-page .hero.hero--industrial .hero-subtitle,
+.services-page .hero.hero--industrial .hero-subtitle,
+.industries-page .hero.hero--industrial .hero-subtitle {
+    font-size: 1.15rem !important;
+    line-height: 1.65 !important;
+    font-weight: 400 !important;
+    max-width: 36rem;
+    margin: 0 0 1.75rem !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+    text-shadow: none !important;
+}
+
+.capabilities-page .hero.hero--industrial .hero-subtitle + .hero-subtitle,
+.services-page .hero.hero--industrial .hero-subtitle + .hero-subtitle,
+.industries-page .hero.hero--industrial .hero-subtitle + .hero-subtitle {
+    margin-top: -0.85rem !important;
+}
+
+.capabilities-page .hero.hero--industrial .hero-actions--industrial,
+.services-page .hero.hero--industrial .hero-actions--industrial,
+.industries-page .hero.hero--industrial .hero-actions--industrial,
+.capabilities-page .hero.hero--industrial .hero-buttons,
+.services-page .hero.hero--industrial .hero-buttons,
+.industries-page .hero.hero--industrial .hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.85rem 1.15rem;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 0.35rem;
+}
+
+.capabilities-page .hero.hero--industrial .btn-hero-industrial-primary,
+.services-page .hero.hero--industrial .btn-hero-industrial-primary,
+.industries-page .hero.hero--industrial .btn-hero-industrial-primary {
+    background: var(--kratos-accent) !important;
+    border-color: var(--kratos-accent) !important;
+    color: var(--kratos-white) !important;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    font-size: 1.05rem;
+    padding: 0.9rem 1.65rem;
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.25);
+    text-transform: none;
+}
+
+.capabilities-page .hero.hero--industrial .btn-hero-industrial-primary:hover,
+.services-page .hero.hero--industrial .btn-hero-industrial-primary:hover,
+.industries-page .hero.hero--industrial .btn-hero-industrial-primary:hover {
+    background: #ec4f6a !important;
+    border-color: #ec4f6a !important;
+    color: var(--kratos-white) !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.3);
+}
+
+.capabilities-page .hero.hero--industrial .btn-hero-industrial-primary .btn-arrow,
+.services-page .hero.hero--industrial .btn-hero-industrial-primary .btn-arrow,
+.industries-page .hero.hero--industrial .btn-hero-industrial-primary .btn-arrow {
+    margin-left: 0.3rem;
+    font-weight: 600;
+    opacity: 0.95;
+}
+
+.capabilities-page .hero.hero--industrial .btn-hero-industrial-secondary,
+.services-page .hero.hero--industrial .btn-hero-industrial-secondary,
+.industries-page .hero.hero--industrial .btn-hero-industrial-secondary {
+    background: transparent !important;
+    color: var(--kratos-white) !important;
+    border: 1px solid rgba(255, 255, 255, 0.85) !important;
+    font-weight: 500;
+    font-size: 1.05rem;
+    padding: 0.9rem 1.5rem;
+    text-transform: none;
+    box-shadow: none;
+}
+
+.capabilities-page .hero.hero--industrial .btn-hero-industrial-secondary:hover,
+.services-page .hero.hero--industrial .btn-hero-industrial-secondary:hover,
+.industries-page .hero.hero--industrial .btn-hero-industrial-secondary:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
+    color: var(--kratos-white) !important;
+    border-color: var(--kratos-white) !important;
+}
+
+@media (max-width: 768px) {
+    .capabilities-page .hero.hero--industrial,
+    .services-page .hero.hero--industrial,
+    .industries-page .hero.hero--industrial {
+        min-height: 62vh;
+        padding: 124px 0 96px;
+    }
+
+    .capabilities-page .hero.hero--industrial .hero-content h1,
+    .services-page .hero.hero--industrial .hero-content h1,
+    .industries-page .hero.hero--industrial .hero-content h1 {
+        font-size: 1.875rem !important;
+    }
+
+    .capabilities-page .hero.hero--industrial .hero-subtitle,
+    .services-page .hero.hero--industrial .hero-subtitle,
+    .industries-page .hero.hero--industrial .hero-subtitle {
+        font-size: 1.05rem !important;
+    }
+}
+
+/* Powder coating page hero – powder gun image */
+.powder-coating-page .hero {
+    background: url('assets/powder-coating.png') !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+}
+.powder-coating-page .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('assets/powder-coating.png');
+    background-size: cover;
+    background-position: center center;
+    filter: brightness(1.15) contrast(1.2) saturate(1.4);
+    z-index: 0;
+    animation: none !important;
+}
+
+/* Aligns with shared industrial hero filter (generic powder ::before rule above would otherwise win on cascade) */
+.powder-coating-page .hero.hero--industrial::before {
+    filter: brightness(0.88) contrast(1.08) saturate(1.15);
+}
+
+/* Powder coating page: same diamond-plate texture as example-parts section (main + hero base) */
+.powder-coating-page main {
+    background-color: #eceef3;
+    background-image:
+        repeating-linear-gradient(
+            45deg,
+            transparent,
+            transparent 9px,
+            rgba(0, 0, 0, 0.028) 9px,
+            rgba(0, 0, 0, 0.028) 10px
+        ),
+        repeating-linear-gradient(
+            -45deg,
+            transparent,
+            transparent 9px,
+            rgba(0, 0, 0, 0.022) 9px,
+            rgba(0, 0, 0, 0.022) 10px
+        );
+}
+
+/* Powder coating — chevron bottom + diamond texture (shared typography via .hero--industrial) */
+.powder-coating-page .hero.hero--industrial.hero--powder-industrial {
+    padding: 148px 0 128px;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 56px), 50% 100%, 0 calc(100% - 56px));
+    background-color: #eceef3 !important;
+    background-image:
+        repeating-linear-gradient(
+            45deg,
+            transparent,
+            transparent 9px,
+            rgba(0, 0, 0, 0.028) 9px,
+            rgba(0, 0, 0, 0.028) 10px
+        ),
+        repeating-linear-gradient(
+            -45deg,
+            transparent,
+            transparent 9px,
+            rgba(0, 0, 0, 0.022) 9px,
+            rgba(0, 0, 0, 0.022) 10px
+        ) !important;
+    background-size: auto, auto !important;
+    background-position: 0 0, 0 0 !important;
+    background-repeat: repeat, repeat !important;
+}
+
+.powder-coating-page .hero.hero--industrial.hero--powder-industrial .hero-powder-edge {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 56px;
+    z-index: 3;
+    pointer-events: none;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .powder-coating-page .hero.hero--industrial.hero--powder-industrial {
+        padding: 124px 0 104px;
+        clip-path: polygon(0 0, 100% 0, 100% calc(100% - 40px), 50% 100%, 0 calc(100% - 40px));
+    }
+
+    .powder-coating-page .hero.hero--industrial.hero--powder-industrial .hero-powder-edge {
+        height: 44px;
+    }
+}
+
+/* Powder coating page: section under hero — no hairline, flows from hero */
+.powder-coating-page #overview.capability-section.alt::before {
+    display: none;
+}
+
+.powder-coating-page #overview.capability-section {
+    padding-top: 56px;
+    padding-bottom: 50px;
+}
+
+/* Powder coating — example parts split showcase (collage + copy) */
+.powder-showcase-section {
+    background-color: #eceef3;
+    background-image:
+        repeating-linear-gradient(
+            45deg,
+            transparent,
+            transparent 9px,
+            rgba(0, 0, 0, 0.028) 9px,
+            rgba(0, 0, 0, 0.028) 10px
+        ),
+        repeating-linear-gradient(
+            -45deg,
+            transparent,
+            transparent 9px,
+            rgba(0, 0, 0, 0.022) 9px,
+            rgba(0, 0, 0, 0.022) 10px
+        );
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.powder-showcase-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+.powder-showcase {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+    gap: clamp(2rem, 5vw, 4rem);
+    align-items: center;
+}
+
+.powder-showcase__media {
+    min-width: 0;
+}
+
+.powder-showcase-collage {
+    position: relative;
+    max-width: 100%;
+    padding-bottom: 22%;
+}
+
+.powder-showcase-collage__main img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 18px 0 18px 0;
+    box-shadow: 0 16px 48px rgba(15, 23, 42, 0.14);
+}
+
+.powder-showcase-collage__inset {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: min(46%, 220px);
+    z-index: 2;
+}
+
+.powder-showcase-collage__inset img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 12px 36px rgba(15, 23, 42, 0.28);
+    border: 3px solid #fff;
+}
+
+.powder-showcase__copy {
+    min-width: 0;
+}
+
+.powder-showcase__kicker {
+    font-family: 'Montserrat', 'Roboto', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--kratos-accent);
+    margin: 0 0 0.65rem;
+}
+
+.powder-showcase__title {
+    font-family: 'Montserrat', 'Roboto', sans-serif;
+    font-size: clamp(1.5rem, 2.8vw, 2.05rem);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #1a1a1a;
+    margin: 0 0 1.25rem;
+}
+
+.powder-showcase__lead,
+.powder-showcase__body {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--text-medium);
+    margin: 0 0 1.1rem;
+}
+
+.powder-showcase__body {
+    margin-bottom: 1.75rem;
+}
+
+.powder-showcase__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--kratos-accent) !important;
+    border-color: var(--kratos-accent) !important;
+    color: var(--kratos-white) !important;
+    font-weight: 700;
+    font-size: 0.8125rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.9rem 1.65rem;
+    border-radius: 0;
+    clip-path: polygon(0 0, 100% 0, 94% 100%, 0 100%);
+    box-shadow: 0 4px 16px rgba(233, 69, 96, 0.35);
+    transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.powder-showcase__cta:hover {
+    background: #ec4f6a !important;
+    border-color: #ec4f6a !important;
+    color: var(--kratos-white) !important;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(233, 69, 96, 0.45);
+}
+
+@media (max-width: 960px) {
+    .powder-showcase {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .powder-showcase-collage {
+        padding-bottom: 26%;
+        max-width: 520px;
+        margin: 0 auto;
+    }
+
+    .powder-showcase__copy {
+        text-align: center;
+    }
+
+    .powder-showcase__kicker,
+    .powder-showcase__title {
+        text-align: center;
+    }
+
+    .powder-showcase__cta {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 520px) {
+    .powder-showcase-section {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+}
+
 
 /* Elevate text above overlays */
 .capabilities-page .hero-container {
@@ -1083,51 +1541,51 @@ ul {
 }
 
 @media (max-width: 768px) {
-    .capabilities-page .hero {
+    .capabilities-page .hero:not(.hero--industrial) {
         min-height: 60vh;
         padding: 100px 0 80px;
         background-attachment: scroll !important;
     }
     
-    .capabilities-page .hero-content h1 {
+    .capabilities-page .hero:not(.hero--industrial) .hero-content h1 {
         font-size: 2.8rem !important;
     }
     
-    .capabilities-page .hero-subtitle {
+    .capabilities-page .hero:not(.hero--industrial) .hero-subtitle {
         font-size: 1.15rem !important;
     }
     
-    .services-page .hero {
+    .services-page .hero:not(.hero--industrial) {
         min-height: 60vh;
         padding: 100px 0 80px;
         background-attachment: scroll !important;
     }
     
-    .services-page .hero-content h1 {
+    .services-page .hero:not(.hero--industrial) .hero-content h1 {
         font-size: 2.8rem !important;
     }
     
-    .services-page .hero-subtitle {
+    .services-page .hero:not(.hero--industrial) .hero-subtitle {
         font-size: 1.15rem !important;
     }
     
-    .industries-page .hero {
+    .industries-page .hero:not(.hero--industrial) {
         min-height: 45vh;
         padding: 80px 0 60px;
         background-attachment: scroll !important;
     }
     
-    .industries-page .hero-content h1 {
+    .industries-page .hero:not(.hero--industrial) .hero-content h1 {
         font-size: 2.2rem !important;
         margin-bottom: 1.25rem !important;
     }
     
-    .industries-page .hero-subtitle {
+    .industries-page .hero:not(.hero--industrial) .hero-subtitle {
         font-size: 1rem !important;
         margin-bottom: 1.5rem !important;
     }
     
-    .industries-page .hero-container {
+    .industries-page .hero:not(.hero--industrial) .hero-container {
         padding: 0 1rem;
     }
 }
@@ -3329,6 +3787,17 @@ textarea:focus {
     contain: layout style;
 }
 
+/* Services page: specialized section – 5 cards in one row, same card width as 3-column sections */
+.services-page #specialized-services .container {
+    /* Widen container so the grid isn't squeezed; other sections' grid = container content = 1200 - 40 = 1160px */
+    max-width: 1995px; /* 1955px grid + 40px padding */
+}
+.services-page #specialized-services .why-choose-grid {
+    grid-template-columns: repeat(5, 1fr);
+    /* Match card width to 3-col: (1160 - 4rem) / 3 ≈ 365px → 5 cols need 5×365 + 4×2rem ≈ 1955px */
+    max-width: 1955px;
+}
+
 .why-choose-feature-image {
     grid-row: span 2;
     height: 100%;
@@ -4915,7 +5384,8 @@ textarea:focus {
     .registration-grid,
     .industry-cert-grid,
     .docs-grid,
-    .why-choose-grid {
+    .why-choose-grid,
+    .services-page #specialized-services .why-choose-grid {
         grid-template-columns: 1fr;
     }
     

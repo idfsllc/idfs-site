@@ -17,10 +17,6 @@ class ComponentLoader {
         const path = window.location.pathname;
         const depth = (path.match(/\//g) || []).length - 1; // Subtract 1 for root
         
-        // #region agent log
-        fetch('http://127.0.0.1:7244/ingest/507464c6-94e3-44b5-b047-102244760801',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'loader.js:18',message:'getBasePath called',data:{path,depth,calculatedPath:depth===0?'components/':'../'.repeat(depth)+'components/'},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'B'})}).catch(()=>{});
-        // #endregion
-        
         if (depth === 0) {
             return 'components/';
         } else {
@@ -36,10 +32,6 @@ class ComponentLoader {
     fixRelativePaths(html) {
         const path = window.location.pathname;
         const depth = (path.match(/\//g) || []).length - 1;
-        
-        // #region agent log
-        fetch('http://127.0.0.1:7244/ingest/507464c6-94e3-44b5-b047-102244760801',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'loader.js:33',message:'fixRelativePaths entry',data:{path,depth,htmlLength:html.length,hasIndexHtml:html.includes('href="index.html"'),hasAssets:html.includes('assets/')},timestamp:Date.now(),sessionId:'debug-session',runId:'post-fix',hypothesisId:'A'})}).catch(()=>{});
-        // #endregion
         
         if (depth === 0) {
             // Root level - paths are already correct
@@ -75,10 +67,6 @@ class ComponentLoader {
             }
         );
         
-        // #region agent log
-        fetch('http://127.0.0.1:7244/ingest/507464c6-94e3-44b5-b047-102244760801',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'loader.js:62',message:'fixRelativePaths after all fixes',data:{fixedHtmlLength:fixedHtml.length,stillHasIndexHtml:fixedHtml.includes('href="index.html"'),hasFixedIndexHtml:fixedHtml.includes('href="../index.html"'),hasFixedCapabilities:fixedHtml.includes('href="../capabilities.html"')},timestamp:Date.now(),sessionId:'debug-session',runId:'post-fix',hypothesisId:'A'})}).catch(()=>{});
-        // #endregion
-        
         return fixedHtml;
     }
 
@@ -94,25 +82,13 @@ class ComponentLoader {
                 basePath = this.getBasePath();
             }
             
-            // #region agent log
-            fetch('http://127.0.0.1:7244/ingest/507464c6-94e3-44b5-b047-102244760801',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'loader.js:66',message:'loadComponent entry',data:{componentName,targetSelector,basePath,url:`${basePath}${componentName}.html`},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'C'})}).catch(()=>{});
-            // #endregion
-            
             const response = await fetch(`${basePath}${componentName}.html`);
-            
-            // #region agent log
-            fetch('http://127.0.0.1:7244/ingest/507464c6-94e3-44b5-b047-102244760801',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'loader.js:71',message:'fetch response',data:{ok:response.ok,status:response.status,statusText:response.statusText},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'C'})}).catch(()=>{});
-            // #endregion
             
             if (!response.ok) {
                 throw new Error(`Failed to load component: ${componentName}`);
             }
             const html = await response.text();
             const target = document.querySelector(targetSelector);
-            
-            // #region agent log
-            fetch('http://127.0.0.1:7244/ingest/507464c6-94e3-44b5-b047-102244760801',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'loader.js:78',message:'target element check',data:{targetFound:!!target,htmlLength:html.length},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'D'})}).catch(()=>{});
-            // #endregion
             
             if (!target) {
                 console.warn(`Target selector "${targetSelector}" not found for component "${componentName}"`);
@@ -121,10 +97,6 @@ class ComponentLoader {
 
             // Fix relative paths in HTML based on current page depth
             const fixedHtml = this.fixRelativePaths(html);
-            
-            // #region agent log
-            fetch('http://127.0.0.1:7244/ingest/507464c6-94e3-44b5-b047-102244760801',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'loader.js:87',message:'before innerHTML insert',data:{fixedHtmlLength:fixedHtml.length,fixedHtmlPreview:fixedHtml.substring(0,200)},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'A'})}).catch(()=>{});
-            // #endregion
             
             // Insert the component HTML
             target.innerHTML = fixedHtml;
@@ -137,9 +109,6 @@ class ComponentLoader {
             
             return fixedHtml;
         } catch (error) {
-            // #region agent log
-            fetch('http://127.0.0.1:7244/ingest/507464c6-94e3-44b5-b047-102244760801',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'loader.js:97',message:'loadComponent error',data:{error:error.message,stack:error.stack},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'C'})}).catch(()=>{});
-            // #endregion
             console.error(`Error loading component ${componentName}:`, error);
         }
     }
@@ -166,10 +135,6 @@ class ComponentLoader {
             const navMenu = document.querySelector('.nav-menu');
             const navLinks = document.querySelectorAll('.nav-link');
             const navbar = document.querySelector('.navbar');
-
-            // #region agent log
-            fetch('http://127.0.0.1:7244/ingest/507464c6-94e3-44b5-b047-102244760801',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'loader.js:119',message:'setupNavbar elements check',data:{navToggleFound:!!navToggle,navMenuFound:!!navMenu,navbarFound:!!navbar,navLinksCount:navLinks.length},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'D'})}).catch(()=>{});
-            // #endregion
 
             if (navToggle && navMenu) {
                 // Remove existing listeners if any
