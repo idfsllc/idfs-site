@@ -1155,6 +1155,60 @@ ul {
     filter: brightness(1.15) contrast(1.2) saturate(1.4);
 }
 
+/* Prop fabrication & prop making — dedicated hero backdrop */
+.capabilities-page.prop-hero-page .hero {
+    background: url('assets/prop-hero.png') !important;
+    background-size: cover !important;
+    background-position: center bottom !important;
+    background-repeat: no-repeat !important;
+}
+
+.capabilities-page.prop-hero-page .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('assets/prop-hero.png');
+    background-size: cover;
+    background-position: center bottom;
+    filter: brightness(1.15) contrast(1.2) saturate(1.4);
+    z-index: 0;
+    animation: none !important;
+}
+
+.capabilities-page.prop-hero-page .hero.hero--industrial::before {
+    filter: brightness(1.15) contrast(1.2) saturate(1.4);
+}
+
+/* CNC / robotic capabilities — dedicated hero backdrop */
+.capabilities-page.robot-hero-page .hero {
+    background: url('assets/robot-hero.png') !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+}
+
+.capabilities-page.robot-hero-page .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('assets/robot-hero.png');
+    background-size: cover;
+    background-position: center center;
+    filter: brightness(1.15) contrast(1.2) saturate(1.4);
+    z-index: 0;
+    animation: none !important;
+}
+
+.capabilities-page.robot-hero-page .hero.hero--industrial::before {
+    filter: brightness(1.15) contrast(1.2) saturate(1.4);
+}
+
 /* Additive manufacturing page hero — abstract additive / digital background */
 .additive-manufacturing-page .hero {
     background: url('assets/additive-mfg-bg.png') !important;
