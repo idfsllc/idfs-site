@@ -51,7 +51,7 @@
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "Manufacturing & Fabrication Capabilities",
-        "description": "Welding, fabrication, powder coating, laser engraving, plasma cutting, parts cutting, robotic milling, robotic MIG and TIG welding, CNC routing, machining equipment, additive manufacturing, CAD CAM, and lost wax castings.",
+        "description": "Welding, fabrication, powder coating, laser engraving, parts cutting, plasma cutting, robotic milling and welding, CNC routing, CNC machining, lost wax castings, additive manufacturing, and CAD/CAM.",
         "provider": {
             "@type": "LocalBusiness",
             "identifier": "WG82SYNRPDZ9",
@@ -76,15 +76,15 @@
                 { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fabrication" } },
                 { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Powder Coating" } },
                 { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Laser Engraving" } },
-                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Plasma Cutting" } },
                 { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Parts Cutting" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Plasma Cutting" } },
                 { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Robotic Milling" } },
                 { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Robotic MIG & Robotic TIG Welding" } },
                 { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "CNC Routing" } },
-                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Machining Equipment" } },
-                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Additive Mfg" } },
-                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "CAD CAM" } },
-                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Lost Wax Castings" } }
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "CNC Machining" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Lost Wax Castings" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Additive Manufacturing" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "CAD CAM" } }
             ]
         }
     }
@@ -100,19 +100,7 @@
 
     <!-- Main Content -->
     <main>
-        <!-- Hero Section -->
-        <section class="hero hero--industrial">
-            <div class="hero-container">
-                <div class="hero-content hero-content--industrial">
-                    <h1>Our Capabilities</h1>
-                    <p class="hero-subtitle">Core capabilities for fabrication and production support.</p>
-                    <div class="hero-actions hero-actions--industrial">
-                        <a href="/capabilities-statement.pdf" class="btn btn-primary btn-hero-industrial-primary" download>Capabilities statement <span class="btn-arrow" aria-hidden="true">→</span></a>
-                        <a href="services.html" class="btn btn-secondary btn-hero-industrial-secondary">View Our Services</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+       
 
         <!-- Equipment & Processes Overview -->
         <section class="capability-section" id="equipment-overview">
@@ -120,14 +108,14 @@
                 <div class="equipment-processes-intro">
                     <div class="why-choose-header equipment-processes-intro__header">
                         <h2 class="equipment-processes-intro__title">Capabilities</h2>
-                        <p class="equipment-processes-intro__lede">Each capability has a dedicated page with more detail.</p>
+                        <p class="equipment-processes-intro__lede">Our in-house capabilties allows us to handle any project, from start to finish.</p>
                     </div>
                 </div>
 
                 <div class="why-choose-grid">
                     <div class="service-card">
-                        <img src="assets/welding-services-mig-tig.webp" alt="Welding and fabricating services" class="service-card-image" loading="lazy">
-                        <h3>Welding &amp; Fabricating</h3>
+                        <img src="assets/welding-services-mig-tig.webp" alt="Welding and fabrication services" class="service-card-image" loading="lazy">
+                        <h3>Welding &amp; Fabrication</h3>
                         <a href="capabilities/welding-fabrication.html" class="what-we-do-link">View capability →</a>
                     </div>
                     <div class="service-card">
@@ -144,7 +132,7 @@
                 <div class="why-choose-grid">
                     <div class="service-card">
                         <img src="assets/3d-printing-formlabs-sla.webp" alt="Additive manufacturing services" class="service-card-image" loading="lazy">
-                        <h3>Additive MFG</h3>
+                        <h3>Additive Manufacturing</h3>
                         <a href="capabilities/additive-manufacturing.html" class="what-we-do-link">View capability →</a>
                     </div>
                     <div class="service-card">
@@ -158,28 +146,64 @@
                         <a href="capabilities/parts-cutting.html" class="what-we-do-link">View capability →</a>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="additional-services">
-                    <h3>Additional Services</h3>
-                    <div class="additional-services-links">
-                        <a href="capabilities/plasma-cutting.html">Plasma Cutting</a>
-                        <a href="capabilities/robotic-milling.html">Robotic Milling</a>
-                        <a href="capabilities/robotic-mig-tig-welding.html">Robotic Mig &amp; Robotic Tig Welding</a>
-                        <a href="capabilities/cnc-routing.html">CNC Routing</a>
-                        <a href="capabilities/cnc-machining.html">Machining Equipment</a>
-                        <a href="capabilities/lost-wax-castings.html">Lost Wax Castings</a>
-                    </div>
-                </div>
+        <!-- Additional capabilities — listed here; detail pages not linked (except CNC machining) -->
+        <section class="capability-section" id="additional-capabilities" aria-labelledby="additional-capabilities-heading">
+            <div class="container">
+                <header class="additional-capabilities__intro">
+                    <h2 id="additional-capabilities-heading" class="additional-capabilities__title">Additional Capabilities</h2>
+                    <p class="additional-capabilities__dek">Robotics, heavy cutting, routing, precision machining, castings, and more—in-house with our core equipment.</p>
+                </header>
+                <ul class="additional-capabilities__grid" role="list">
+                    <li>
+                        <div class="additional-capabilities__card additional-capabilities__card--static">
+                            <span class="additional-capabilities__label">Plasma cutting</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="additional-capabilities__card additional-capabilities__card--static">
+                            <span class="additional-capabilities__label">Robotic milling</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="additional-capabilities__card additional-capabilities__card--static">
+                            <span class="additional-capabilities__label">Robotic MIG &amp; TIG welding</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="additional-capabilities__card additional-capabilities__card--static">
+                            <span class="additional-capabilities__label">CNC routing</span>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="additional-capabilities__card" href="capabilities/cnc-machining.html">
+                            <span class="additional-capabilities__label">Machining equipment</span>
+                            <span class="additional-capabilities__go" aria-hidden="true">→</span>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="additional-capabilities__card additional-capabilities__card--static">
+                            <span class="additional-capabilities__label">Lost wax castings</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
+        <!-- Software & technology stack -->
+        <section class="capability-section" id="software-workflow" aria-labelledby="software-workflow-heading">
+            <div class="container">
                 <div class="equipment-processes-intro equipment-processes-intro--software">
                     <div class="why-choose-header equipment-processes-intro__header">
-                        <h3 class="equipment-processes-intro__title">Software That Powers Our Workflow</h3>
+                        <h2 id="software-workflow-heading" class="equipment-processes-intro__title">Software That Powers Our Workflow</h2>
+                        <p class="equipment-processes-intro__lede">Software &amp; technology — CAD, CAM, robotics, and manufacturing software.</p>
                     </div>
                 </div>
 
-                <!-- Software Banner -->
                 <div class="equipment-software-banner">
-                    <img src="assets/software.png" alt="Software & TechnologyPartners - CAD CAM Robotics Manufacturing Software" loading="lazy">
+                    <img src="assets/software.png" alt="CAD, CAM, robotics, and manufacturing software partners" loading="lazy">
                     <a href="contact.html#rfqForm" class="btn btn-primary software-banner-btn">Software →</a>
                 </div>
             </div>
@@ -191,7 +215,7 @@
                 <header class="why-choose-editorial__header">
                     <p class="why-choose-editorial__eyebrow">— Why teams choose IDFS —</p>
                     <h2 id="why-choose-heading">Why Companies Choose IDFS</h2>
-                    <p class="why-choose-editorial__dek">Design expertise, modern manufacturing, and responsive service—without the long lead times or runaround.</p>
+                    <p class="why-choose-editorial__dek">Design expertise, modern manufacturing, and responsive service without the long lead times or runaround.</p>
                 </header>
             </div>
 
@@ -216,7 +240,7 @@
                                 <h3 class="why-choose-editorial__panel-title">Expertise &amp; agility</h3>
                                 <ul class="why-choose-editorial__bullets">
                                     <li>DFM, fabrication, and product development under one roof</li>
-                                    <li>Fast quotes, agile scheduling, direct access to your build team</li>
+                                    <li>Hands on approach and attention to detail</li>
                                     <li>Fayetteville, GA—serving the Atlanta metro with short runs &amp; prototypes</li>
                                 </ul>
                             </div>
@@ -260,11 +284,11 @@
                 <div class="footer-section">
                     <h4>Services</h4>
                     <ul>
-                        <li><a href="services/design-engineering.html">Design & Engineering</a></li>
-                        <li><a href="services/metal-fabrication.html">Metal Fabrication</a></li>
-                        <li><a href="services/cnc-machining.html">CNC Machining</a></li>
-                        <li><a href="services/3d-printing.html">3D Printing</a></li>
-                        <li><a href="services/part-cutting.html">Part Cutting</a></li>
+                        <li><a href="capabilities/cad-modeling.html">Design & Engineering</a></li>
+                        <li><a href="capabilities/welding-fabrication.html">Metal Fabrication</a></li>
+                        <li><a href="capabilities/cnc-machining.html">CNC Machining</a></li>
+                        <li><a href="capabilities/additive-manufacturing.html">3D Printing</a></li>
+                        <li><a href="capabilities/parts-cutting.html">Part Cutting</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">

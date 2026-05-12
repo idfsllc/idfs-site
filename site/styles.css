@@ -967,49 +967,12 @@ ul {
     animation: none !important;
 }
 
-/* Hero section for services page with background image */
-.services-page .hero {
-    background: url('assets/Todd_Welding_Best.webp') !important;
-    background-size: cover !important;
-    background-position: center center !important;
-    background-repeat: no-repeat !important;
-    background-attachment: fixed !important;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-bottom: 3px solid var(--kratos-accent);
-    min-height: 80vh;
-    padding: 120px 0 100px;
-}
-
-.services-page .hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('assets/Todd_Welding_Best.webp');
-    background-size: cover;
-    background-position: center center;
-    filter: brightness(1.15) contrast(1.2) saturate(1.4);
-    z-index: 0;
-    animation: none !important;
-}
-
-.services-page .hero::after {
-    display: none;
-}
-
 .capabilities-page .hero::after {
     display: none;
 }
 
 /* Industrial hero — shared editorial style (left-aligned, strong overlay, CTA buttons). No bottom chevron (see powder-industrial for that). */
 .capabilities-page .hero.hero--industrial,
-.services-page .hero.hero--industrial,
 .industries-page .hero.hero--industrial {
     text-align: left;
     align-items: center;
@@ -1022,19 +985,16 @@ ul {
 }
 
 .capabilities-page .hero.hero--industrial::before,
-.services-page .hero.hero--industrial::before,
 .industries-page .hero.hero--industrial::before {
     filter: brightness(1.15) contrast(1.2) saturate(1.4);
 }
 
 .capabilities-page .hero.hero--industrial::after,
-.services-page .hero.hero--industrial::after,
 .industries-page .hero.hero--industrial::after {
     display: none !important;
 }
 
 .capabilities-page .hero.hero--industrial .hero-container,
-.services-page .hero.hero--industrial .hero-container,
 .industries-page .hero.hero--industrial .hero-container {
     width: 100%;
     text-align: left;
@@ -1046,7 +1006,6 @@ ul {
 }
 
 .capabilities-page .hero.hero--industrial .hero-content--industrial,
-.services-page .hero.hero--industrial .hero-content--industrial,
 .industries-page .hero.hero--industrial .hero-content--industrial {
     text-align: left;
     margin: 0;
@@ -1054,7 +1013,6 @@ ul {
 }
 
 .capabilities-page .hero.hero--industrial .hero-content h1,
-.services-page .hero.hero--industrial .hero-content h1,
 .industries-page .hero.hero--industrial .hero-content h1 {
     font-family: 'Montserrat', 'Roboto', sans-serif;
     font-style: italic;
@@ -1069,7 +1027,6 @@ ul {
 }
 
 .capabilities-page .hero.hero--industrial .hero-subtitle,
-.services-page .hero.hero--industrial .hero-subtitle,
 .industries-page .hero.hero--industrial .hero-subtitle {
     font-size: 1.15rem !important;
     line-height: 1.65 !important;
@@ -1087,16 +1044,13 @@ ul {
 }
 
 .capabilities-page .hero.hero--industrial .hero-subtitle + .hero-subtitle,
-.services-page .hero.hero--industrial .hero-subtitle + .hero-subtitle,
 .industries-page .hero.hero--industrial .hero-subtitle + .hero-subtitle {
     margin-top: -0.85rem !important;
 }
 
 .capabilities-page .hero.hero--industrial .hero-actions--industrial,
-.services-page .hero.hero--industrial .hero-actions--industrial,
 .industries-page .hero.hero--industrial .hero-actions--industrial,
 .capabilities-page .hero.hero--industrial .hero-buttons,
-.services-page .hero.hero--industrial .hero-buttons,
 .industries-page .hero.hero--industrial .hero-buttons {
     display: flex;
     flex-wrap: wrap;
@@ -1107,7 +1061,6 @@ ul {
 }
 
 .capabilities-page .hero.hero--industrial .btn-hero-industrial-primary,
-.services-page .hero.hero--industrial .btn-hero-industrial-primary,
 .industries-page .hero.hero--industrial .btn-hero-industrial-primary {
     background: var(--kratos-accent) !important;
     border-color: var(--kratos-accent) !important;
@@ -1121,7 +1074,6 @@ ul {
 }
 
 .capabilities-page .hero.hero--industrial .btn-hero-industrial-primary:hover,
-.services-page .hero.hero--industrial .btn-hero-industrial-primary:hover,
 .industries-page .hero.hero--industrial .btn-hero-industrial-primary:hover {
     background: var(--kratos-accent-hover) !important;
     border-color: var(--kratos-accent-hover) !important;
@@ -1131,7 +1083,6 @@ ul {
 }
 
 .capabilities-page .hero.hero--industrial .btn-hero-industrial-primary .btn-arrow,
-.services-page .hero.hero--industrial .btn-hero-industrial-primary .btn-arrow,
 .industries-page .hero.hero--industrial .btn-hero-industrial-primary .btn-arrow {
     margin-left: 0.3rem;
     font-weight: 600;
@@ -1139,7 +1090,6 @@ ul {
 }
 
 .capabilities-page .hero.hero--industrial .btn-hero-industrial-secondary,
-.services-page .hero.hero--industrial .btn-hero-industrial-secondary,
 .industries-page .hero.hero--industrial .btn-hero-industrial-secondary {
     background: var(--kratos-white) !important;
     color: var(--kratos-navy) !important;
@@ -1152,7 +1102,6 @@ ul {
 }
 
 .capabilities-page .hero.hero--industrial .btn-hero-industrial-secondary:hover,
-.services-page .hero.hero--industrial .btn-hero-industrial-secondary:hover,
 .industries-page .hero.hero--industrial .btn-hero-industrial-secondary:hover {
     background: var(--kratos-light) !important;
     color: var(--kratos-navy) !important;
@@ -1163,28 +1112,25 @@ ul {
 
 @media (max-width: 768px) {
     .capabilities-page .hero.hero--industrial,
-    .services-page .hero.hero--industrial,
     .industries-page .hero.hero--industrial {
         min-height: 62vh;
         padding: 124px 0 96px;
     }
 
     .capabilities-page .hero.hero--industrial .hero-content h1,
-    .services-page .hero.hero--industrial .hero-content h1,
     .industries-page .hero.hero--industrial .hero-content h1 {
         font-size: 1.875rem !important;
     }
 
     .capabilities-page .hero.hero--industrial .hero-subtitle,
-    .services-page .hero.hero--industrial .hero-subtitle,
     .industries-page .hero.hero--industrial .hero-subtitle {
         font-size: 1.05rem !important;
     }
 }
 
-/* Powder coating page hero – powder gun image */
+/* Powder coating page hero — booth / line image (matches powdercoating-home asset) */
 .powder-coating-page .hero {
-    background: url('assets/powder-coating.png') !important;
+    background: url('assets/powdercoating-home.png') !important;
     background-size: cover !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
@@ -1196,7 +1142,7 @@ ul {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('assets/powder-coating.png');
+    background: url('assets/powdercoating-home.png');
     background-size: cover;
     background-position: center center;
     filter: brightness(1.15) contrast(1.2) saturate(1.4);
@@ -1207,6 +1153,195 @@ ul {
 /* Aligns with shared industrial hero filter (generic powder ::before rule above would otherwise win on cascade) */
 .powder-coating-page .hero.hero--industrial::before {
     filter: brightness(1.15) contrast(1.2) saturate(1.4);
+}
+
+/* Additive manufacturing page hero — abstract additive / digital background */
+.additive-manufacturing-page .hero {
+    background: url('assets/additive-mfg-bg.png') !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+}
+
+.additive-manufacturing-page .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('assets/additive-mfg-bg.png');
+    background-size: cover;
+    background-position: center center;
+    filter: brightness(1.08) contrast(1.12) saturate(1.12);
+    z-index: 0;
+    animation: none !important;
+}
+
+.additive-manufacturing-page .hero.hero--industrial::before {
+    filter: brightness(1.08) contrast(1.12) saturate(1.12);
+}
+
+/* Overflow & production support service page hero */
+.overflow-production-support-page .hero {
+    background: url('assets/overflow-prod-support.png') !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+}
+
+.overflow-production-support-page .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('assets/overflow-prod-support.png');
+    background-size: cover;
+    background-position: center center;
+    filter: brightness(1.06) contrast(1.1) saturate(1.06);
+    z-index: 0;
+    animation: none !important;
+}
+
+.overflow-production-support-page .hero.hero--industrial::before {
+    filter: brightness(1.06) contrast(1.1) saturate(1.06);
+}
+
+/* CAD / CAM capability page hero — blueprint-style background */
+.cad-cam-page .hero {
+    background: url('assets/cad-cam-bg.png') !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+}
+
+.cad-cam-page .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('assets/cad-cam-bg.png');
+    background-size: cover;
+    background-position: center center;
+    filter: brightness(1.08) contrast(1.15) saturate(1.1);
+    z-index: 0;
+    animation: none !important;
+}
+
+.cad-cam-page .hero.hero--industrial::before {
+    filter: brightness(1.08) contrast(1.15) saturate(1.1);
+}
+
+/* Laser engraving / marking capability page hero */
+.laser-engraving-page .hero {
+    background: url('assets/laser-engraving-marking.png') !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+}
+
+.laser-engraving-page .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('assets/laser-engraving-marking.png');
+    background-size: cover;
+    background-position: center center;
+    filter: brightness(0.92) contrast(1.12) saturate(1.05);
+    z-index: 0;
+    animation: none !important;
+}
+
+.laser-engraving-page .hero.hero--industrial::before {
+    filter: brightness(0.92) contrast(1.12) saturate(1.05);
+}
+
+/* Parts cutting capability page hero */
+.parts-cutting-page .hero {
+    background: url('assets/part-cutting.png') !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+}
+
+.parts-cutting-page .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('assets/part-cutting.png');
+    background-size: cover;
+    background-position: center center;
+    filter: brightness(0.95) contrast(1.1) saturate(1.05);
+    z-index: 0;
+    animation: none !important;
+}
+
+.parts-cutting-page .hero.hero--industrial::before {
+    filter: brightness(0.95) contrast(1.1) saturate(1.05);
+}
+
+/* Short production runs (services) hero */
+.production-runs-page .hero {
+    background: url('assets/short-run-prod.png') !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+}
+
+.production-runs-page .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('assets/short-run-prod.png');
+    background-size: cover;
+    background-position: center center;
+    filter: brightness(0.94) contrast(1.1) saturate(1.05);
+    z-index: 0;
+    animation: none !important;
+}
+
+.production-runs-page .hero.hero--industrial::before {
+    filter: brightness(0.94) contrast(1.1) saturate(1.05);
+}
+
+/* Repair services page hero */
+.repairs-page .hero {
+    background: url('assets/repair-hero.png') !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+}
+
+.repairs-page .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('assets/repair-hero.png');
+    background-size: cover;
+    background-position: center center;
+    filter: brightness(1.04) contrast(1.08) saturate(1.05);
+    z-index: 0;
+    animation: none !important;
+}
+
+.repairs-page .hero.hero--industrial::before {
+    filter: brightness(1.04) contrast(1.08) saturate(1.05);
 }
 
 /* Powder coating page: same diamond-plate texture as example-parts section (main + hero base) */
@@ -1508,58 +1643,6 @@ ul {
     margin: 0 auto;
 }
 
-/* Services page hero content styling */
-.services-page .hero-container {
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
-    text-align: center;
-}
-
-.services-page .hero-content {
-    text-align: center;
-    max-width: 900px;
-    margin: 0 auto;
-    position: relative;
-    z-index: 2;
-}
-
-.services-page .hero-content h1 {
-    color: var(--kratos-white) !important;
-    text-shadow: 
-        0 0 14px rgba(0, 0, 0, 0.75),
-        0 0 22px rgba(0, 0, 0, 0.75),
-        0 0 28px rgba(0, 0, 0, 0.71),
-        0 2px 8px rgba(0, 0, 0, 0.75),
-        0 4px 26px rgba(0, 0, 0, 0.75),
-        0 6px 38px rgba(0, 0, 0, 0.71) !important;
-    font-size: 4.5rem !important;
-    font-weight: 700 !important;
-    letter-spacing: -0.02em !important;
-    line-height: 1.1 !important;
-    margin-bottom: 2rem !important;
-    text-transform: uppercase;
-}
-
-.services-page .hero-subtitle {
-    color: rgba(255, 255, 255, 1) !important;
-    text-shadow: 
-        0 0 14px rgba(0, 0, 0, 1),
-        0 0 22px rgba(0, 0, 0, 1),
-        0 0 28px rgba(0, 0, 0, 0.95),
-        0 2px 8px rgba(0, 0, 0, 1),
-        0 4px 26px rgba(0, 0, 0, 1),
-        0 6px 38px rgba(0, 0, 0, 0.95) !important;
-    font-size: 1.4rem !important;
-    font-weight: 500 !important;
-    line-height: 1.7 !important;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
 @media (max-width: 768px) {
     .capabilities-page .hero:not(.hero--industrial) {
         min-height: 60vh;
@@ -1572,20 +1655,6 @@ ul {
     }
     
     .capabilities-page .hero:not(.hero--industrial) .hero-subtitle {
-        font-size: 1.15rem !important;
-    }
-    
-    .services-page .hero:not(.hero--industrial) {
-        min-height: 60vh;
-        padding: 100px 0 80px;
-        background-attachment: scroll !important;
-    }
-    
-    .services-page .hero:not(.hero--industrial) .hero-content h1 {
-        font-size: 2.8rem !important;
-    }
-    
-    .services-page .hero:not(.hero--industrial) .hero-subtitle {
         font-size: 1.15rem !important;
     }
     
@@ -3631,21 +3700,26 @@ textarea:focus {
     position: relative;
 }
 
-/* Services page — Core Services section */
+/* Services page — shared background image on main */
+.services-page main {
+    isolation: isolate;
+    background-color: #0f172a;
+    background-image: url('assets/service-badge-bar-bg.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Services page — Core Services section (grid texture, no overlay) */
 .services-page #core-services {
     isolation: isolate;
-    background-color: #f1f5f9;
-    background-image:
-        linear-gradient(
-            180deg,
-            rgba(248, 250, 252, 0.78) 0%,
-            rgba(226, 232, 240, 0.72) 100%
-        ),
-        url('assets/Commercial_Consumer_Stock_Img.webp');
-    background-repeat: no-repeat, no-repeat;
-    background-position: center center, center center;
-    background-size: cover, cover;
-    background-attachment: scroll, fixed;
+    background-color: transparent;
+    background-image: url('assets/grid.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: scroll;
 }
 
 .services-page #core-services > .container {
@@ -3653,21 +3727,47 @@ textarea:focus {
     z-index: 1;
 }
 
-/* Services page — Manufacturing Services section */
+/* Services page — section intros (Core / Manufacturing / Specialized): white copy on photo backgrounds */
+.services-page .capability-section > .container > .why-choose-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.services-page .capability-section > .container > .why-choose-header h2,
+.services-page .capability-section > .container > .why-choose-header p {
+    color: #fff;
+    text-shadow:
+        0 0 20px rgba(0, 0, 0, 0.85),
+        0 2px 12px rgba(0, 0, 0, 0.75),
+        0 1px 3px rgba(0, 0, 0, 0.9);
+}
+
+.services-page .capability-section > .container > .why-choose-header h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1.15;
+}
+
+.services-page .capability-section > .container > .why-choose-header p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Services page — Manufacturing Services (services.png was badge bar art) */
 .services-page #manufacturing-services {
     isolation: isolate;
-    background-color: #f1f5f9;
-    background-image:
-        linear-gradient(
-            180deg,
-            rgba(248, 250, 252, 0.78) 0%,
-            rgba(226, 232, 240, 0.72) 100%
-        ),
-        url('assets/sparks.png');
-    background-repeat: no-repeat, no-repeat;
-    background-position: center center, center center;
-    background-size: cover, cover;
-    background-attachment: scroll, fixed;
+    background-color: transparent;
+    background-image: url('assets/services.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: scroll;
 }
 
 .services-page #manufacturing-services > .container {
@@ -3675,16 +3775,66 @@ textarea:focus {
     z-index: 1;
 }
 
+/* Services page — Specialized Services (same services.png backdrop) */
+.services-page #specialized-services {
+    background-color: transparent;
+    background-image: url('assets/services.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+/* Services page — badge strip: solid dark blue (no image) */
+.services-page .services-badge-bar-bg {
+    background-color: #0f172a;
+    background-image: none;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+}
+
 @media (max-width: 1024px) {
-    .services-page #core-services,
+    .services-page main {
+        background-attachment: scroll;
+    }
+
+    .services-page #core-services {
+        background-attachment: scroll;
+    }
+
     .services-page #manufacturing-services {
+        background-attachment: scroll;
+    }
+
+    .services-page #specialized-services {
+        background-attachment: scroll;
+    }
+
+    .services-page #contact-cta {
         background-attachment: scroll, scroll;
     }
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .services-page #core-services,
+    .services-page main {
+        background-attachment: scroll;
+    }
+
+    .services-page #core-services {
+        background-attachment: scroll;
+    }
+
     .services-page #manufacturing-services {
+        background-attachment: scroll;
+    }
+
+    .services-page #specialized-services {
+        background-attachment: scroll;
+    }
+
+    .services-page #contact-cta {
         background-attachment: scroll, scroll;
     }
 }
@@ -3697,10 +3847,10 @@ textarea:focus {
     background-image:
         linear-gradient(
             180deg,
-            rgba(15, 23, 42, 0.78) 0%,
-            rgba(15, 23, 42, 0.65) 100%
+            rgba(15, 23, 42, 0.42) 0%,
+            rgba(15, 23, 42, 0.34) 100%
         ),
-        url('assets/metal4.png');
+        url('assets/service-badge-bar-bg.png');
     background-repeat: no-repeat, no-repeat;
     background-position: center center, center center;
     background-size: cover, cover;
@@ -3720,18 +3870,6 @@ textarea:focus {
 .services-page #contact-cta .capability-content > p {
     color: rgba(255, 255, 255, 0.92);
     text-shadow: 0 1px 12px rgba(0, 0, 0, 0.4);
-}
-
-@media (max-width: 1024px) {
-    .services-page #contact-cta {
-        background-attachment: scroll, scroll;
-    }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .services-page #contact-cta {
-        background-attachment: scroll, scroll;
-    }
 }
 
 /* Smaller padding for product development section */
@@ -3812,6 +3950,10 @@ textarea:focus {
     margin-bottom: 3rem;
 }
 
+.capability-content--text-only {
+    grid-template-columns: 1fr;
+}
+
 /* Center CTA sections */
 #contact-cta .capability-content {
     display: block;
@@ -3885,7 +4027,7 @@ textarea:focus {
     /* Transform removed - keeping overlay effects only */
 }
 
-/* Capabilities — Equipment & Processes: bp.png behind entire section (fixed / “viewport” parallax) */
+/* Capabilities — Equipment & Processes: bp.png behind section (fixed / “viewport” parallax) */
 #equipment-overview {
     position: relative;
     isolation: isolate;
@@ -3897,14 +4039,37 @@ textarea:focus {
     background-attachment: fixed;
 }
 
+/* Additional capabilities — dedicated industrial backdrop */
+#additional-capabilities {
+    position: relative;
+    isolation: isolate;
+    background-color: #0b1120;
+    background-image: url('assets/additional-capability.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Software stack — flat background (no hero photo) */
+#software-workflow {
+    position: relative;
+    isolation: isolate;
+    background-color: #0f172a;
+    background-image: none;
+    background-attachment: scroll;
+}
+
 @media (max-width: 1024px) {
-    #equipment-overview {
+    #equipment-overview,
+    #additional-capabilities {
         background-attachment: scroll;
     }
 }
 
 @media (prefers-reduced-motion: reduce) {
-    #equipment-overview {
+    #equipment-overview,
+    #additional-capabilities {
         background-attachment: scroll;
     }
 }
@@ -3923,7 +4088,24 @@ textarea:focus {
     );
 }
 
-#equipment-overview > .container {
+#additional-capabilities::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    /* Darker on the left for intro copy; lighter mid-right so the gear art reads */
+    background: linear-gradient(
+        115deg,
+        rgba(11, 17, 32, 0.9) 0%,
+        rgba(15, 23, 42, 0.52) 42%,
+        rgba(15, 23, 42, 0.72) 100%
+    );
+}
+
+#equipment-overview > .container,
+#additional-capabilities > .container,
+#software-workflow > .container {
     position: relative;
     z-index: 1;
 }
@@ -3936,24 +4118,32 @@ textarea:focus {
     margin: 1.65rem 0 0.6rem;
 }
 
-#equipment-overview .equipment-processes-intro--software .equipment-processes-intro__header {
+#software-workflow .equipment-processes-intro--software {
+    margin: 0 0 0.6rem;
+}
+
+#equipment-overview .equipment-processes-intro--software .equipment-processes-intro__header,
+#software-workflow .equipment-processes-intro--software .equipment-processes-intro__header {
     padding-top: 0;
 }
 
-#equipment-overview .equipment-processes-intro__header {
+#equipment-overview .equipment-processes-intro__header,
+#software-workflow .equipment-processes-intro__header {
     text-align: center;
     margin-bottom: 0;
     padding: clamp(0.25rem, 2vw, 1rem) 0 0;
 }
 
-#equipment-overview .equipment-processes-intro__title {
+#equipment-overview .equipment-processes-intro__title,
+#software-workflow .equipment-processes-intro__title {
     color: var(--kratos-white) !important;
     margin-bottom: 1rem;
     letter-spacing: 0.02em;
     text-shadow: 0 2px 28px rgba(0, 0, 0, 0.5);
 }
 
-#equipment-overview .equipment-processes-intro__lede {
+#equipment-overview .equipment-processes-intro__lede,
+#software-workflow .equipment-processes-intro__lede {
     font-size: 1.15rem;
     line-height: 1.65;
     color: rgba(255, 255, 255, 0.95);
@@ -3963,11 +4153,20 @@ textarea:focus {
     text-shadow: 0 1px 18px rgba(0, 0, 0, 0.4);
 }
 
-/* Cards & software strip read clearly on photo */
+#software-workflow .equipment-processes-intro__title {
+    text-shadow: none;
+}
+
+#software-workflow .equipment-processes-intro__lede {
+    text-shadow: none;
+}
+
+/* Cards, additional-capabilities panel, and software strip read clearly on photo */
 #equipment-overview .service-card,
 #equipment-overview .capabilities-index-grid,
-#equipment-overview .additional-services,
-#equipment-overview .equipment-software-banner {
+#equipment-overview .equipment-software-banner,
+#additional-capabilities .additional-capabilities__grid,
+#software-workflow .equipment-software-banner {
     position: relative;
     z-index: 1;
 }
@@ -4057,46 +4256,170 @@ textarea:focus {
     }
 }
 
-.additional-services {
-    max-width: 1200px;
-    margin: 1rem auto 2.25rem;
-    padding: 1.25rem 1.25rem 1.4rem;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    background: rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(4px);
+/* Capabilities page — Additional Capabilities (card grid, light tiles on hero bg) */
+.additional-capabilities__intro {
+    text-align: center;
+    max-width: 44rem;
+    margin: 0 auto 2.5rem;
+    position: relative;
+    z-index: 1;
 }
 
-.additional-services h3 {
-    margin: 0 0 0.9rem;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.1rem;
-    letter-spacing: 0.3px;
-    color: var(--kratos-white);
-}
-
-.additional-services-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.6rem 0.7rem;
-}
-
-.additional-services-links a {
-    text-decoration: none;
-    color: #f5f7fb;
+.additional-capabilities__eyebrow {
+    font-family: var(--font-heading, Montserrat, system-ui, sans-serif);
+    font-size: 0.84rem;
     font-weight: 600;
-    font-size: 0.92rem;
-    padding: 0.45rem 0.75rem;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    background: rgba(26, 26, 46, 0.35);
-    transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.88);
+    margin: 0 0 0.65rem;
 }
 
-.additional-services-links a:hover,
-.additional-services-links a:focus-visible {
-    background: rgba(233, 40, 36, 0.28);
-    border-color: rgba(233, 40, 36, 0.7);
-    transform: translateY(-1px);
-    outline: none;
+.additional-capabilities__title {
+    font-family: var(--font-heading, Montserrat, system-ui, sans-serif);
+    font-size: clamp(1.65rem, 3.2vw, 2.15rem);
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: var(--kratos-white);
+    margin: 0 0 0.85rem;
+    line-height: 1.2;
+    text-shadow: 0 2px 24px rgba(0, 0, 0, 0.45);
+}
+
+.additional-capabilities__dek {
+    margin: 0;
+    font-size: clamp(1rem, 1.35vw, 1.08rem);
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0 1px 14px rgba(0, 0, 0, 0.35);
+}
+
+.additional-capabilities__grid {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+    gap: 1rem 1.15rem;
+    align-items: stretch;
+}
+
+.additional-capabilities__grid > li {
+    margin: 0;
+}
+
+.additional-capabilities__card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    min-height: 5.25rem;
+    padding: 1.15rem 1.35rem;
+    text-decoration: none;
+    color: var(--kratos-navy, #1a1a2e);
+    font-family: var(--font-heading, Montserrat, system-ui, sans-serif);
+    font-weight: 700;
+    font-size: clamp(1rem, 1.25vw, 1.12rem);
+    line-height: 1.3;
+    letter-spacing: 0.01em;
+    background: linear-gradient(145deg, #ffffff 0%, #f1f5f9 55%, #e8eef5 100%);
+    border: 2px solid rgba(255, 255, 255, 0.65);
+    border-radius: var(--border-radius-lg, 12px);
+    box-shadow:
+        0 10px 28px rgba(0, 0, 0, 0.2),
+        0 2px 8px rgba(0, 0, 0, 0.12),
+        inset 0 1px 0 rgba(255, 255, 255, 0.85);
+    transition:
+        transform 0.22s ease,
+        box-shadow 0.22s ease,
+        border-color 0.22s ease;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+.additional-capabilities__card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--kratos-accent) 0%, var(--kratos-blue) 100%);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.28s ease;
+}
+
+.additional-capabilities__card:hover,
+.additional-capabilities__card:focus-visible {
+    transform: translateY(-3px);
+    border-color: rgba(233, 40, 36, 0.45);
+    box-shadow:
+        0 16px 36px rgba(0, 0, 0, 0.22),
+        0 4px 14px rgba(15, 52, 96, 0.18),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.additional-capabilities__card:focus-visible {
+    outline: 2px solid var(--kratos-accent);
+    outline-offset: 3px;
+}
+
+.additional-capabilities__card:hover::before,
+.additional-capabilities__card:focus-visible::before {
+    transform: scaleX(1);
+}
+
+.additional-capabilities__label {
+    flex: 1;
+    min-width: 0;
+}
+
+.additional-capabilities__go {
+    flex-shrink: 0;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--kratos-accent);
+    opacity: 0.85;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.additional-capabilities__card:hover .additional-capabilities__go,
+.additional-capabilities__card:focus-visible .additional-capabilities__go {
+    transform: translateX(4px);
+    opacity: 1;
+}
+
+/* Non-linked tiles (capabilities named on the index only) */
+.additional-capabilities__card--static {
+    cursor: default;
+    box-shadow:
+        0 8px 22px rgba(0, 0, 0, 0.16),
+        0 2px 6px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.85);
+}
+
+.additional-capabilities__card--static:hover,
+.additional-capabilities__card--static:focus-visible {
+    transform: none;
+    border-color: rgba(255, 255, 255, 0.65);
+    box-shadow:
+        0 8px 22px rgba(0, 0, 0, 0.16),
+        0 2px 6px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.85);
+}
+
+.additional-capabilities__card--static:hover::before,
+.additional-capabilities__card--static:focus-visible::before {
+    transform: scaleX(0);
+}
+
+@media (max-width: 480px) {
+    .additional-capabilities__grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Equipment Software Banner */
@@ -4110,7 +4433,8 @@ textarea:focus {
     position: relative;
 }
 
-#equipment-overview .equipment-processes-intro--software + .equipment-software-banner {
+#equipment-overview .equipment-processes-intro--software + .equipment-software-banner,
+#software-workflow .equipment-processes-intro--software + .equipment-software-banner {
     margin-top: 0.5rem;
     margin-bottom: 1.5rem;
 }
@@ -4168,6 +4492,8 @@ textarea:focus {
 .services-page #specialized-services .container {
     /* Widen container so the grid isn't squeezed; other sections' grid = container content = 1200 - 40 = 1160px */
     max-width: 1995px; /* 1955px grid + 40px padding */
+    position: relative;
+    z-index: 1;
 }
 .services-page #specialized-services .why-choose-grid {
     grid-template-columns: repeat(5, 1fr);
