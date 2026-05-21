@@ -1,7 +1,10 @@
 {
   "site_info": {
     "company_name": "IDFS Integrated Design and Fabrication Solutions",
-    "alternate_names": ["IDFS", "IDFS Machine Shop Georgia"],
+    "alternate_names": [
+      "IDFS",
+      "IDFS Machine Shop Georgia"
+    ],
     "base_url": "https://idfsllc.com",
     "location": {
       "address": "133 Bethea Rd. Suite 801",
@@ -30,48 +33,49 @@
     {
       "page": "index.html",
       "url": "https://idfsllc.com/",
-      "title": "Custom Metal Fabrication & Design (Fayetteville, GA)",
+      "canonical": "https://idfsllc.com/",
+      "title": "Home | IDFS",
       "meta_tags": {
-        "description": "Expert custom metal fabrication and product design in Fayetteville, GA by IDFS - Custom metal work, prototyping, small run manufacturing, product design. Trusted by clients across the U.S.",
-        "keywords": "custom metal fabrication Georgia, custom metal fabrication GA, custom metal fabrication Fayetteville GA, custom metal fabrication Atlanta GA, custom metal fabrication Atlanta Georgia, metal fabrication Georgia, metal fabrication GA, fabrication shop Georgia, fabrication shop GA, CNC machining Georgia, CNC machining GA, design services Georgia, design services GA, prototyping services Georgia, prototyping services GA, scene work Georgia, scene work GA, scene shop services Georgia, scene shop services GA, entertainment fabrication Georgia, entertainment fabrication GA, theatrical fabrication Georgia, theatrical fabrication GA, Trilith Studios fabrication Georgia, Trilith Studios fabrication GA, Tyler Perry Studios fabrication Georgia, Tyler Perry Studios fabrication GA, Atlanta Metro Studios fabrication Georgia, Atlanta Metro Studios fabrication GA, film industry fabrication Georgia, film industry fabrication GA",
-        "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
-        "language": "English",
-        "author": "IDFS Integrated Design and Fabrication Solutions",
-        "geo_region": "US-GA",
-        "geo_placename": "Fayetteville"
+        "description": "Custom metal fabrication, design engineering, powder coating, and more in Fayetteville, GA. Fast turnaround from prototypes to short production runs.",
+        "keywords": "",
+        "robots": "index,follow",
+        "language": "",
+        "author": "",
+        "geo_region": "",
+        "geo_placename": ""
       },
       "open_graph": {
-        "og:title": "Custom Metal Fabrication Georgia | Fayetteville GA & Atlanta GA | IDFS",
-        "og:description": "Expert custom metal fabrication and product design in Fayetteville, GA by IDFS - Custom metal work, prototyping, small run manufacturing, product design. Trusted by clients across the U.S.",
+        "og:title": "IDFS LLC | Custom metal fabricator in Fayetteville, GA",
+        "og:description": "Custom Metal Fabrication, design engineering, powder coating, laser engraving, and more. Fast turnaround from prototypes to short run production runs.",
         "og:type": "website",
-        "og:url": "https://idfsllc.com",
-        "og:image": "https://idfsllc.com/assets/machine-shop-facility.webp",
-        "og:site_name": "IDFS Integrated Design and Fabrication Solutions",
+        "og:url": "https://idfsllc.com/",
+        "og:image": "https://idfsllc.com/assets/DESIGN-BUILD-PEROFRM.png",
+        "og:site_name": "IDFS LLC",
         "og:locale": "en_US"
       },
       "twitter_card": {
         "twitter:card": "summary_large_image",
-        "twitter:title": "Custom Metal Fabrication Georgia | Fayetteville GA & Atlanta GA | IDFS",
-        "twitter:description": "Expert custom metal fabrication and product design in Fayetteville, GA by IDFS - Custom metal work, prototyping, small run manufacturing, product design. Trusted by clients across the U.S.",
-        "twitter:image": "https://idfsllc.com/assets/machine-shop-facility.webp"
+        "twitter:title": "IDFS LLC | Custom metal fabricator in Fayetteville, GA",
+        "twitter:description": "Custom Metal Fabrication, design engineering, powder coating, laser engraving, and more. Fast turnaround from prototypes to short run production runs.",
+        "twitter:image": "https://idfsllc.com/assets/DESIGN-BUILD-PEROFRM.png"
       },
       "structured_data": {
+        "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "identifier": "WG82SYNRPDZ9",
-        "name": "IDFS Integrated Design and Fabrication Solutions",
-        "alternateName": ["IDFS", "IDFS Machine Shop Georgia"],
-        "description": "Premier custom metal fabrication shop in Fayetteville, Georgia specializing in design, prototyping, and custom fabrication services serving the Atlanta metro area",
-        "services": [
-          "Custom Metal Fabrication",
-          "Design Services",
-          "Prototyping",
-          "CNC Machining",
-          "Welding Services",
-          "Scene Work",
-          "Entertainment Fabrication",
-          "Theatrical Fabrication",
-          "Sculptural Milling"
-        ]
+        "name": "IDFS LLC",
+        "url": "https://idfsllc.com",
+        "logo": "https://idfsllc.com/logo.png",
+        "image": "https://idfsllc.com/og-image.jpg",
+        "description": "Custom metal fabrication, design engineering, powder coating, laser engraving, and manufacturing services in Fayetteville, GA.",
+        "telephone": "+1-470-409-9972",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Fayetteville",
+          "addressRegion": "GA",
+          "postalCode": "30214",
+          "addressCountry": "US"
+        },
+        "areaServed": "Georgia"
       },
       "content": {
         "hero": {
@@ -142,29 +146,129 @@
       }
     },
     {
-      "page": "capabilities.html",
-      "url": "https://idfsllc.com/capabilities",
-      "title": "Manufacturing Capabilities Fayetteville GA | Atlanta Metro CNC Machining, Welding & Fabrication Services | IDFS",
+      "page": "services.html",
+      "url": "https://idfsllc.com/services.html",
+      "canonical": "https://idfsllc.com/services.html",
+      "title": "Fabrication Services | Metal Fabrication, Design Engineering, Powder Coating, Laser Engraving, and more in Fayetteville, GA!",
       "meta_tags": {
-        "description": "Comprehensive manufacturing capabilities in Fayetteville, GA serving Atlanta metro area. CNC machining, TIG/MIG welding, fabrication, industrial 3D printing, contract manufacturing services. Located near Trilith Studios, Tyler Perry Studios, and Atlanta Metro Studios. ±0.001\" precision, aerospace-grade quality. Get quote today!",
-        "keywords": "CNC machining Georgia, CNC machining GA, precision machining Fayetteville Georgia, precision machining Fayetteville GA, CNC machining Atlanta Georgia, CNC machining Atlanta GA, welding services Georgia, welding services GA, fabrication services Georgia, fabrication services GA, contract manufacturing Georgia, contract manufacturing GA, CNC milling Georgia, CNC milling GA, TIG welding Georgia, TIG welding GA, MIG welding Georgia, MIG welding GA, aerospace manufacturing Georgia, aerospace manufacturing GA, defense contractor Georgia, defense contractor GA, precision tolerances Georgia, precision tolerances GA, robotic milling Georgia, robotic milling GA, plasma cutting Georgia, plasma cutting GA, industrial 3D printing Georgia, industrial 3D printing GA, additive manufacturing Georgia, additive manufacturing GA, professional 3D printing Georgia, professional 3D printing GA, production 3D printing Georgia, production 3D printing GA, scene work Georgia, scene work GA, scene shop services Georgia, scene shop services GA, entertainment fabrication Georgia, entertainment fabrication GA, theatrical fabrication Georgia, theatrical fabrication GA, sculptural milling Georgia, sculptural milling GA, Trilith Studios fabrication Georgia, Trilith Studios fabrication GA, Tyler Perry Studios fabrication Georgia, Tyler Perry Studios fabrication GA, Atlanta Metro Studios fabrication Georgia, Atlanta Metro Studios fabrication GA, film industry fabrication Georgia, film industry fabrication GA",
-        "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
-        "language": "English",
-        "author": "IDFS Integrated Design and Fabrication Solutions",
-        "geo_region": "US-GA",
-        "geo_placename": "Fayetteville"
+        "description": "Expert fabrication services with experience in government, industrial, automotive, and scenic industries. Call 470-409-9972 for a free quote",
+        "keywords": "",
+        "robots": "index,follow",
+        "language": "",
+        "author": "",
+        "geo_region": "",
+        "geo_placename": ""
+      },
+      "open_graph": {
+        "og:title": "Fabrication Services in Fayetteville. GA",
+        "og:description": "Metal Fabrication, Design Engineering, Powder Coating, Laser Engraving, and more in Fayetteville, GA",
+        "og:type": "website",
+        "og:url": "https://idfsllc.com/services.html",
+        "og:image": "https://idfsllc.com/assets/todd-welding-edit.jpg",
+        "og:site_name": "idfsllc.com",
+        "og:locale": "en_US"
+      },
+      "twitter_card": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Fabrication Services in Fayetteville. GA",
+        "twitter:description": "Metal Fabrication, Design Engineering, Powder Coating, Laser Engraving, and more in Fayetteville, GA",
+        "twitter:image": "https://idfsllc.com/assets/todd-welding-edit.jpg"
       },
       "structured_data": {
-        "@type": "Service",
-        "name": "Manufacturing Capabilities",
-        "description": "CNC machining, welding, and fabrication services in Fayetteville, Georgia",
-        "services": [
-          "CNC Machining",
-          "Welding Services",
-          "Fabrication Services",
-          "Industrial 3D Printing & Additive Manufacturing"
-        ]
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://idfsllc.com/#localbusiness",
+        "name": "IDFS LLC",
+        "url": "https://idfsllc.com",
+        "logo": "https://idfsllc.com/logo.png",
+        "image": "https://idfsllc.com/todd-welding-edit.jpg",
+        "telephone": "+1-470-409-9972",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Fayetteville",
+          "addressRegion": "GA",
+          "postalCode": "30214",
+          "addressCountry": "US"
+        },
+        "areaServed": "Georgia",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Manufacturing & Fabrication Services",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Custom Metal Fabrication",
+                "description": "High-quality custom metal fabrication services tailored to your project specifications."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Design Engineering",
+                "description": "Professional design engineering services to bring your concepts to manufacturing-ready reality."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Powder Coating",
+                "description": "Durable and premium powder coating finishes for various metal products."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Laser Engraving",
+                "description": "Durable laser engraving services for custom branding, serialization, and detailing."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Manufacturing Services",
+                "description": "End-to-end manufacturing solutions for components and full product assemblies."
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "page": "capabilities.html",
+      "url": "https://idfsllc.com/capabilities.html",
+      "canonical": "https://idfsllc.com/capabilities.html",
+      "title": "Industrial Manufacturing & Fabrication Capabilities | IDFS LLC",
+      "meta_tags": {
+        "description": "Explore the in-house capabilities of IDFS LLC in Fayetteville, GA. From precision welding and powder coating to CAD/CAM, additive manufacturing, and robotic milling.",
+        "keywords": "",
+        "robots": "index, follow",
+        "language": "",
+        "author": "",
+        "geo_region": "",
+        "geo_placename": ""
       },
+      "open_graph": {
+        "og:title": "Industrial Manufacturing & Fabrication Capabilities | IDFS LLC",
+        "og:description": "Explore the in-house capabilities of IDFS LLC in Fayetteville, GA. From precision welding and powder coating to CAD/CAM, additive manufacturing, and robotic milling.",
+        "og:type": "website",
+        "og:url": "https://idfsllc.com/capabilities.html",
+        "og:image": "https://idfsllc.com/og-image.jpg",
+        "og:site_name": "IDFS LLC",
+        "og:locale": ""
+      },
+      "twitter_card": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Industrial Manufacturing & Fabrication Capabilities | IDFS LLC",
+        "twitter:description": "Explore the in-house capabilities of IDFS LLC in Fayetteville, GA. From precision welding and powder coating to CAD/CAM, additive manufacturing, and robotic milling.",
+        "twitter:image": "https://idfsllc.com/og-image.jpg"
+      },
+      "structured_data": {},
       "content": {
         "hero": {
           "heading": "Our Capabilities",
@@ -214,25 +318,113 @@
           "heading": "Let's get started on your next project",
           "button_text": "Get Quote"
         }
+      },
+      "open_graph": {
+        "og:title": "",
+        "og:description": "",
+        "og:type": "",
+        "og:url": "",
+        "og:image": "",
+        "og:site_name": "",
+        "og:locale": ""
+      },
+      "twitter_card": {
+        "twitter:card": "",
+        "twitter:title": "",
+        "twitter:description": "",
+        "twitter:image": ""
       }
     },
     {
       "page": "contact.html",
-      "url": "https://idfsllc.com/contact",
-      "title": "Contact IDFS Custom Fabrication & Design Fayetteville GA | Atlanta Metro Custom Fabrication Quote Request | CNC Robotic Fabrication Design",
+      "url": "https://idfsllc.com/contact.html",
+      "canonical": "https://idfsllc.com/contact.html",
+      "title": "Request a Quote | Custom Metal Fabrication & Design | IDFS LLC",
       "meta_tags": {
-        "description": "Contact IDFS for custom fabrication, part cutting, design, and prototyping services in Fayetteville, GA serving Atlanta area. With tons of experience in design, fabrication, and prototyping, we're your go-to for all your custom fabrication needs. Call (470) 409-9972 or email Designs@idfsllc.com",
-        "keywords": "custom fabrication Georgia, custom fabrication GA, Atlanta custom fabrication Georgia, Atlanta custom fabrication GA, custom fabrication in atlanta Georgia, custom fabrication in atlanta GA, custom fabrication in ga Georgia, custom fabrication in ga GA, custom design Georgia, custom design GA, CNC machining Georgia, CNC machining GA, robotic capabilities Georgia, robotic capabilities GA, welding Georgia, welding GA, custom fabrication ga Georgia, custom fabrication ga GA, design fabrication Georgia, design fabrication GA, scene work Georgia, scene work GA, scene shop Georgia, scene shop GA, entertainment fabrication Georgia, entertainment fabrication GA, theatrical fabrication Georgia, theatrical fabrication GA, Trilith Studios Georgia, Trilith Studios GA, Tyler Perry Studios Georgia, Tyler Perry Studios GA, Atlanta Metro Studios Georgia, Atlanta Metro Studios GA, film industry fabrication Georgia, film industry fabrication GA",
-        "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
-        "language": "English",
-        "author": "IDFS Integrated Design and Fabrication Solutions",
-        "geo_region": "US-GA",
-        "geo_placename": "Fayetteville"
+        "description": "Contact IDFS LLC in Fayetteville, GA to request a quote (RFQ) for custom metal fabrication, CNC machining, and design engineering. Serving the Atlanta metro area.",
+        "keywords": "",
+        "robots": "index, follow",
+        "language": "",
+        "author": "",
+        "geo_region": "",
+        "geo_placename": ""
+      },
+      "open_graph": {
+        "og:title": "Request a Quote | Custom Metal Fabrication & Design | IDFS LLC",
+        "og:description": "Contact IDFS LLC in Fayetteville, GA to request a quote (RFQ) for custom metal fabrication, CNC machining, and design engineering. Serving the Atlanta metro area.",
+        "og:type": "website",
+        "og:url": "https://idfsllc.com/contact.html",
+        "og:image": "https://idfsllc.com/og-image.jpg",
+        "og:site_name": "IDFS LLC",
+        "og:locale": ""
+      },
+      "twitter_card": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Request a Quote | Custom Metal Fabrication & Design | IDFS LLC",
+        "twitter:description": "Contact IDFS LLC in Fayetteville, GA to request a quote (RFQ) for custom metal fabrication, CNC machining, and design engineering. Serving the Atlanta metro area.",
+        "twitter:image": "https://idfsllc.com/og-image.jpg"
       },
       "structured_data": {
-        "@type": "ContactPage",
-        "name": "Contact IDFS Custom Fabrication & Design Georgia",
-        "description": "Contact page for IDFS Custom Fabrication & Design Georgia - CNC Machining Georgia, Custom Metal Fabrication Georgia, Defense Fabrication Georgia services"
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://idfsllc.com/#localbusiness",
+        "name": "IDFS LLC",
+        "legalName": "IDFS Integrated Design and Fabrication Solutions",
+        "url": "https://idfsllc.com",
+        "logo": "https://idfsllc.com/logo.png",
+        "image": "https://idfsllc.com/og-image.jpg",
+        "telephone": "+1-470-409-9972",
+        "email": "Designs@idfsllc.com",
+        "cageCode": "109T0",
+        "duns": "110818579",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "133 Bethea Rd. Suite 801",
+          "addressLocality": "Fayetteville",
+          "addressRegion": "GA",
+          "postalCode": "30214",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 33.4735,
+          "longitude": -84.4371
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "09:00",
+            "closes": "16:30"
+          }
+        ],
+        "areaServed": [
+          {
+            "@type": "AdministrativeArea",
+            "name": "Georgia"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Atlanta Metro Area"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Fayetteville"
+          }
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+1-470-409-9972",
+          "contactType": "customer service",
+          "email": "Designs@idfsllc.com",
+          "availableLanguage": "en"
+        }
       },
       "content": {
         "contact_info": {
@@ -288,29 +480,96 @@
             ]
           }
         }
+      },
+      "open_graph": {
+        "og:title": "",
+        "og:description": "",
+        "og:type": "",
+        "og:url": "",
+        "og:image": "",
+        "og:site_name": "",
+        "og:locale": ""
+      },
+      "twitter_card": {
+        "twitter:card": "",
+        "twitter:title": "",
+        "twitter:description": "",
+        "twitter:image": ""
       }
     },
     {
       "page": "industries.html",
-      "url": "https://idfsllc.com/industries",
-      "title": "Industries Served | Government Defense Aerospace Manufacturing | Fayetteville GA Atlanta Metro | IDFS",
+      "url": "https://idfsllc.com/industries.html",
+      "canonical": "https://idfsllc.com/industries.html",
+      "title": "Custom Fabrication Services Across Industries | IDFS LLC",
       "meta_tags": {
-        "description": "Industries served by IDFS: Government & Defense, Aerospace, Automotive, Energy, Entertainment. Contract manufacturing services in Fayetteville, Georgia serving Atlanta metro area for government contractors and industrial clients.",
-        "keywords": "government contractor Georgia, defense manufacturing, aerospace manufacturing, contract manufacturing Georgia, automotive manufacturing, entertainment industry fabrication, scene shop services, job shop manufacturing, defense contractor Georgia, aerospace supplier Georgia, Atlanta manufacturing, Atlanta machine shop, scene work Georgia, entertainment fabrication Georgia, theatrical fabrication Georgia, event fabrication Georgia",
-        "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
-        "language": "English",
-        "author": "IDFS Integrated Design and Fabrication Solutions",
-        "geo_region": "US-GA",
-        "geo_placename": "Fayetteville"
+        "description": "IDFS LLC delivers custom fabrication, design engineering, and powder coating for aerospace, industrial, automotive, film & entertainment, and consumer markets.",
+        "keywords": "",
+        "robots": "index, follow",
+        "language": "",
+        "author": "",
+        "geo_region": "",
+        "geo_placename": ""
+      },
+      "open_graph": {
+        "og:title": "Custom Fabrication Services Across Industries | IDFS LLC",
+        "og:description": "IDFS LLC delivers custom fabrication, design engineering, and powder coating for aerospace, industrial, automotive, film & entertainment, and consumer markets.",
+        "og:type": "website",
+        "og:url": "https://idfsllc.com/industries.html",
+        "og:image": "https://idfsllc.com/og-image.jpg",
+        "og:site_name": "IDFS LLC",
+        "og:locale": ""
+      },
+      "twitter_card": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Custom Fabrication Services Across Industries | IDFS LLC",
+        "twitter:description": "IDFS LLC delivers custom fabrication, design engineering, and powder coating for aerospace, industrial, automotive, film & entertainment, and consumer markets.",
+        "twitter:image": "https://idfsllc.com/todd-welding-edit.jpg"
       },
       "structured_data": {
-        "@type": "Organization",
-        "description": "Manufacturing services for government, defense, aerospace, automotive, and energy industries",
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://idfsllc.com/#localbusiness",
+        "name": "IDFS LLC",
+        "legalName": "IDFS Integrated Design and Fabrication Solutions",
+        "url": "https://idfsllc.com",
+        "logo": "https://idfsllc.com/logo.png",
+        "image": "https://idfsllc.com/og-image.jpg",
+        "telephone": "+1-470-409-9972",
+        "email": "Designs@idfsllc.com",
+        "cageCode": "109T0",
+        "duns": "110818579",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "133 Bethea Rd. Suite 801",
+          "addressLocality": "Fayetteville",
+          "addressRegion": "GA",
+          "postalCode": "30214",
+          "addressCountry": "US"
+        },
         "knowsAbout": [
-          "Government Contracting",
-          "Defense Manufacturing",
-          "Aerospace Manufacturing",
-          "Contract Manufacturing"
+          "Aerospace Fabrication",
+          "Industrial Manufacturing Solutions",
+          "Automotive Component Fabrication",
+          "Film and Set Prop Fabrication",
+          "Scenic Elements & Sculptures",
+          "Custom Metalwork & Prototyping",
+          "CNC Machining",
+          "3D Printing & Additive Manufacturing"
+        ],
+        "areaServed": [
+          {
+            "@type": "AdministrativeArea",
+            "name": "Georgia"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Atlanta Metro Area"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Fayetteville"
+          }
         ]
       },
       "content": {
@@ -344,26 +603,37 @@
           "text": "Interested in our capabilities?",
           "button_text": "View Our Capabilities"
         }
+      },
+      "open_graph": {
+        "og:title": "",
+        "og:description": "",
+        "og:type": "",
+        "og:url": "",
+        "og:image": "",
+        "og:site_name": "",
+        "og:locale": ""
+      },
+      "twitter_card": {
+        "twitter:card": "",
+        "twitter:title": "",
+        "twitter:description": "",
+        "twitter:image": ""
       }
     },
     {
       "page": "privacy-policy.html",
       "url": "https://idfsllc.com/privacy-policy",
-      "title": "Privacy Policy | IDFS Integrated Design and Fabrication Solutions",
+      "title": "",
       "meta_tags": {
-        "description": "Privacy Policy for IDFS Integrated Design and Fabrication Solutions. Learn how we collect, use, and protect your personal information.",
-        "keywords": "privacy policy, data protection, IDFS privacy, custom fabrication privacy",
-        "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
-        "language": "English",
-        "author": "IDFS Integrated Design and Fabrication Solutions",
-        "geo_region": "US-GA",
-        "geo_placename": "Fayetteville"
+        "description": "",
+        "keywords": "",
+        "robots": "",
+        "language": "",
+        "author": "",
+        "geo_region": "",
+        "geo_placename": ""
       },
-      "structured_data": {
-        "@type": "WebPage",
-        "name": "Privacy Policy",
-        "description": "Privacy Policy for IDFS Integrated Design and Fabrication Solutions"
-      },
+      "structured_data": {},
       "content": {
         "last_updated": "January 1, 2024",
         "sections": [
@@ -408,6 +678,21 @@
             "content": "For questions about this Privacy Policy or data practices, contact: IDFS Integrated Design and Fabrication Solutions, 133 Bethea Rd. Suite 801, Fayetteville, GA 30214, Phone: (470) 409-9972, Email: Designs@idfsllc.com"
           }
         ]
+      },
+      "open_graph": {
+        "og:title": "",
+        "og:description": "",
+        "og:type": "",
+        "og:url": "",
+        "og:image": "",
+        "og:site_name": "",
+        "og:locale": ""
+      },
+      "twitter_card": {
+        "twitter:card": "",
+        "twitter:title": "",
+        "twitter:description": "",
+        "twitter:image": ""
       }
     }
   ],
@@ -477,4 +762,3 @@
     ]
   }
 }
-
